@@ -11,13 +11,15 @@
 # production
 /build
 /dist
+src/styles/tailwind.output.css
 
 # Storybook
 storybook-static
 *storybook.log
 
-# lock file
+# yarn
 yarn.lock
+.yarn
 
 # misc
 .DS_Store
