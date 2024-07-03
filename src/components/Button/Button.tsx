@@ -1,6 +1,7 @@
 // src/components/Button/Button.tsx
 
 import React from 'react';
+import '../../styles/tailwind.output.css';
 
 export interface ButtonProps {
   label: string;
