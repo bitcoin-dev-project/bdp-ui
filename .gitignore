@@ -18,8 +18,13 @@ storybook-static
 *storybook.log
 
 # yarn
-yarn.lock
-.yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # misc
 .DS_Store
