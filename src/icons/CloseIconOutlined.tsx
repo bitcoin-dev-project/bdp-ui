@@ -11,7 +11,7 @@ const CloseIconOutlined = ({ width = 14, height, ...props }: SVGProps<SVGSVGElem
   >
     <path
       d="M1 1L13 13M13 1L1 13"
-      stroke="#4D4D4D"
+      stroke="currentColor"
       strokeWidth={2}
       strokeLinecap="round"
     />
