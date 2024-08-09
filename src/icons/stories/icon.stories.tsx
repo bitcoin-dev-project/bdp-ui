@@ -46,25 +46,10 @@ const IconGrid = ({
 export const AllIcons: Story = {
   args: {
     width: 24,
-    // color: "black",
     className: "text-orange-500",
     pathProps: {
-      strokeWidth: 1,
+      strokeWidth: 1.5,
     }
   },
   render: (args) => <IconGrid {...args} />,
 };
-
-// const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
-
-// export const Primary = Template.bind({});
-// Primary.args = {
-//   label: 'Primary Button',
-//   variant: 'primary',
-// };
-
-// export const Disabled = Template.bind({});
-// Disabled.args = {
-//   label: 'Disabled Button',
-//   disabled: true,
-// };
