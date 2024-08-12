@@ -9,12 +9,12 @@ jobs:
   build-and-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -26,14 +26,14 @@ jobs:
 
       - name: Commit dist folder
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "${{ secrets.EMAIL }}"
+          git config --local user.name "${{ secrets.NAME }}"
           git add dist
           git commit -m "Build dist folder for release ${{ github.ref }}" || echo "No changes to commit"
           git push
 
       - name: Update release with dist folder
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BDP_UI_TOKEN: ${{ secrets.BDP_UI_TOKEN }}
         run: |
           gh release upload ${{ github.ref }} dist/** --clobber
