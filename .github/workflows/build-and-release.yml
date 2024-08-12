@@ -25,6 +25,8 @@ jobs:
         run: yarn build
 
       - name: Commit dist folder
+        env:
+          BDP_UI_TOKEN: ${{ secrets.BDP_UI_TOKEN }}
         run: |
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.name "${{ secrets.NAME }}"
@@ -33,7 +35,5 @@ jobs:
           git push
 
       - name: Update release with dist folder
-        env:
-          BDP_UI_TOKEN: ${{ secrets.BDP_UI_TOKEN }}
         run: |
           gh release upload ${{ github.ref }} dist/** --clobber
