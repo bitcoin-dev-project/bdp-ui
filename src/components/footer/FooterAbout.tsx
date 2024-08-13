@@ -9,18 +9,18 @@ interface FooterAboutProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
 const FooterAbout = (props: React.PropsWithChildren<FooterAboutProps>) => {
   const { className: classname, children, entityLink, entityName, ...rest } = props
   if (children) {
-    <div {...rest} className={classname}>
+    <div {...rest} className={props.classname}>
       {props.children}
     </div>
   }
   return (
-    <div {...rest} className={`leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 ${classname}`}>
+    <div {...rest} className={`text-sm text-gray-500 dark:text-gray-400 ${classname}`}>
       Built with <span>🧡</span> by the{" "}
           <a
             href={entityLink ?? "https://bitcoindevs.xyz/"}
             target="_blank"
             rel="noreferrer"
-            className="underline font-medium text-custom-brightOrange-100"
+            className="underline font-medium"
           >
             {entityName ?? "Bitcoin Dev Project"}
           </a>
