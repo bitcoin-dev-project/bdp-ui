@@ -28,8 +28,8 @@ jobs:
         env:
           BDP_UI_TOKEN: ${{ secrets.BDP_UI_TOKEN }}
         run: |
-          git config --local user.email "${{ secrets.EMAIL }}"
-          git config --local user.name "${{ secrets.NAME }}"
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git config --global user.name "${{ secrets.NAME }}"
           git add dist
           git commit -m "Build dist folder for release ${{ github.ref }}" || echo "No changes to commit"
           git push
