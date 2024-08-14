@@ -39,7 +39,6 @@ jobs:
           git push
 
       - name: Update release with dist folder
-        if: github.event_name == 'release'
         env:
           BDP_UI_TOKEN: ${{ secrets.BDP_UI_TOKEN }}
         run: |
