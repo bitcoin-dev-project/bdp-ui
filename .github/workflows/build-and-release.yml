@@ -40,6 +40,6 @@ jobs:
 
       - name: Update release with dist folder
         env:
-          BDP_UI_TOKEN: ${{ secrets.BDP_UI_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           gh release upload ${{ github.ref }} dist/** --clobber
