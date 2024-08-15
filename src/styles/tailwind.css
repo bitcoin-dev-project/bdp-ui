@@ -1,3 +1,65 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background: #fafafa;
+  --hover-primary: #f5f5f5;
+  --button: #333333;
+  --hover-state: #fff0e0;
+  --stroke: #bfbfbf;
+  --secondary-text: #636366;
+  /* --secondary-text: #999999; */
+  --primary-text: #292929;
+  --black: #292929;
+  /* --other-light-text: #D9D9D9; */
+  --other-light-text: #999999;
+  --accent: #f7931a;
+  --gradient: linear-gradient(92.78deg, #e8782b 0%, #f6a73f 101.1%);
+  --shadow-left: linear-gradient(
+    90deg,
+    #fafafa 50.33%,
+    rgba(250, 250, 250, 0) 100%
+  );
+  --shadow-right: linear-gradient(
+    270deg,
+    #fafafa 50.33%,
+    rgba(250, 250, 250, 0) 100%
+  );
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.dark {
+  --background: #1c1c1e;
+  --hover-state: #2c2c2e;
+  --button: #8e8e93;
+  --stroke: #3a3a3c;
+  --secondary-text: #999999;
+  /* --secondary-text: #636366; */
+  --primary-text: #a4a4a8;
+  /* --primary-text: #8e8e93; */
+  --black: #292929;
+  --other-light-text: #636366;
+  /* --other-light-text: #48484a; */
+  --accent: #f7931a;
+  --hover-primary: #2c2c2e;
+  --gradient: linear-gradient(92.78deg, #e8782b 0%, #f6a73f 101.1%);
+
+  --shadow-right: linear-gradient(
+    270deg,
+    #1c1c1f 50.33%,
+    rgba(28, 28, 31, 0) 100%
+  );
+  --shadow-left: linear-gradient(
+    90deg,
+    #1c1c1f 50.33%,
+    rgba(28, 28, 31, 0) 100%
+  );
+}
