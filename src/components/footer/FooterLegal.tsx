@@ -7,7 +7,7 @@ const FooterLegal = (props: React.PropsWithChildren<FooterLegalProps>) => {
   const { className: classname, children, ...rest } = props
   if (children) {
     return (
-      <div className={`${props.classname} text-sm text-gray-500 dark:text-gray-400`}>
+      <div className={`${props.className} text-sm text-gray-500 dark:text-gray-400`}>
         {props.children}
       </div>
     )
