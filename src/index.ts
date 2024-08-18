@@ -1,1 +1,2 @@
-export * from './components/Button';
+export * from './components/button';
+export * from './components/footer';
