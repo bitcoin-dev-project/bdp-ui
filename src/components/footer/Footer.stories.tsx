@@ -22,28 +22,28 @@ export const UnModifiedFooter = (args: any) => {
               entity: "github",
               entityLink: "https://github.com/bitcoindevs",
               iconProps: {
-                className: "w-full basis-full shrink-0 hover:text-orange-400"
+                className: "hover:text-orange-400"
               }
             },
             {
               entity: "discord",
               entityLink: "https://discord.gg/bitcoindev",
               iconProps: {
-                className: "w-full basis-full shrink-0 hover:text-orange-400"
+                className: "hover:text-orange-400"
               }
             },
             {
               entity: "twitter",
               entityLink: "https://twitter.com/bitcoindevs",
               iconProps: {
-                className: "w-full basis-full shrink-0 hover:text-orange-400"
+                className: "hover:text-orange-400"
               }
             },
             {
               entity: "nostr",
               entityLink: "https://discord.gg/bitcoindevs",
               iconProps: {
-                className: "w-full basis-full shrink-0 hover:text-orange-400"
+                className: "hover:text-orange-400"
               }
             },
           ]}

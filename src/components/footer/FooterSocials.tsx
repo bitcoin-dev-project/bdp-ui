@@ -26,28 +26,28 @@ interface FooterSocialsProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
 
 const Platform = ({ platform }: { platform: SocialMediaProps }) => {
   const { entity, entityLink, icon, iconProps } = platform;
+  const { className, ...rest } = iconProps ?? {};
   const getIcon = (entity: SocialMediaProps["entity"]) => {
-    const { className, ...rest } = iconProps ?? {};
     if (icon) {
       return React.cloneElement(icon, { ...rest, className });
     }
     if (entity === "twitter") {
-      return <TwitterXIcon className={`w-[34px] ${className}`} {...rest} />;
+      return <TwitterXIcon className={`w-full ${className}`} {...rest} />;
     }
     if (entity === "github") {
-      return <GithubIcon className={`w-[34px] ${className}`} {...rest} />;
+      return <GithubIcon className={`w-full ${className}`} {...rest} />;
     }
     if (entity === "discord") {
-      return <DiscordIcon className={`w-[36px] ${className}`} {...rest} />;
+      return <DiscordIcon className={`w-full ${className}`} {...rest} />;
     }
     if (entity === "nostr") {
-      return <NostrIcon className={`w-[32px] ${className}`} {...rest} />;
+      return <NostrIcon className={`w-full ${className}`} {...rest} />;
     }
   };
   const iconElement = getIcon(entity);
 
   return (
-    <div className="flex items-center justify-center w-full max-w-[40px]">
+    <div className="flex items-center justify-center w-full max-w-[40px] min-w-[24px]">
       <a
         href={entityLink}
         target="_blank"
@@ -82,7 +82,7 @@ export const FooterSocials = (
   return (
     <div
       {...rest}
-      className={`text-black dark:text-white flex w-fit max-w-full gap-[24px] ${classname}`} 
+      className={`text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px] ${classname}`} 
     >
       {platforms.map((platform, index) => (
         <Platform key={platform.entity} platform={platform} />

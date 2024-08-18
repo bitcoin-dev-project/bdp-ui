@@ -12,7 +12,7 @@ const FooterPublic = ({ className: classname, dshboardLink, ...rest }: FooterPub
       href={dshboardLink}
       target="_blank"
       rel="noreferrer"
-      className={`text-sm text-gray-500 dark:text-gray-400 underline ${classname}`}
+      className={`leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 underline ${classname}`}
       {...rest}
     >
       View our public visitor count
