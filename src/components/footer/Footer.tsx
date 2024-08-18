@@ -29,7 +29,7 @@ const Footer = ({ children, className, separator, ...rest}: React.PropsWithChild
 
   return (
     <div>
-      <div className={`flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[24px] mx-auto max-w-[1920px] p-2 ${className}`}>
+      <div className={`flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2 ${className}`}>
         {renderChildrenWithSeparator()}
       </div>
     </div>

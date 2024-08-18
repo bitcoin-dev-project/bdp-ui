@@ -14,7 +14,7 @@ const FooterAbout = (props: React.PropsWithChildren<FooterAboutProps>) => {
     </div>
   }
   return (
-    <div {...rest} className={`text-sm text-gray-500 dark:text-gray-400 ${classname}`}>
+    <div {...rest} className={`leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 ${classname}`}>
       Built with <span>🧡</span> by the{" "}
           <a
             href={entityLink ?? "https://bitcoindevs.xyz/"}
