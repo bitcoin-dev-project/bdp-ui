@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterPartsPrimitiveProps } from "./types";
 
-interface FooterFeedbackProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
+export interface FooterFeedbackProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
   feedbackLink: string;
 }
 

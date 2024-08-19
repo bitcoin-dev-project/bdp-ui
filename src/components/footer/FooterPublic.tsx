@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterPartsPrimitiveProps } from "./types";
 
-interface FooterPublicProps extends FooterPartsPrimitiveProps<HTMLAnchorElement> {
+export interface FooterPublicProps extends FooterPartsPrimitiveProps<HTMLAnchorElement> {
   dshboardLink: string;
 }
 
