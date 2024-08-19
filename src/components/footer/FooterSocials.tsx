@@ -20,7 +20,7 @@ type SocialMediaProps =
       icon: React.ReactElement;
     }>;
 
-interface FooterSocialsProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
+export interface FooterSocialsProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
   platforms: SocialMediaProps[];
 }
 

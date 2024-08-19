@@ -1,15 +1,24 @@
 import React from "react";
+import FooterAbout, { FooterAboutProps } from "./FooterAbout";
+import FooterFeedback, { FooterFeedbackProps } from "./FooterFeedback";
+import { FooterSocials, FooterSocialsProps } from "./FooterSocials";
+import FooterPublic, { FooterPublicProps } from "./FooterPublic";
 import { FooterPartsPrimitiveProps } from "./types";
 
-interface FooterRootProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
+export interface FooterRootProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
   separator?: React.ReactElement;
 }
 
-export const Separator = () => (
+const Separator = () => (
   <div className="h-5 border xl:h-6 xl:border-2 border-custom-stroke hidden xl:block" />
 );
 
-const Footer = ({ children, className, separator, ...rest}: React.PropsWithChildren<FooterRootProps>) => {
+const Footer: React.FC<FooterRootProps> & {
+  About: React.FC<FooterAboutProps>;
+  Feedback: React.FC<FooterFeedbackProps>;
+  Socials: React.FC<FooterSocialsProps>;
+  Public: React.FC<FooterPublicProps>;
+} = ({ children, className, separator, ...rest}) => {
 
   const viewSeparator = separator ?? <Separator />;
 
@@ -28,12 +37,15 @@ const Footer = ({ children, className, separator, ...rest}: React.PropsWithChild
   };
 
   return (
-    <div>
-      <div className={`flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2 ${className}`}>
-        {renderChildrenWithSeparator()}
-      </div>
+    <div className={`flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2 ${className}`} {...rest}>
+      {renderChildrenWithSeparator()}
     </div>
   );
 };
 
-export default Footer;
+Footer.About = FooterAbout;
+Footer.Feedback = FooterFeedback;
+Footer.Socials = FooterSocials;
+Footer.Public = FooterPublic;
+
+export { Footer, Separator };
