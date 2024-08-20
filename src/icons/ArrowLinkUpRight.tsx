@@ -19,15 +19,15 @@ const ArrowLinkUpRight = ({
       d="M17 7.5L6 18.5"
       stroke="currentColor"
       strokeWidth="1.5"
-      stroke-linecap="round"
+      strokeLinecap="round"
       {...pathProps}
     />
     <path
       d="M11 6.6315C11 6.6315 16.6335 6.15661 17.4885 7.01152C18.3434 7.86644 17.8684 13.5 17.8684 13.5"
       stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...pathProps}
     />
   </svg>
