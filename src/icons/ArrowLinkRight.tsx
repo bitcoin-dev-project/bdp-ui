@@ -18,17 +18,17 @@ const ArrowLinkRight = ({
     <path
       d="M20 12.5H4"
       stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...pathProps}
     />
     <path
       d="M15 17.5C15 17.5 20 13.8176 20 12.5C20 11.1824 15 7.5 15 7.5"
       stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...pathProps}
     />
   </svg>
