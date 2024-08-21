@@ -84,7 +84,7 @@ export const FooterSocials = (
       {...rest}
       className={`text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px] ${classname}`} 
     >
-      {platforms.map((platform, index) => (
+      {platforms.map((platform) => (
         <Platform key={platform.entity} platform={platform} />
       ))}
     </div>
