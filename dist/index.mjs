@@ -341,7 +341,7 @@ var FooterSocials = (props) => {
       ...rest,
       className: `text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px] ${classname}`
     },
-    platforms.map((platform, index) => /* @__PURE__ */ React30.createElement(Platform, { key: platform.entity, platform }))
+    platforms.map((platform) => /* @__PURE__ */ React30.createElement(Platform, { key: platform.entity, platform }))
   );
 };
 FooterSocials.displayName = "FooterSocials";

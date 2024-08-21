@@ -122,9 +122,9 @@ var ArrowLinkRight = ({
       {
         d: "M20 12.5H4",
         stroke: "currentColor",
-        "stroke-width": "1.5",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
         ...pathProps
       }
     ),
@@ -133,9 +133,9 @@ var ArrowLinkRight = ({
       {
         d: "M15 17.5C15 17.5 20 13.8176 20 12.5C20 11.1824 15 7.5 15 7.5",
         stroke: "currentColor",
-        "stroke-width": "1.5",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
         ...pathProps
       }
     )
@@ -167,7 +167,7 @@ var ArrowLinkUpRight = ({
         d: "M17 7.5L6 18.5",
         stroke: "currentColor",
         strokeWidth: "1.5",
-        "stroke-linecap": "round",
+        strokeLinecap: "round",
         ...pathProps
       }
     ),
@@ -176,9 +176,9 @@ var ArrowLinkUpRight = ({
       {
         d: "M11 6.6315C11 6.6315 16.6335 6.15661 17.4885 7.01152C18.3434 7.86644 17.8684 13.5 17.8684 13.5",
         stroke: "currentColor",
-        "stroke-width": "1.5",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
         ...pathProps
       }
     )
@@ -253,8 +253,8 @@ var BitcoinIcon = ({ width = 18, height, ...props }) => (
     /* @__PURE__ */ React7.createElement(
       "path",
       {
-        "fill-rule": "evenodd",
-        "clip-rule": "evenodd",
+        fillRule: "evenodd",
+        clipRule: "evenodd",
         d: "M9 18C10.1819 18 11.3522 17.7672 12.4442 17.3149C13.5361 16.8626 14.5282 16.1997 15.364 15.364C16.1997 14.5282 16.8626 13.5361 17.3149 12.4442C17.7672 11.3522 18 10.1819 18 9C18 7.8181 17.7672 6.64778 17.3149 5.55585C16.8626 4.46392 16.1997 3.47177 15.364 2.63604C14.5282 1.80031 13.5361 1.13738 12.4442 0.68508C11.3522 0.23279 10.1819 0 9 0C6.61305 0 4.32387 0.94821 2.63604 2.63604C0.94821 4.32387 0 6.61305 0 9C0 11.3869 0.94821 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18ZM12.873 7.616C13.079 6.314 12.18 5.636 10.933 5.178L11.371 3.408L10.381 3.162L9.954 4.888L9.761 4.838C9.565 4.788 9.372 4.738 9.174 4.694L9.602 2.969L8.585 2.717L8.157 4.442L6.139 3.942L5.847 5.122C5.847 5.122 6.596 5.285 6.568 5.301C6.968 5.409 7.037 5.693 7.015 5.91L6.506 7.917L5.808 10.74C5.753 10.874 5.618 11.066 5.344 11C5.356 11.012 4.616 10.809 4.616 10.809L4.13 12.054L6.088 12.588L5.652 14.349L6.635 14.593L7.072 12.831C7.23 12.877 7.39 12.914 7.545 12.95C7.661 12.977 7.774 13.003 7.881 13.032L7.444 14.793L8.429 15.037L8.866 13.276C10.561 13.599 11.841 13.448 12.413 11.779C12.873 10.449 12.443 9.689 11.55 9.19C12.22 9.027 12.717 8.563 12.873 7.616Z",
         fill: "currentColor"
       }
@@ -276,8 +276,8 @@ var BookmarkIcon = ({ width = 25, height, ...props }) => (
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React8.createElement("path", { d: "M3.75195 20.5604V14.7496C3.75195 10.7459 3.75195 8.74403 4.96226 7.50023C6.17257 6.25644 8.12053 6.25644 12.0164 6.25644C15.9123 6.25644 17.8603 6.25644 19.0707 7.50023C20.2809 8.74403 20.2809 10.7459 20.2809 14.7496V20.5604C20.2809 23.1013 20.2809 24.3717 19.4826 24.8265C17.9365 25.7071 15.0363 22.7691 13.659 21.8845C12.8602 21.3714 12.4608 21.1149 12.0164 21.1149C11.572 21.1149 11.1726 21.3714 10.3739 21.8845C8.9966 22.7691 6.09646 25.7071 4.55035 24.8265C3.75195 24.3717 3.75195 23.1013 3.75195 20.5604Z", stroke: "currentColor", "stroke-width": "1.6529", "stroke-linecap": "round", "stroke-linejoin": "round" }),
-    /* @__PURE__ */ React8.createElement("path", { d: "M10.3638 2.95062H12.5676C17.7621 2.95062 20.3595 2.95062 21.9732 4.56437C23.5869 6.1781 23.5869 8.77538 23.5869 13.9699V20.5815", stroke: "currentColor", "stroke-width": "1.6529", "stroke-linecap": "round", "stroke-linejoin": "round" })
+    /* @__PURE__ */ React8.createElement("path", { d: "M3.75195 20.5604V14.7496C3.75195 10.7459 3.75195 8.74403 4.96226 7.50023C6.17257 6.25644 8.12053 6.25644 12.0164 6.25644C15.9123 6.25644 17.8603 6.25644 19.0707 7.50023C20.2809 8.74403 20.2809 10.7459 20.2809 14.7496V20.5604C20.2809 23.1013 20.2809 24.3717 19.4826 24.8265C17.9365 25.7071 15.0363 22.7691 13.659 21.8845C12.8602 21.3714 12.4608 21.1149 12.0164 21.1149C11.572 21.1149 11.1726 21.3714 10.3739 21.8845C8.9966 22.7691 6.09646 25.7071 4.55035 24.8265C3.75195 24.3717 3.75195 23.1013 3.75195 20.5604Z", stroke: "currentColor", strokeWidth: "1.6529", strokeLinecap: "round", strokeLinejoin: "round" }),
+    /* @__PURE__ */ React8.createElement("path", { d: "M10.3638 2.95062H12.5676C17.7621 2.95062 20.3595 2.95062 21.9732 4.56437C23.5869 6.1781 23.5869 8.77538 23.5869 13.9699V20.5815", stroke: "currentColor", strokeWidth: "1.6529", strokeLinecap: "round", strokeLinejoin: "round" })
   )
 );
 var BookmarkIcon_default = BookmarkIcon;
@@ -306,9 +306,9 @@ var CalendarIcon = ({
       {
         d: "M17.2283 2.2829V4.11945M6.20898 2.2829V4.11945",
         stroke: "currentColor",
-        "stroke-width": "1.6529",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
+        strokeWidth: "1.6529",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
       }
     ),
     /* @__PURE__ */ React9.createElement(
@@ -316,9 +316,9 @@ var CalendarIcon = ({
       {
         d: "M11.7144 12.3839H11.7226M11.7144 16.057H11.7226M15.3834 12.3839H15.3916M8.04541 12.3839H8.05365M8.04541 16.057H8.05365",
         stroke: "currentColor",
-        "stroke-width": "2.20386",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
+        strokeWidth: "2.20386",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
       }
     ),
     /* @__PURE__ */ React9.createElement(
@@ -326,9 +326,9 @@ var CalendarIcon = ({
       {
         d: "M3.91309 7.7926H19.5238",
         stroke: "currentColor",
-        "stroke-width": "1.6529",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
+        strokeWidth: "1.6529",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
       }
     ),
     /* @__PURE__ */ React9.createElement(
@@ -336,9 +336,9 @@ var CalendarIcon = ({
       {
         d: "M2.99463 11.689C2.99463 7.68781 2.99463 5.6872 4.14442 4.44419C5.29421 3.20117 7.14477 3.20117 10.8459 3.20117H12.5906C16.2917 3.20117 18.1423 3.20117 19.2921 4.44419C20.4419 5.6872 20.4419 7.68781 20.4419 11.689V12.1606C20.4419 16.1618 20.4419 18.1624 19.2921 19.4054C18.1423 20.6484 16.2917 20.6484 12.5906 20.6484H10.8459C7.14477 20.6484 5.29421 20.6484 4.14442 19.4054C2.99463 18.1624 2.99463 16.1618 2.99463 12.1606V11.689Z",
         stroke: "currentColor",
-        "stroke-width": "1.6529",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
+        strokeWidth: "1.6529",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
       }
     ),
     /* @__PURE__ */ React9.createElement(
@@ -346,9 +346,9 @@ var CalendarIcon = ({
       {
         d: "M3.4541 7.7926H19.9831",
         stroke: "currentColor",
-        "stroke-width": "1.6529",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
+        strokeWidth: "1.6529",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
       }
     )
   )
@@ -445,7 +445,7 @@ var DiceIcon = ({
       {
         d: "M10.341 13.159C9.68198 12.5 8.62132 12.5 6.5 12.5C4.37868 12.5 3.31802 12.5 2.65901 13.159M10.341 13.159C11 13.818 11 14.8787 11 17C11 19.1213 11 20.182 10.341 20.841M2.65901 13.159C2 13.818 2 14.8787 2 17C2 19.1213 2 20.182 2.65901 20.841M2.65901 20.841C3.31802 21.5 4.37868 21.5 6.5 21.5C8.62132 21.5 9.68198 21.5 10.341 20.841",
         stroke: "currentColor",
-        "stroke-width": "1.5"
+        strokeWidth: "1.5"
       }
     ),
     /* @__PURE__ */ React13.createElement(
@@ -453,7 +453,7 @@ var DiceIcon = ({
       {
         d: "M15.2218 4.77817C16.7406 6.29696 17.5 7.05635 17.5 8C17.5 8.94365 16.7406 9.70304 15.2218 11.2218C13.703 12.7406 12.9436 13.5 12 13.5C11.0563 13.5 10.297 12.7406 8.77817 11.2218C7.25939 9.70304 6.5 8.94365 6.5 8C6.5 7.05635 7.25939 6.29696 8.77817 4.77817C10.297 3.25939 11.0563 2.5 12 2.5C12.9437 2.5 13.703 3.25939 15.2218 4.77817Z",
         stroke: "currentColor",
-        "stroke-width": "1.5"
+        strokeWidth: "1.5"
       }
     ),
     /* @__PURE__ */ React13.createElement(
@@ -461,7 +461,7 @@ var DiceIcon = ({
       {
         d: "M21.341 13.159C20.682 12.5 19.6213 12.5 17.5 12.5C15.3787 12.5 14.318 12.5 13.659 13.159M21.341 13.159C22 13.818 22 14.8787 22 17C22 19.1213 22 20.182 21.341 20.841M13.659 13.159C13 13.818 13 14.8787 13 17C13 19.1213 13 20.182 13.659 20.841M13.659 20.841C14.318 21.5 15.3787 21.5 17.5 21.5C19.6213 21.5 20.682 21.5 21.341 20.841",
         stroke: "currentColor",
-        "stroke-width": "1.5"
+        strokeWidth: "1.5"
       }
     ),
     /* @__PURE__ */ React13.createElement(
@@ -469,9 +469,9 @@ var DiceIcon = ({
       {
         d: "M12.008 8H11.999",
         stroke: "currentColor",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
+        strokeWidth: "2",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
       }
     )
   )
@@ -611,7 +611,7 @@ var MicIcon = ({
       {
         d: "M19.179 7.79078V12.1985C19.179 15.2414 16.7122 17.7082 13.6693 17.7082C10.6264 17.7082 8.15967 15.2414 8.15967 12.1985V7.79078C8.15967 4.74789 10.6264 2.28113 13.6693 2.28113C16.7122 2.28113 19.179 4.74789 19.179 7.79078Z",
         stroke: "currentColor",
-        "stroke-width": 1.6529
+        strokeWidth: 1.6529
       }
     ),
     /* @__PURE__ */ React18.createElement(
@@ -619,8 +619,8 @@ var MicIcon = ({
       {
         d: "M19.1793 7.79077H15.8735M19.1793 12.1985H15.8735",
         stroke: "currentColor",
-        "stroke-width": 1.6529,
-        "stroke-linecap": "round"
+        strokeWidth: 1.6529,
+        strokeLinecap: "round"
       }
     ),
     /* @__PURE__ */ React18.createElement(
@@ -628,8 +628,8 @@ var MicIcon = ({
       {
         d: "M22.4849 12.1985C22.4849 17.0671 18.5381 21.0139 13.6695 21.0139M13.6695 21.0139C8.80081 21.0139 4.854 17.0671 4.854 12.1985M13.6695 21.0139V24.3197M13.6695 24.3197H16.9752M13.6695 24.3197H10.3637",
         stroke: "currentColor",
-        "stroke-width": 1.6529,
-        "stroke-linecap": "round"
+        strokeWidth: 1.6529,
+        strokeLinecap: "round"
       }
     )
   )
