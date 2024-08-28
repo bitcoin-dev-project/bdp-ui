@@ -105,12 +105,14 @@ var import_react6 = __toESM(require("react"));
 
 // src/components/footer/FooterAbout.tsx
 var import_react2 = __toESM(require("react"));
+var import_tailwind_merge = require("tailwind-merge");
+var import_clsx = __toESM(require("clsx"));
 var FooterAbout = (props) => {
-  const { className: classname, children, entityLink, entityName, ...rest } = props;
+  const { className, children, entityLink, entityName, ...rest } = props;
   if (children) {
-    /* @__PURE__ */ import_react2.default.createElement("div", { ...rest, className: classname }, props.children);
+    /* @__PURE__ */ import_react2.default.createElement("div", { ...rest, className }, props.children);
   }
-  return /* @__PURE__ */ import_react2.default.createElement("div", { ...rest, className: `leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 ${classname}` }, "Built with ", /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F9E1}"), " by the", " ", /* @__PURE__ */ import_react2.default.createElement(
+  return /* @__PURE__ */ import_react2.default.createElement("div", { ...rest, className: (0, import_tailwind_merge.twMerge)((0, import_clsx.default)("leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400", className)) }, "Built with ", /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F9E1}"), " by the", " ", /* @__PURE__ */ import_react2.default.createElement(
     "a",
     {
       href: entityLink != null ? entityLink : "https://bitcoindevs.xyz/",
@@ -126,8 +128,10 @@ var FooterAbout_default = FooterAbout;
 
 // src/components/footer/FooterFeedback.tsx
 var import_react3 = __toESM(require("react"));
+var import_tailwind_merge2 = require("tailwind-merge");
+var import_clsx2 = __toESM(require("clsx"));
 var FooterFeedback = (props) => {
-  const { className: classname, children, feedbackLink, ...rest } = props;
+  const { className, children, feedbackLink, ...rest } = props;
   if (children) {
     /* @__PURE__ */ import_react3.default.createElement("div", { ...rest, className: props.className }, props.children);
   }
@@ -135,7 +139,7 @@ var FooterFeedback = (props) => {
     "div",
     {
       ...rest,
-      className: `leading-none md:leading-tight flex flex-col sm:flex-row items-stretch sm:items-center text-sm text-gray-500 dark:text-gray-400 gap-[20px] md:gap-[24px] ${classname}`
+      className: (0, import_tailwind_merge2.twMerge)((0, import_clsx2.default)("leading-none md:leading-tight flex flex-col sm:flex-row items-stretch sm:items-center text-sm text-gray-500 dark:text-gray-400 gap-[20px] md:gap-[24px]", className))
     },
     /* @__PURE__ */ import_react3.default.createElement("span", null, "We'd love to hear your feedback on this project?"),
     /* @__PURE__ */ import_react3.default.createElement(
@@ -337,6 +341,8 @@ var TwitterXIcon = ({
 var TwitterXIcon_default = TwitterXIcon;
 
 // src/components/footer/FooterSocials.tsx
+var import_tailwind_merge3 = require("tailwind-merge");
+var import_clsx3 = __toESM(require("clsx"));
 var Platform = ({ platform }) => {
   const { entity, entityLink, icon, iconProps } = platform;
   const { className, ...rest } = iconProps != null ? iconProps : {};
@@ -345,16 +351,16 @@ var Platform = ({ platform }) => {
       return import_react4.default.cloneElement(icon, { ...rest, className });
     }
     if (entity2 === "twitter") {
-      return /* @__PURE__ */ import_react4.default.createElement(TwitterXIcon_default, { className: `w-full ${className}`, ...rest });
+      return /* @__PURE__ */ import_react4.default.createElement(TwitterXIcon_default, { className: (0, import_tailwind_merge3.twMerge)((0, import_clsx3.default)("w-full", className)), ...rest });
     }
     if (entity2 === "github") {
-      return /* @__PURE__ */ import_react4.default.createElement(GithubIcon_default, { className: `w-full ${className}`, ...rest });
+      return /* @__PURE__ */ import_react4.default.createElement(GithubIcon_default, { className: (0, import_tailwind_merge3.twMerge)((0, import_clsx3.default)("w-full", className)), ...rest });
     }
     if (entity2 === "discord") {
-      return /* @__PURE__ */ import_react4.default.createElement(DiscordIcon_default, { className: `w-full ${className}`, ...rest });
+      return /* @__PURE__ */ import_react4.default.createElement(DiscordIcon_default, { className: (0, import_tailwind_merge3.twMerge)((0, import_clsx3.default)("w-full", className)), ...rest });
     }
     if (entity2 === "nostr") {
-      return /* @__PURE__ */ import_react4.default.createElement(NostrIcon_default, { className: `w-full ${className}`, ...rest });
+      return /* @__PURE__ */ import_react4.default.createElement(NostrIcon_default, { className: (0, import_tailwind_merge3.twMerge)((0, import_clsx3.default)("w-full", className)), ...rest });
     }
   };
   const iconElement = getIcon(entity);
@@ -374,11 +380,12 @@ var FooterSocials = (props) => {
   if (children) {
     /* @__PURE__ */ import_react4.default.createElement("div", { ...rest, className: classname }, props.children);
   }
+  const resolvedClassName = (0, import_tailwind_merge3.twMerge)((0, import_clsx3.default)("text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px]", classname));
   return /* @__PURE__ */ import_react4.default.createElement(
     "div",
     {
       ...rest,
-      className: `text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px] ${classname}`
+      className: resolvedClassName
     },
     platforms.map((platform) => /* @__PURE__ */ import_react4.default.createElement(Platform, { key: platform.entity, platform }))
   );
@@ -387,14 +394,16 @@ FooterSocials.displayName = "FooterSocials";
 
 // src/components/footer/FooterPublic.tsx
 var import_react5 = __toESM(require("react"));
-var FooterPublic = ({ className: classname, dshboardLink, ...rest }) => {
+var import_tailwind_merge4 = require("tailwind-merge");
+var import_clsx4 = __toESM(require("clsx"));
+var FooterPublic = ({ className, dashboardLink, ...rest }) => {
   return /* @__PURE__ */ import_react5.default.createElement(
     "a",
     {
-      href: dshboardLink,
+      href: dashboardLink,
       target: "_blank",
       rel: "noreferrer",
-      className: `leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 underline ${classname}`,
+      className: (0, import_tailwind_merge4.twMerge)((0, import_clsx4.default)("leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 underline", className)),
       ...rest
     },
     "View our public visitor count"
@@ -403,6 +412,8 @@ var FooterPublic = ({ className: classname, dshboardLink, ...rest }) => {
 var FooterPublic_default = FooterPublic;
 
 // src/components/footer/Footer.tsx
+var import_tailwind_merge5 = require("tailwind-merge");
+var import_clsx5 = __toESM(require("clsx"));
 var Separator = () => /* @__PURE__ */ import_react6.default.createElement("div", { className: "h-5 border xl:h-6 xl:border-2 border-custom-stroke hidden xl:block" });
 var Footer = ({ children, className, separator, ...rest }) => {
   const viewSeparator = separator != null ? separator : /* @__PURE__ */ import_react6.default.createElement(Separator, null);
@@ -419,7 +430,7 @@ var Footer = ({ children, className, separator, ...rest }) => {
     });
     return newChildren;
   };
-  return /* @__PURE__ */ import_react6.default.createElement("div", { className: `flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2 ${className}`, ...rest }, renderChildrenWithSeparator());
+  return /* @__PURE__ */ import_react6.default.createElement("div", { className: (0, import_tailwind_merge5.twMerge)((0, import_clsx5.default)("flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2", className)), ...rest }, renderChildrenWithSeparator());
 };
 Footer.About = FooterAbout_default;
 Footer.Feedback = FooterFeedback_default;
@@ -458,17 +469,19 @@ function throttledDebounce(func, limit) {
 
 // src/components/carousel/CarouselComponents.tsx
 var import_react7 = __toESM(require("react"));
+var import_tailwind_merge6 = require("tailwind-merge");
+var import_clsx6 = __toESM(require("clsx"));
 var CarouselContainer = ({ children, ...props }) => {
   const { className, ...rest } = props;
   const { containerRef } = useCarousel();
-  return /* @__PURE__ */ import_react7.default.createElement("div", { ref: containerRef, className: `max-w-full h-full flex overflow-scroll gap-2  no-scrollbar ${className}`, ...rest }, children);
+  return /* @__PURE__ */ import_react7.default.createElement("div", { ref: containerRef, className: (0, import_tailwind_merge6.twMerge)((0, import_clsx6.default)("max-w-full h-full flex overflow-scroll gap-2 no-scrollbar", className)), ...rest }, children);
 };
 var CarouselItem = ({ children, ...props }) => {
   const { className, ...rest } = props;
-  return /* @__PURE__ */ import_react7.default.createElement("div", { className: `flex-shrink-0 relative ${className}`, ...rest }, children);
+  return /* @__PURE__ */ import_react7.default.createElement("div", { className: (0, import_tailwind_merge6.twMerge)((0, import_clsx6.default)("flex-shrink-0 relative", className)), ...rest }, children);
 };
 var CarouselControls = ({ children, className, ...props }) => {
-  return /* @__PURE__ */ import_react7.default.createElement("div", { className: `flex items-center gap-2 md:gap-4 w-fit mx-auto pt-4 ${className}`, ...props }, children);
+  return /* @__PURE__ */ import_react7.default.createElement("div", { className: (0, import_tailwind_merge6.twMerge)((0, import_clsx6.default)("flex items-center gap-2 md:gap-4 w-fit mx-auto pt-4", className)), ...props }, children);
 };
 var CarouselPreviousButton = ({ children, ...props }) => {
   const { goToPreviousSlide, possibleDirection } = useCarousel();
@@ -481,7 +494,7 @@ var CarouselPreviousButton = ({ children, ...props }) => {
     }
   }
   const { icon, className, ...rest } = props;
-  return /* @__PURE__ */ import_react7.default.createElement("button", { onClick: goToPreviousSlide, disabled: !possibleDirection.canGoToPreviousSlide, className: `w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent ${className}`, ...rest }, icon);
+  return /* @__PURE__ */ import_react7.default.createElement("button", { onClick: goToPreviousSlide, disabled: !possibleDirection.canGoToPreviousSlide, className: (0, import_tailwind_merge6.twMerge)((0, import_clsx6.default)("w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent", className)), ...rest }, icon);
 };
 var CarouselNextButton = ({ children, ...props }) => {
   const { goToNextSlide, possibleDirection } = useCarousel();
@@ -494,7 +507,7 @@ var CarouselNextButton = ({ children, ...props }) => {
     }
   }
   const { icon, className, ...rest } = props;
-  return /* @__PURE__ */ import_react7.default.createElement("button", { onClick: goToNextSlide, disabled: !possibleDirection.canGoToNextSlide, className: `w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent ${className}`, ...rest }, icon);
+  return /* @__PURE__ */ import_react7.default.createElement("button", { onClick: goToNextSlide, disabled: !possibleDirection.canGoToNextSlide, className: (0, import_tailwind_merge6.twMerge)((0, import_clsx6.default)("w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent", className)), ...rest }, icon);
 };
 
 // src/components/carousel/Carousel.tsx

@@ -39,7 +39,7 @@ interface FooterSocialsProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
 }
 
 interface FooterPublicProps extends FooterPartsPrimitiveProps<HTMLAnchorElement> {
-    dshboardLink: string;
+    dashboardLink: string;
 }
 
 interface FooterRootProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
