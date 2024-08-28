@@ -1,5 +1,7 @@
 import React from "react";
 import { FooterPartsPrimitiveProps } from "./types";
+import { twMerge } from "tailwind-merge";
+import clsx from "clsx";
 
 export interface FooterFeedbackProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
   feedbackLink: string;
@@ -8,7 +10,7 @@ export interface FooterFeedbackProps extends FooterPartsPrimitiveProps<HTMLDivEl
 const FooterFeedback = (
   props: React.PropsWithChildren<FooterFeedbackProps>
 ) => {
-  const { className: classname, children, feedbackLink, ...rest } = props;
+  const { className, children, feedbackLink, ...rest } = props;
   if (children) {
     <div {...rest} className={props.className}>
       {props.children}
@@ -17,7 +19,7 @@ const FooterFeedback = (
   return (
     <div
       {...rest}
-      className={`leading-none md:leading-tight flex flex-col sm:flex-row items-stretch sm:items-center text-sm text-gray-500 dark:text-gray-400 gap-[20px] md:gap-[24px] ${classname}`}
+      className={twMerge(clsx('leading-none md:leading-tight flex flex-col sm:flex-row items-stretch sm:items-center text-sm text-gray-500 dark:text-gray-400 gap-[20px] md:gap-[24px]', className))}
     >
       <span>We&apos;d love to hear your feedback on this project?</span>
       <a

@@ -4,6 +4,8 @@ import FooterFeedback, { FooterFeedbackProps } from "./FooterFeedback";
 import { FooterSocials, FooterSocialsProps } from "./FooterSocials";
 import FooterPublic, { FooterPublicProps } from "./FooterPublic";
 import { FooterPartsPrimitiveProps } from "./types";
+import { twMerge } from "tailwind-merge";
+import clsx from "clsx";
 
 export interface FooterRootProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
   separator?: React.ReactElement;
@@ -37,7 +39,7 @@ const Footer: React.FC<FooterRootProps> & {
   };
 
   return (
-    <div className={`flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2 ${className}`} {...rest}>
+    <div className={twMerge(clsx('flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2', className))} {...rest}>
       {renderChildrenWithSeparator()}
     </div>
   );
