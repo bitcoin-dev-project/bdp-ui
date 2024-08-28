@@ -1,9 +1,15 @@
 {
   "name": "bdp-ui",
   "version": "1.1.1",
+  "description": "A UI library for the Bitcoin Dev Project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
@@ -16,9 +22,14 @@
       "types": "./dist/icons.d.ts"
     }
   },
-  "files": [
-    "dist", "README.md"
-  ],
+  "homepage": "https://github.com/bitcoin-dev-project/bdp-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitcoin-dev-project/bdp-ui.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build:css": "tailwindcss -i src/styles/tailwind.css -o src/styles/tailwind.output.css --minify",
     "watch:css": "tailwindcss -i src/styles/tailwind.css -o src/styles/tailwind.output.css --watch",
@@ -30,8 +41,6 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "license": "MIT",
-  "description": "",
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
@@ -69,5 +78,9 @@
     "tsup": "^8.1.0",
     "typescript": "^5.5.2"
   },
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.3.1",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2"
+  }
 }
