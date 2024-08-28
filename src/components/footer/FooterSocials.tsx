@@ -1,6 +1,8 @@
 import React from "react";
 import { FooterPartsPrimitiveProps } from "./types";
 import { TwitterXIcon, GithubIcon, DiscordIcon, NostrIcon } from "../../icons";
+import { twMerge } from "tailwind-merge";
+import clsx from "clsx";
 
 type SupportedSocialMedia = "twitter" | "github" | "discord" | "nostr";
 
@@ -32,16 +34,16 @@ const Platform = ({ platform }: { platform: SocialMediaProps }) => {
       return React.cloneElement(icon, { ...rest, className });
     }
     if (entity === "twitter") {
-      return <TwitterXIcon className={`w-full ${className}`} {...rest} />;
+      return <TwitterXIcon className={twMerge(clsx('w-full', className))} {...rest} />;
     }
     if (entity === "github") {
-      return <GithubIcon className={`w-full ${className}`} {...rest} />;
+      return <GithubIcon className={twMerge(clsx('w-full', className))} {...rest} />;
     }
     if (entity === "discord") {
-      return <DiscordIcon className={`w-full ${className}`} {...rest} />;
+      return <DiscordIcon className={twMerge(clsx('w-full', className))} {...rest} />;
     }
     if (entity === "nostr") {
-      return <NostrIcon className={`w-full ${className}`} {...rest} />;
+      return <NostrIcon className={twMerge(clsx('w-full', className))} {...rest} />;
     }
   };
   const iconElement = getIcon(entity);
@@ -79,10 +81,11 @@ export const FooterSocials = (
       {props.children}
     </div>;
   }
+  const resolvedClassName = twMerge(clsx('text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px]', classname));
   return (
     <div
       {...rest}
-      className={`text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px] ${classname}`} 
+      className={resolvedClassName} 
     >
       {platforms.map((platform) => (
         <Platform key={platform.entity} platform={platform} />
