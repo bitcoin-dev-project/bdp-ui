@@ -1,5 +1,5 @@
 {
-  "name": "bdp-ui",
+  "name": "@bitcoin-dev-project/bdp-ui",
   "version": "1.1.1",
   "description": "A UI library for the Bitcoin Dev Project",
   "main": "./dist/index.js",
