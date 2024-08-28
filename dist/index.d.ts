@@ -53,4 +53,48 @@ declare const Footer: React__default.FC<FooterRootProps> & {
     Public: React__default.FC<FooterPublicProps>;
 };
 
-export { Button, type ButtonProps, Footer, type FooterRootProps, Separator };
+type CarouselConfig = {
+    stepWidthInPercent: number;
+};
+
+interface ComponentStylePrimitiveProps<T> extends React.HTMLAttributes<T> {
+    className?: string;
+}
+
+interface CarouselContainerProps extends ComponentStylePrimitiveProps<HTMLDivElement> {
+    children: React__default.ReactNode;
+}
+interface CarouselItemProps extends CarouselContainerProps {
+}
+interface CarouselControlProps extends ComponentStylePrimitiveProps<HTMLDivElement> {
+    children: React__default.ReactNode;
+}
+interface CarouselButtonProps extends Omit<ComponentStylePrimitiveProps<HTMLButtonElement>, 'children'> {
+    children?: React__default.ReactNode | ((goToPreviousSlide: () => void, possibleDirection: CarouselContextType['possibleDirection']) => React__default.ReactNode);
+    icon: React__default.ReactNode;
+}
+
+interface CarouselContextType {
+    containerRef: React__default.RefObject<HTMLDivElement>;
+    totalCarouselItems: number;
+    goToNextSlide: () => void;
+    goToPreviousSlide: () => void;
+    possibleDirection: {
+        canGoToNextSlide: boolean;
+        canGoToPreviousSlide: boolean;
+    };
+}
+interface CarouselProviderProps {
+    children: React__default.ReactNode;
+    containerRef: React__default.RefObject<HTMLDivElement>;
+    config?: CarouselConfig;
+}
+declare const Carousel: React__default.FC<Omit<CarouselProviderProps, 'containerRef'>> & {
+    Container: React__default.FC<CarouselContainerProps>;
+    Item: React__default.FC<CarouselItemProps>;
+    Controls: React__default.FC<CarouselControlProps>;
+    PreviousButton: React__default.FC<CarouselButtonProps>;
+    NextButton: React__default.FC<CarouselButtonProps>;
+};
+
+export { Button, type ButtonProps, Carousel, type CarouselContextType, Footer, type FooterRootProps, Separator };
