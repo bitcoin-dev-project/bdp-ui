@@ -4,14 +4,14 @@ import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 
 export interface FooterPublicProps extends FooterPartsPrimitiveProps<HTMLAnchorElement> {
-  dshboardLink: string;
+  dashboardLink: string;
 }
 
 
-const FooterPublic = ({ className, dshboardLink, ...rest }: FooterPublicProps) => {
+const FooterPublic = ({ className, dashboardLink, ...rest }: FooterPublicProps) => {
   return (
     <a
-      href={dshboardLink}
+      href={dashboardLink}
       target="_blank"
       rel="noreferrer"
       className={twMerge(clsx('leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 underline', className))}
