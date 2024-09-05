@@ -14,9 +14,7 @@ export default {
   },
 } as Meta;
 
-export const UnModifiedFooter = (args: {
-  colorMode: "light" | "dark";
-}) => {
+export const UnModifiedFooter = (args: { colorMode: "light" | "dark" }) => {
   const { colorMode } = args;
   const isDark = colorMode === "dark";
   return (

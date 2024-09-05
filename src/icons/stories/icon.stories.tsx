@@ -20,25 +20,23 @@ const meta: Meta<typeof Icons> = {
 
 export default meta;
 
-type SVGIcon = React.SVGProps<SVGSVGElement> & { pathProps?: React.SVGProps<SVGPathElement> }
+type SVGIcon = React.SVGProps<SVGSVGElement> & {
+  pathProps?: React.SVGProps<SVGPathElement>;
+};
 type IconComponent = React.ComponentType<SVGIcon>;
 
 type Story = StoryObj<IconComponent>;
 
-const IconGrid = ({
-  width,
-  color,
-  ...args
-}: SVGIcon) => (
+const IconGrid = ({ width, color, ...args }: SVGIcon) => (
   <IconShowcase>
     {Object.entries(Icons).map(([name, Icon]) => {
       const IconComponent = Icon as IconComponent;
-      IconComponent.defaultProps= {
+      IconComponent.defaultProps = {
         width,
         color,
-        ...args
-      }
-      return (<IconItem key={name} IconComponent={IconComponent} name={name} />);
+        ...args,
+      };
+      return <IconItem key={name} IconComponent={IconComponent} name={name} />;
     })}
   </IconShowcase>
 );
@@ -49,7 +47,7 @@ export const AllIcons: Story = {
     className: "text-orange-500",
     pathProps: {
       strokeWidth: 1.5,
-    }
+    },
   },
   render: (args) => <IconGrid {...args} />,
 };

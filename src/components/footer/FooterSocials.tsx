@@ -11,7 +11,6 @@ type ManadatorySocialMediaProps<T> = {
   iconProps?: React.SVGProps<SVGSVGElement>;
 } & T;
 
-
 type SocialMediaProps =
   | ManadatorySocialMediaProps<{
       entity: SupportedSocialMedia;
@@ -22,7 +21,8 @@ type SocialMediaProps =
       icon: React.ReactElement;
     }>;
 
-export interface FooterSocialsProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
+export interface FooterSocialsProps
+  extends FooterPartsPrimitiveProps<HTMLDivElement> {
   platforms: SocialMediaProps[];
 }
 
@@ -34,16 +34,27 @@ const Platform = ({ platform }: { platform: SocialMediaProps }) => {
       return React.cloneElement(icon, { ...rest, className });
     }
     if (entity === "twitter") {
-      return <TwitterXIcon className={twMerge(clsx('w-full', className))} {...rest} />;
+      return (
+        <TwitterXIcon
+          className={twMerge(clsx("w-full", className))}
+          {...rest}
+        />
+      );
     }
     if (entity === "github") {
-      return <GithubIcon className={twMerge(clsx('w-full', className))} {...rest} />;
+      return (
+        <GithubIcon className={twMerge(clsx("w-full", className))} {...rest} />
+      );
     }
     if (entity === "discord") {
-      return <DiscordIcon className={twMerge(clsx('w-full', className))} {...rest} />;
+      return (
+        <DiscordIcon className={twMerge(clsx("w-full", className))} {...rest} />
+      );
     }
     if (entity === "nostr") {
-      return <NostrIcon className={twMerge(clsx('w-full', className))} {...rest} />;
+      return (
+        <NostrIcon className={twMerge(clsx("w-full", className))} {...rest} />
+      );
     }
   };
   const iconElement = getIcon(entity);
@@ -73,7 +84,7 @@ const Platform = ({ platform }: { platform: SocialMediaProps }) => {
  */
 
 export const FooterSocials = (
-  props: React.PropsWithChildren<FooterSocialsProps>
+  props: React.PropsWithChildren<FooterSocialsProps>,
 ) => {
   const { className: classname, children, platforms, ...rest } = props;
   if (children) {
@@ -81,12 +92,14 @@ export const FooterSocials = (
       {props.children}
     </div>;
   }
-  const resolvedClassName = twMerge(clsx('text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px]', classname));
+  const resolvedClassName = twMerge(
+    clsx(
+      "text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px]",
+      classname,
+    ),
+  );
   return (
-    <div
-      {...rest}
-      className={resolvedClassName} 
-    >
+    <div {...rest} className={resolvedClassName}>
       {platforms.map((platform) => (
         <Platform key={platform.entity} platform={platform} />
       ))}
