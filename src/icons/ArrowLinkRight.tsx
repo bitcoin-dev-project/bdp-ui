@@ -3,6 +3,7 @@ import { SVGProps } from "react";
 
 const ArrowLinkRight = ({
   width = 24,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   pathProps,
   ...props

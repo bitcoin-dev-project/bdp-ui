@@ -1,6 +1,6 @@
 import React from "react";
 
-export const IconShowcase = ({children}: {children: React.ReactNode}) => {
+export const IconShowcase = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">

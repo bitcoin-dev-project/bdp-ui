@@ -1,7 +1,12 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const AppsIcon = ({ width = 24, height, ...props }: SVGProps<SVGSVGElement>) => (
+const AppsIcon = ({
+  width = 24,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}: SVGProps<SVGSVGElement>) => (
   // height is destructed and unused, scaling is defined by width
   <svg width={width} viewBox="0 0 22 22" fill="none" {...props}>
     <path

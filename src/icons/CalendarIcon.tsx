@@ -3,13 +3,15 @@ import { SVGProps } from "react";
 
 const CalendarIcon = ({
   width = 23,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   pathProps,
   ...props
 }: SVGProps<SVGSVGElement> & { pathProps?: SVGProps<SVGPathElement> }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  
+
   <svg
     width={width}
     viewBox="0 0 23 23"

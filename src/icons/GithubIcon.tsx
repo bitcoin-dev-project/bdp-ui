@@ -3,6 +3,7 @@ import { SVGProps } from "react";
 
 const GithubIcon = ({
   width = 52,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   ...props
 }: SVGProps<SVGSVGElement>) => (
