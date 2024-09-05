@@ -3,6 +3,7 @@ import { SVGProps } from "react";
 
 const MicIcon = ({
   width = 27,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   pathProps,
   ...props

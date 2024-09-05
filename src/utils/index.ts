@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export function debounce<T extends (...args: any[]) => void>(
   func: T,
   wait: number
@@ -5,6 +6,7 @@ export function debounce<T extends (...args: any[]) => void>(
   let timeout: ReturnType<typeof setTimeout> | null = null;
 
   return function(this: any, ...args: Parameters<T>) {
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
     const context = this;
 
     const later = () => {
@@ -27,6 +29,7 @@ export function throttledDebounce<T extends (...args: any[]) => void>(
   let lastArgs: Parameters<T> | null = null;
 
   return function(this: any, ...args: Parameters<T>) {
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
     const context = this;
 
     if (!inThrottle) {

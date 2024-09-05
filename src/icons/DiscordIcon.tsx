@@ -3,7 +3,9 @@ import { SVGProps } from "react";
 
 const DiscordIcon = ({
   width = 45,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   pathProps,
   ...props
 }: SVGProps<SVGSVGElement> & { pathProps?: SVGProps<SVGPathElement> }) => (

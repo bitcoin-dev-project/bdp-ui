@@ -1,7 +1,12 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const DateIcon = ({ width = 12, height, ...props }: SVGProps<SVGSVGElement>) => (
+const DateIcon = ({
+  width = 12,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}: SVGProps<SVGSVGElement>) => (
   // height is destructed and unused, scaling is defined by width
   <svg
     width={width}

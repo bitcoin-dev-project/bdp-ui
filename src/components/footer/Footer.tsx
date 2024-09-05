@@ -7,7 +7,8 @@ import { FooterPartsPrimitiveProps } from "./types";
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 
-export interface FooterRootProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
+export interface FooterRootProps
+  extends FooterPartsPrimitiveProps<HTMLDivElement> {
   separator?: React.ReactElement;
 }
 
@@ -20,18 +21,22 @@ const Footer: React.FC<FooterRootProps> & {
   Feedback: React.FC<FooterFeedbackProps>;
   Socials: React.FC<FooterSocialsProps>;
   Public: React.FC<FooterPublicProps>;
-} = ({ children, className, separator, ...rest}) => {
-
+} = ({ children, className, separator, ...rest }: FooterRootProps) => {
   const viewSeparator = separator ?? <Separator />;
 
   const renderChildrenWithSeparator = () => {
     const newChildren: React.ReactNode[] = [];
     React.Children.forEach(children, (child, index) => {
       if (React.isValidElement(child)) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const displayName = (child.type as any).displayName;
         newChildren.push(child);
         if (index < React.Children.count(children) - 1) {
-          newChildren.push(React.cloneElement(viewSeparator, { key: `${displayName}-separator-${index}` }));
+          newChildren.push(
+            React.cloneElement(viewSeparator, {
+              key: `${displayName}-separator-${index}`,
+            }),
+          );
         }
       }
     });
@@ -39,7 +44,15 @@ const Footer: React.FC<FooterRootProps> & {
   };
 
   return (
-    <div className={twMerge(clsx('flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2', className))} {...rest}>
+    <div
+      className={twMerge(
+        clsx(
+          "flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2",
+          className,
+        ),
+      )}
+      {...rest}
+    >
       {renderChildrenWithSeparator()}
     </div>
   );

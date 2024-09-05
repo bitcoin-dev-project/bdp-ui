@@ -1,6 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const DayIcon = ({ width = 16, height, ...props }: SVGProps<SVGSVGElement>) => (
   // height is destructed and unused, scaling is defined by width
   <svg width={width} viewBox="0 0 16 16" fill="none" {...props}>

@@ -3,6 +3,7 @@ import { SVGProps } from "react";
 
 const NightIcon = ({
   width = 12,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   pathProps,
   ...svgProps

@@ -1,6 +1,12 @@
 import * as React from "react";
 import { SVGProps } from "react";
-const ArrowRight = ({ width = 7, height, pathProps, ...props }: SVGProps<SVGSVGElement> & { pathProps?: SVGProps<SVGPathElement> }) => {
+const ArrowRight = ({
+  width = 7,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  pathProps,
+  ...props
+}: SVGProps<SVGSVGElement> & { pathProps?: SVGProps<SVGPathElement> }) => {
   // height is destructed and unused, scaling is defined by width
   return (
     <svg
