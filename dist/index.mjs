@@ -24,7 +24,7 @@ function styleInject(css, { insertAt } = {}) {
 }
 
 // src/styles/tailwind.output.css
-styleInject('/*! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com*/\n*,\n:after,\n:before {\n  box-sizing: border-box;\n  border: 0 solid #e5e7eb;\n}\n:after,\n:before {\n  --tw-content:"";\n}\n:host,\nhtml {\n  line-height: 1.5;\n  -webkit-text-size-adjust: 100%;\n  -moz-tab-size: 4;\n  -o-tab-size: 4;\n  tab-size: 4;\n  font-family: ui-sans-serif, system-ui;\n  font-feature-settings: normal;\n  font-variation-settings: normal;\n  -webkit-tap-highlight-color: transparent;\n}\nbody {\n  margin: 0;\n  line-height: inherit;\n}\nhr {\n  height: 0;\n  color: inherit;\n  border-top-width: 1px;\n}\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n  text-decoration: underline dotted;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\na {\n  color: inherit;\n  text-decoration: inherit;\n}\nb,\nstrong {\n  font-weight: bolder;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: ui-monospace, SFMono-Regular;\n  font-feature-settings: normal;\n  font-variation-settings: normal;\n  font-size: 1em;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: initial;\n}\nsub {\n  bottom: -.25em;\n}\nsup {\n  top: -.5em;\n}\ntable {\n  text-indent: 0;\n  border-color: inherit;\n  border-collapse: collapse;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit;\n  font-feature-settings: inherit;\n  font-variation-settings: inherit;\n  font-size: 100%;\n  font-weight: inherit;\n  line-height: inherit;\n  letter-spacing: inherit;\n  color: inherit;\n  margin: 0;\n  padding: 0;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\ninput:where([type=button]),\ninput:where([type=reset]),\ninput:where([type=submit]) {\n  -webkit-appearance: button;\n  background-color: initial;\n  background-image: none;\n}\n:-moz-focusring {\n  outline: auto;\n}\n:-moz-ui-invalid {\n  box-shadow: none;\n}\nprogress {\n  vertical-align: initial;\n}\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n[type=search] {\n  -webkit-appearance: textfield;\n  outline-offset: -2px;\n}\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  font: inherit;\n}\nsummary {\n  display: list-item;\n}\nblockquote,\ndd,\ndl,\nfigure,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n}\nfieldset,\nlegend {\n  padding: 0;\n}\nmenu,\nol,\nul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\ndialog {\n  padding: 0;\n}\ntextarea {\n  resize: vertical;\n}\ninput::-moz-placeholder,\ntextarea::-moz-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\ninput::-moz-placeholder,\ntextarea::-moz-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n[role=button],\nbutton {\n  cursor: pointer;\n}\n:disabled {\n  cursor: default;\n}\naudio,\ncanvas,\nembed,\niframe,\nimg,\nobject,\nsvg,\nvideo {\n  display: block;\n  vertical-align: middle;\n}\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n[hidden] {\n  display: none;\n}\n*,\n::backdrop,\n:after,\n:before {\n  --tw-border-spacing-x:0;\n  --tw-border-spacing-y:0;\n  --tw-translate-x:0;\n  --tw-translate-y:0;\n  --tw-rotate:0;\n  --tw-skew-x:0;\n  --tw-skew-y:0;\n  --tw-scale-x:1;\n  --tw-scale-y:1;\n  --tw-pan-x: ;\n  --tw-pan-y: ;\n  --tw-pinch-zoom: ;\n  --tw-scroll-snap-strictness:proximity;\n  --tw-gradient-from-position: ;\n  --tw-gradient-via-position: ;\n  --tw-gradient-to-position: ;\n  --tw-ordinal: ;\n  --tw-slashed-zero: ;\n  --tw-numeric-figure: ;\n  --tw-numeric-spacing: ;\n  --tw-numeric-fraction: ;\n  --tw-ring-inset: ;\n  --tw-ring-offset-width:0px;\n  --tw-ring-offset-color:#fff;\n  --tw-ring-color:#3b82f680;\n  --tw-ring-offset-shadow:0 0 #0000;\n  --tw-ring-shadow:0 0 #0000;\n  --tw-shadow:0 0 #0000;\n  --tw-shadow-colored:0 0 #0000;\n  --tw-blur: ;\n  --tw-brightness: ;\n  --tw-contrast: ;\n  --tw-grayscale: ;\n  --tw-hue-rotate: ;\n  --tw-invert: ;\n  --tw-saturate: ;\n  --tw-sepia: ;\n  --tw-drop-shadow: ;\n  --tw-backdrop-blur: ;\n  --tw-backdrop-brightness: ;\n  --tw-backdrop-contrast: ;\n  --tw-backdrop-grayscale: ;\n  --tw-backdrop-hue-rotate: ;\n  --tw-backdrop-invert: ;\n  --tw-backdrop-opacity: ;\n  --tw-backdrop-saturate: ;\n  --tw-backdrop-sepia: ;\n  --tw-contain-size: ;\n  --tw-contain-layout: ;\n  --tw-contain-paint: ;\n  --tw-contain-style: ;\n}\n.relative {\n  position: relative;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.mb-4 {\n  margin-bottom: 1rem;\n}\n.mb-\\[6px\\] {\n  margin-bottom: 6px;\n}\n.flex {\n  display: flex;\n}\n.grid {\n  display: grid;\n}\n.contents {\n  display: contents;\n}\n.hidden {\n  display: none;\n}\n.h-10 {\n  height: 2.5rem;\n}\n.h-24 {\n  height: 6rem;\n}\n.h-5 {\n  height: 1.25rem;\n}\n.h-full {\n  height: 100%;\n}\n.w-10 {\n  width: 2.5rem;\n}\n.w-\\[300px\\] {\n  width: 300px;\n}\n.w-fit {\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.w-full {\n  width: 100%;\n}\n.min-w-\\[24px\\] {\n  min-width: 24px;\n}\n.min-w-fit {\n  min-width: -moz-fit-content;\n  min-width: fit-content;\n}\n.max-w-6xl {\n  max-width: 72rem;\n}\n.max-w-\\[1920px\\] {\n  max-width: 1920px;\n}\n.max-w-\\[40px\\] {\n  max-width: 40px;\n}\n.max-w-full {\n  max-width: 100%;\n}\n.flex-shrink-0 {\n  flex-shrink: 0;\n}\n.cursor-not-allowed {\n  cursor: not-allowed;\n}\n.resize {\n  resize: both;\n}\n.grid-cols-2 {\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-center {\n  align-items: center;\n}\n.items-stretch {\n  align-items: stretch;\n}\n.justify-center {\n  justify-content: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.gap-2 {\n  gap: .5rem;\n}\n.gap-6 {\n  gap: 1.5rem;\n}\n.gap-\\[20px\\] {\n  gap: 20px;\n}\n.gap-\\[24px\\] {\n  gap: 24px;\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.overflow-scroll {\n  overflow: scroll;\n}\n.rounded {\n  border-radius: .25rem;\n}\n.rounded-\\[10px\\] {\n  border-radius: 10px;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.rounded-lg {\n  border-radius: .5rem;\n}\n.rounded-md {\n  border-radius: .375rem;\n}\n.border {\n  border-width: 1px;\n}\n.border-custom-stroke {\n  border-color: var(--stroke);\n}\n.border-gray-200 {\n  --tw-border-opacity:1;\n  border-color: rgb(229 231 235/var(--tw-border-opacity));\n}\n.border-gray-600 {\n  --tw-border-opacity:1;\n  border-color: rgb(75 85 99/var(--tw-border-opacity));\n}\n.bg-\\[\\#292929\\] {\n  --tw-bg-opacity:1;\n  background-color: rgb(41 41 41/var(--tw-bg-opacity));\n}\n.bg-\\[\\#ddd\\] {\n  --tw-bg-opacity:1;\n  background-color: rgb(221 221 221/var(--tw-bg-opacity));\n}\n.bg-blue-500 {\n  --tw-bg-opacity:1;\n  background-color: rgb(59 130 246/var(--tw-bg-opacity));\n}\n.bg-gray-300 {\n  --tw-bg-opacity:1;\n  background-color: rgb(209 213 219/var(--tw-bg-opacity));\n}\n.bg-white {\n  --tw-bg-opacity:1;\n  background-color: rgb(255 255 255/var(--tw-bg-opacity));\n}\n.p-2 {\n  padding: .5rem;\n}\n.p-4 {\n  padding: 1rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.px-5 {\n  padding-left: 1.25rem;\n  padding-right: 1.25rem;\n}\n.py-12 {\n  padding-top: 3rem;\n  padding-bottom: 3rem;\n}\n.py-2 {\n  padding-top: .5rem;\n  padding-bottom: .5rem;\n}\n.py-4 {\n  padding-bottom: 1rem;\n}\n.pt-4,\n.py-4 {\n  padding-top: 1rem;\n}\n.text-center {\n  text-align: center;\n}\n.text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-sm {\n  font-size: .875rem;\n  line-height: 1.25rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.font-medium {\n  font-weight: 500;\n}\n.leading-none {\n  line-height: 1;\n}\n.text-\\[\\#FAFAFA\\] {\n  --tw-text-opacity:1;\n  color: rgb(250 250 250/var(--tw-text-opacity));\n}\n.text-\\[\\#ddd\\] {\n  --tw-text-opacity:1;\n  color: rgb(221 221 221/var(--tw-text-opacity));\n}\n.text-black {\n  --tw-text-opacity:1;\n  color: rgb(0 0 0/var(--tw-text-opacity));\n}\n.text-custom-brightOrange-100 {\n  --tw-text-opacity:1;\n  color: rgb(236 128 47/var(--tw-text-opacity));\n}\n.text-gray-500 {\n  --tw-text-opacity:1;\n  color: rgb(107 114 128/var(--tw-text-opacity));\n}\n.text-gray-600 {\n  --tw-text-opacity:1;\n  color: rgb(75 85 99/var(--tw-text-opacity));\n}\n.text-gray-800 {\n  --tw-text-opacity:1;\n  color: rgb(31 41 55/var(--tw-text-opacity));\n}\n.text-orange-500 {\n  --tw-text-opacity:1;\n  color: rgb(249 115 22/var(--tw-text-opacity));\n}\n.text-white {\n  --tw-text-opacity:1;\n  color: rgb(255 255 255/var(--tw-text-opacity));\n}\n.underline {\n  text-decoration-line: underline;\n}\n.opacity-50 {\n  opacity: .5;\n}\n.shadow-md {\n  --tw-shadow:0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;\n  --tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color);\n}\n.shadow-md,\n.shadow-sm {\n  box-shadow:\n    var(--tw-ring-offset-shadow,0 0 #0000),\n    var(--tw-ring-shadow,0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-sm {\n  --tw-shadow:0 1px 2px 0 #0000000d;\n  --tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);\n}\n.transition-colors {\n  transition-property:\n    color,\n    background-color,\n    border-color,\n    text-decoration-color,\n    fill,\n    stroke;\n  transition-timing-function: cubic-bezier(.4, 0, .2, 1);\n  transition-duration: .15s;\n}\n.no-scrollbar::-webkit-scrollbar {\n  display: none;\n}\n.no-scrollbar {\n  -ms-overflow-style: none;\n  scrollbar-width: none;\n}\n:root {\n  --foreground-rgb:0,0,0;\n  --background-start-rgb:214,219,220;\n  --background-end-rgb:255,255,255;\n  --background:#fafafa;\n  --hover-primary:#f5f5f5;\n  --button:#333;\n  --hover-state:#fff0e0;\n  --stroke:#bfbfbf;\n  --secondary-text:#636366;\n  --primary-text:#292929;\n  --black:#292929;\n  --other-light-text:#999;\n  --accent:#f7931a;\n  --gradient:linear-gradient(\n      92.78deg,#e8782b,#f6a73f 101.1%);\n  --shadow-left:linear-gradient(\n      90deg,#fafafa 50.33%,#fafafa00);\n  --shadow-right:linear-gradient(\n      270deg,#fafafa 50.33%,#fafafa00);\n}\nhtml {\n  scroll-behavior: smooth !important;\n}\n.dark {\n  --background:#1c1c1e;\n  --hover-state:#2c2c2e;\n  --button:#8e8e93;\n  --stroke:#3a3a3c;\n  --secondary-text:#999;\n  --primary-text:#a4a4a8;\n  --black:#292929;\n  --other-light-text:#636366;\n  --accent:#f7931a;\n  --hover-primary:#2c2c2e;\n  --gradient:linear-gradient(\n      92.78deg,#e8782b,#f6a73f 101.1%);\n  --shadow-right:linear-gradient(\n      270deg,#1c1c1f 50.33%,#1c1c1f00);\n  --shadow-left:linear-gradient(\n      90deg,#1c1c1f 50.33%,#1c1c1f00);\n}\n.hover\\:bg-blue-700:hover {\n  --tw-bg-opacity:1;\n  background-color: rgb(29 78 216/var(--tw-bg-opacity));\n}\n.hover\\:bg-gray-100:hover {\n  --tw-bg-opacity:1;\n  background-color: rgb(243 244 246/var(--tw-bg-opacity));\n}\n.hover\\:bg-gray-400:hover {\n  --tw-bg-opacity:1;\n  background-color: rgb(156 163 175/var(--tw-bg-opacity));\n}\n.hover\\:text-orange-400:hover {\n  --tw-text-opacity:1;\n  color: rgb(251 146 60/var(--tw-text-opacity));\n}\n.disabled\\:cursor-not-allowed:disabled {\n  cursor: not-allowed;\n}\n.disabled\\:opacity-50:disabled {\n  opacity: .5;\n}\n.disabled\\:hover\\:bg-transparent:hover:disabled {\n  background-color: initial;\n}\n.group:hover .group-hover\\:bg-black {\n  --tw-bg-opacity:1;\n  background-color: rgb(0 0 0/var(--tw-bg-opacity));\n}\n.group:hover .group-hover\\:text-\\[\\#fff\\] {\n  --tw-text-opacity:1;\n  color: rgb(255 255 255/var(--tw-text-opacity));\n}\n.group:hover .group-hover\\:text-black {\n  --tw-text-opacity:1;\n  color: rgb(0 0 0/var(--tw-text-opacity));\n}\n.dark\\:border-gray-300:is(.dark *) {\n  --tw-border-opacity:1;\n  border-color: rgb(209 213 219/var(--tw-border-opacity));\n}\n.dark\\:bg-\\[\\#FAFAFA\\]:is(.dark *) {\n  --tw-bg-opacity:1;\n  background-color: rgb(250 250 250/var(--tw-bg-opacity));\n}\n.dark\\:bg-black:is(.dark *) {\n  --tw-bg-opacity:1;\n  background-color: rgb(0 0 0/var(--tw-bg-opacity));\n}\n.dark\\:text-\\[\\#292929\\]:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(41 41 41/var(--tw-text-opacity));\n}\n.dark\\:text-gray-300:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(209 213 219/var(--tw-text-opacity));\n}\n.dark\\:text-gray-400:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(156 163 175/var(--tw-text-opacity));\n}\n.dark\\:text-white:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(255 255 255/var(--tw-text-opacity));\n}\n.dark\\:hover\\:bg-gray-600:hover:is(.dark *) {\n  --tw-bg-opacity:1;\n  background-color: rgb(75 85 99/var(--tw-bg-opacity));\n}\n.disabled\\:dark\\:hover\\:bg-transparent:hover:is(.dark *):disabled {\n  background-color: initial;\n}\n@media (min-width:640px) {\n  .sm\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n  .sm\\:items-center {\n    align-items: center;\n  }\n  .sm\\:items-stretch {\n    align-items: stretch;\n  }\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width:768px) {\n  .md\\:mb-0 {\n    margin-bottom: 0;\n  }\n  .md\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .md\\:flex-row {\n    flex-direction: row;\n  }\n  .md\\:items-center {\n    align-items: center;\n  }\n  .md\\:gap-4 {\n    gap: 1rem;\n  }\n  .md\\:gap-\\[24px\\] {\n    gap: 24px;\n  }\n  .md\\:font-semibold {\n    font-weight: 600;\n  }\n  .md\\:leading-tight {\n    line-height: 1.25;\n  }\n}\n@media (min-width:1024px) {\n  .lg\\:grid-cols-5 {\n    grid-template-columns: repeat(5, minmax(0, 1fr));\n  }\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width:1280px) {\n  .xl\\:block {\n    display: block;\n  }\n  .xl\\:h-6 {\n    height: 1.5rem;\n  }\n  .xl\\:border-2 {\n    border-width: 2px;\n  }\n}\n');
+styleInject('/*! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com*/\n*,\n:after,\n:before {\n  box-sizing: border-box;\n  border: 0 solid #e5e7eb;\n}\n:after,\n:before {\n  --tw-content:"";\n}\n:host,\nhtml {\n  line-height: 1.5;\n  -webkit-text-size-adjust: 100%;\n  -moz-tab-size: 4;\n  -o-tab-size: 4;\n  tab-size: 4;\n  font-family: ui-sans-serif, system-ui;\n  font-feature-settings: normal;\n  font-variation-settings: normal;\n  -webkit-tap-highlight-color: transparent;\n}\nbody {\n  margin: 0;\n  line-height: inherit;\n}\nhr {\n  height: 0;\n  color: inherit;\n  border-top-width: 1px;\n}\nabbr:where([title]) {\n  -webkit-text-decoration: underline dotted;\n  text-decoration: underline dotted;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\na {\n  color: inherit;\n  text-decoration: inherit;\n}\nb,\nstrong {\n  font-weight: bolder;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: ui-monospace, SFMono-Regular;\n  font-feature-settings: normal;\n  font-variation-settings: normal;\n  font-size: 1em;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\nsub {\n  bottom: -.25em;\n}\nsup {\n  top: -.5em;\n}\ntable {\n  text-indent: 0;\n  border-color: inherit;\n  border-collapse: collapse;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit;\n  font-feature-settings: inherit;\n  font-variation-settings: inherit;\n  font-size: 100%;\n  font-weight: inherit;\n  line-height: inherit;\n  letter-spacing: inherit;\n  color: inherit;\n  margin: 0;\n  padding: 0;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\ninput:where([type=button]),\ninput:where([type=reset]),\ninput:where([type=submit]) {\n  -webkit-appearance: button;\n  background-color: transparent;\n  background-image: none;\n}\n:-moz-focusring {\n  outline: auto;\n}\n:-moz-ui-invalid {\n  box-shadow: none;\n}\nprogress {\n  vertical-align: baseline;\n}\n::-webkit-inner-spin-button,\n::-webkit-outer-spin-button {\n  height: auto;\n}\n[type=search] {\n  -webkit-appearance: textfield;\n  outline-offset: -2px;\n}\n::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  font: inherit;\n}\nsummary {\n  display: list-item;\n}\nblockquote,\ndd,\ndl,\nfigure,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\np,\npre {\n  margin: 0;\n}\nfieldset {\n  margin: 0;\n}\nfieldset,\nlegend {\n  padding: 0;\n}\nmenu,\nol,\nul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\ndialog {\n  padding: 0;\n}\ntextarea {\n  resize: vertical;\n}\ninput::-moz-placeholder,\ntextarea::-moz-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\ninput::-moz-placeholder,\ntextarea::-moz-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n[role=button],\nbutton {\n  cursor: pointer;\n}\n:disabled {\n  cursor: default;\n}\naudio,\ncanvas,\nembed,\niframe,\nimg,\nobject,\nsvg,\nvideo {\n  display: block;\n  vertical-align: middle;\n}\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n[hidden] {\n  display: none;\n}\n*,\n:after,\n:before {\n  --tw-border-spacing-x:0;\n  --tw-border-spacing-y:0;\n  --tw-translate-x:0;\n  --tw-translate-y:0;\n  --tw-rotate:0;\n  --tw-skew-x:0;\n  --tw-skew-y:0;\n  --tw-scale-x:1;\n  --tw-scale-y:1;\n  --tw-pan-x: ;\n  --tw-pan-y: ;\n  --tw-pinch-zoom: ;\n  --tw-scroll-snap-strictness:proximity;\n  --tw-gradient-from-position: ;\n  --tw-gradient-via-position: ;\n  --tw-gradient-to-position: ;\n  --tw-ordinal: ;\n  --tw-slashed-zero: ;\n  --tw-numeric-figure: ;\n  --tw-numeric-spacing: ;\n  --tw-numeric-fraction: ;\n  --tw-ring-inset: ;\n  --tw-ring-offset-width:0px;\n  --tw-ring-offset-color:#fff;\n  --tw-ring-color:rgba(59,130,246,.5);\n  --tw-ring-offset-shadow:0 0 #0000;\n  --tw-ring-shadow:0 0 #0000;\n  --tw-shadow:0 0 #0000;\n  --tw-shadow-colored:0 0 #0000;\n  --tw-blur: ;\n  --tw-brightness: ;\n  --tw-contrast: ;\n  --tw-grayscale: ;\n  --tw-hue-rotate: ;\n  --tw-invert: ;\n  --tw-saturate: ;\n  --tw-sepia: ;\n  --tw-drop-shadow: ;\n  --tw-backdrop-blur: ;\n  --tw-backdrop-brightness: ;\n  --tw-backdrop-contrast: ;\n  --tw-backdrop-grayscale: ;\n  --tw-backdrop-hue-rotate: ;\n  --tw-backdrop-invert: ;\n  --tw-backdrop-opacity: ;\n  --tw-backdrop-saturate: ;\n  --tw-backdrop-sepia: ;\n  --tw-contain-size: ;\n  --tw-contain-layout: ;\n  --tw-contain-paint: ;\n  --tw-contain-style: ;\n}\n::backdrop {\n  --tw-border-spacing-x:0;\n  --tw-border-spacing-y:0;\n  --tw-translate-x:0;\n  --tw-translate-y:0;\n  --tw-rotate:0;\n  --tw-skew-x:0;\n  --tw-skew-y:0;\n  --tw-scale-x:1;\n  --tw-scale-y:1;\n  --tw-pan-x: ;\n  --tw-pan-y: ;\n  --tw-pinch-zoom: ;\n  --tw-scroll-snap-strictness:proximity;\n  --tw-gradient-from-position: ;\n  --tw-gradient-via-position: ;\n  --tw-gradient-to-position: ;\n  --tw-ordinal: ;\n  --tw-slashed-zero: ;\n  --tw-numeric-figure: ;\n  --tw-numeric-spacing: ;\n  --tw-numeric-fraction: ;\n  --tw-ring-inset: ;\n  --tw-ring-offset-width:0px;\n  --tw-ring-offset-color:#fff;\n  --tw-ring-color:rgba(59,130,246,.5);\n  --tw-ring-offset-shadow:0 0 #0000;\n  --tw-ring-shadow:0 0 #0000;\n  --tw-shadow:0 0 #0000;\n  --tw-shadow-colored:0 0 #0000;\n  --tw-blur: ;\n  --tw-brightness: ;\n  --tw-contrast: ;\n  --tw-grayscale: ;\n  --tw-hue-rotate: ;\n  --tw-invert: ;\n  --tw-saturate: ;\n  --tw-sepia: ;\n  --tw-drop-shadow: ;\n  --tw-backdrop-blur: ;\n  --tw-backdrop-brightness: ;\n  --tw-backdrop-contrast: ;\n  --tw-backdrop-grayscale: ;\n  --tw-backdrop-hue-rotate: ;\n  --tw-backdrop-invert: ;\n  --tw-backdrop-opacity: ;\n  --tw-backdrop-saturate: ;\n  --tw-backdrop-sepia: ;\n  --tw-contain-size: ;\n  --tw-contain-layout: ;\n  --tw-contain-paint: ;\n  --tw-contain-style: ;\n}\n.relative {\n  position: relative;\n}\n.mx-auto {\n  margin-left: auto;\n  margin-right: auto;\n}\n.mb-4 {\n  margin-bottom: 1rem;\n}\n.mb-\\[6px\\] {\n  margin-bottom: 6px;\n}\n.flex {\n  display: flex;\n}\n.grid {\n  display: grid;\n}\n.contents {\n  display: contents;\n}\n.hidden {\n  display: none;\n}\n.h-10 {\n  height: 2.5rem;\n}\n.h-24 {\n  height: 6rem;\n}\n.h-5 {\n  height: 1.25rem;\n}\n.h-full {\n  height: 100%;\n}\n.w-10 {\n  width: 2.5rem;\n}\n.w-\\[300px\\] {\n  width: 300px;\n}\n.w-fit {\n  width: -moz-fit-content;\n  width: fit-content;\n}\n.w-full {\n  width: 100%;\n}\n.min-w-\\[24px\\] {\n  min-width: 24px;\n}\n.min-w-fit {\n  min-width: -moz-fit-content;\n  min-width: fit-content;\n}\n.max-w-6xl {\n  max-width: 72rem;\n}\n.max-w-\\[1920px\\] {\n  max-width: 1920px;\n}\n.max-w-\\[40px\\] {\n  max-width: 40px;\n}\n.max-w-full {\n  max-width: 100%;\n}\n.flex-shrink-0 {\n  flex-shrink: 0;\n}\n.cursor-not-allowed {\n  cursor: not-allowed;\n}\n.resize {\n  resize: both;\n}\n.grid-cols-2 {\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n}\n.flex-col {\n  flex-direction: column;\n}\n.items-center {\n  align-items: center;\n}\n.items-stretch {\n  align-items: stretch;\n}\n.justify-center {\n  justify-content: center;\n}\n.justify-between {\n  justify-content: space-between;\n}\n.gap-2 {\n  gap: .5rem;\n}\n.gap-6 {\n  gap: 1.5rem;\n}\n.gap-\\[20px\\] {\n  gap: 20px;\n}\n.gap-\\[24px\\] {\n  gap: 24px;\n}\n.overflow-hidden {\n  overflow: hidden;\n}\n.overflow-scroll {\n  overflow: scroll;\n}\n.rounded {\n  border-radius: .25rem;\n}\n.rounded-\\[10px\\] {\n  border-radius: 10px;\n}\n.rounded-full {\n  border-radius: 9999px;\n}\n.rounded-lg {\n  border-radius: .5rem;\n}\n.rounded-md {\n  border-radius: .375rem;\n}\n.border {\n  border-width: 1px;\n}\n.border-custom-stroke {\n  border-color: var(--stroke);\n}\n.border-gray-200 {\n  --tw-border-opacity:1;\n  border-color: rgb(229 231 235/var(--tw-border-opacity));\n}\n.border-gray-600 {\n  --tw-border-opacity:1;\n  border-color: rgb(75 85 99/var(--tw-border-opacity));\n}\n.bg-\\[\\#292929\\] {\n  --tw-bg-opacity:1;\n  background-color: rgb(41 41 41/var(--tw-bg-opacity));\n}\n.bg-\\[\\#ddd\\] {\n  --tw-bg-opacity:1;\n  background-color: rgb(221 221 221/var(--tw-bg-opacity));\n}\n.bg-blue-500 {\n  --tw-bg-opacity:1;\n  background-color: rgb(59 130 246/var(--tw-bg-opacity));\n}\n.bg-gray-300 {\n  --tw-bg-opacity:1;\n  background-color: rgb(209 213 219/var(--tw-bg-opacity));\n}\n.bg-white {\n  --tw-bg-opacity:1;\n  background-color: rgb(255 255 255/var(--tw-bg-opacity));\n}\n.p-2 {\n  padding: .5rem;\n}\n.p-4 {\n  padding: 1rem;\n}\n.px-4 {\n  padding-left: 1rem;\n  padding-right: 1rem;\n}\n.px-5 {\n  padding-left: 1.25rem;\n  padding-right: 1.25rem;\n}\n.py-12 {\n  padding-top: 3rem;\n  padding-bottom: 3rem;\n}\n.py-2 {\n  padding-top: .5rem;\n  padding-bottom: .5rem;\n}\n.py-4 {\n  padding-bottom: 1rem;\n}\n.pt-4,\n.py-4 {\n  padding-top: 1rem;\n}\n.text-center {\n  text-align: center;\n}\n.text-2xl {\n  font-size: 1.5rem;\n  line-height: 2rem;\n}\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n.text-sm {\n  font-size: .875rem;\n  line-height: 1.25rem;\n}\n.font-bold {\n  font-weight: 700;\n}\n.font-medium {\n  font-weight: 500;\n}\n.leading-none {\n  line-height: 1;\n}\n.text-\\[\\#FAFAFA\\] {\n  --tw-text-opacity:1;\n  color: rgb(250 250 250/var(--tw-text-opacity));\n}\n.text-\\[\\#ddd\\] {\n  --tw-text-opacity:1;\n  color: rgb(221 221 221/var(--tw-text-opacity));\n}\n.text-black {\n  --tw-text-opacity:1;\n  color: rgb(0 0 0/var(--tw-text-opacity));\n}\n.text-custom-brightOrange-100 {\n  --tw-text-opacity:1;\n  color: rgb(236 128 47/var(--tw-text-opacity));\n}\n.text-gray-500 {\n  --tw-text-opacity:1;\n  color: rgb(107 114 128/var(--tw-text-opacity));\n}\n.text-gray-600 {\n  --tw-text-opacity:1;\n  color: rgb(75 85 99/var(--tw-text-opacity));\n}\n.text-gray-800 {\n  --tw-text-opacity:1;\n  color: rgb(31 41 55/var(--tw-text-opacity));\n}\n.text-orange-500 {\n  --tw-text-opacity:1;\n  color: rgb(249 115 22/var(--tw-text-opacity));\n}\n.text-white {\n  --tw-text-opacity:1;\n  color: rgb(255 255 255/var(--tw-text-opacity));\n}\n.underline {\n  text-decoration-line: underline;\n}\n.opacity-50 {\n  opacity: .5;\n}\n.shadow-md {\n  --tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);\n  --tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color);\n}\n.shadow-md,\n.shadow-sm {\n  box-shadow:\n    var(--tw-ring-offset-shadow,0 0 #0000),\n    var(--tw-ring-shadow,0 0 #0000),\n    var(--tw-shadow);\n}\n.shadow-sm {\n  --tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);\n  --tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);\n}\n.transition-colors {\n  transition-property:\n    color,\n    background-color,\n    border-color,\n    text-decoration-color,\n    fill,\n    stroke;\n  transition-timing-function: cubic-bezier(.4, 0, .2, 1);\n  transition-duration: .15s;\n}\n.no-scrollbar::-webkit-scrollbar {\n  display: none;\n}\n.no-scrollbar {\n  -ms-overflow-style: none;\n  scrollbar-width: none;\n}\n:root {\n  --foreground-rgb:0,0,0;\n  --background-start-rgb:214,219,220;\n  --background-end-rgb:255,255,255;\n  --background:#fafafa;\n  --hover-primary:#f5f5f5;\n  --button:#333;\n  --hover-state:#fff0e0;\n  --stroke:#bfbfbf;\n  --secondary-text:#636366;\n  --primary-text:#292929;\n  --black:#292929;\n  --other-light-text:#999;\n  --accent:#f7931a;\n  --gradient:linear-gradient(\n      92.78deg,#e8782b,#f6a73f 101.1%);\n  --shadow-left:linear-gradient(\n      90deg,#fafafa 50.33%,hsla(0,0%,98%,0));\n  --shadow-right:linear-gradient(\n      270deg,#fafafa 50.33%,hsla(0,0%,98%,0));\n}\nhtml {\n  scroll-behavior: smooth !important;\n}\n.dark {\n  --background:#1c1c1e;\n  --hover-state:#2c2c2e;\n  --button:#8e8e93;\n  --stroke:#3a3a3c;\n  --secondary-text:#999;\n  --primary-text:#a4a4a8;\n  --black:#292929;\n  --other-light-text:#636366;\n  --accent:#f7931a;\n  --hover-primary:#2c2c2e;\n  --gradient:linear-gradient(\n      92.78deg,#e8782b,#f6a73f 101.1%);\n  --shadow-right:linear-gradient(\n      270deg,#1c1c1f 50.33%,rgba(28,28,31,0));\n  --shadow-left:linear-gradient(\n      90deg,#1c1c1f 50.33%,rgba(28,28,31,0));\n}\n.hover\\:bg-blue-700:hover {\n  --tw-bg-opacity:1;\n  background-color: rgb(29 78 216/var(--tw-bg-opacity));\n}\n.hover\\:bg-gray-100:hover {\n  --tw-bg-opacity:1;\n  background-color: rgb(243 244 246/var(--tw-bg-opacity));\n}\n.hover\\:bg-gray-400:hover {\n  --tw-bg-opacity:1;\n  background-color: rgb(156 163 175/var(--tw-bg-opacity));\n}\n.hover\\:text-orange-400:hover {\n  --tw-text-opacity:1;\n  color: rgb(251 146 60/var(--tw-text-opacity));\n}\n.disabled\\:cursor-not-allowed:disabled {\n  cursor: not-allowed;\n}\n.disabled\\:opacity-50:disabled {\n  opacity: .5;\n}\n.disabled\\:hover\\:bg-transparent:hover:disabled {\n  background-color: transparent;\n}\n.group:hover .group-hover\\:bg-black {\n  --tw-bg-opacity:1;\n  background-color: rgb(0 0 0/var(--tw-bg-opacity));\n}\n.group:hover .group-hover\\:text-\\[\\#fff\\] {\n  --tw-text-opacity:1;\n  color: rgb(255 255 255/var(--tw-text-opacity));\n}\n.group:hover .group-hover\\:text-black {\n  --tw-text-opacity:1;\n  color: rgb(0 0 0/var(--tw-text-opacity));\n}\n.dark\\:border-gray-300:is(.dark *) {\n  --tw-border-opacity:1;\n  border-color: rgb(209 213 219/var(--tw-border-opacity));\n}\n.dark\\:bg-\\[\\#FAFAFA\\]:is(.dark *) {\n  --tw-bg-opacity:1;\n  background-color: rgb(250 250 250/var(--tw-bg-opacity));\n}\n.dark\\:bg-black:is(.dark *) {\n  --tw-bg-opacity:1;\n  background-color: rgb(0 0 0/var(--tw-bg-opacity));\n}\n.dark\\:text-\\[\\#292929\\]:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(41 41 41/var(--tw-text-opacity));\n}\n.dark\\:text-gray-300:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(209 213 219/var(--tw-text-opacity));\n}\n.dark\\:text-gray-400:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(156 163 175/var(--tw-text-opacity));\n}\n.dark\\:text-white:is(.dark *) {\n  --tw-text-opacity:1;\n  color: rgb(255 255 255/var(--tw-text-opacity));\n}\n.dark\\:hover\\:bg-gray-600:hover:is(.dark *) {\n  --tw-bg-opacity:1;\n  background-color: rgb(75 85 99/var(--tw-bg-opacity));\n}\n.disabled\\:dark\\:hover\\:bg-transparent:hover:is(.dark *):disabled {\n  background-color: transparent;\n}\n@media (min-width:640px) {\n  .sm\\:grid-cols-3 {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  .sm\\:flex-row {\n    flex-direction: row;\n  }\n  .sm\\:items-center {\n    align-items: center;\n  }\n  .sm\\:items-stretch {\n    align-items: stretch;\n  }\n  .sm\\:px-6 {\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n  }\n}\n@media (min-width:768px) {\n  .md\\:mb-0 {\n    margin-bottom: 0;\n  }\n  .md\\:grid-cols-4 {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n  .md\\:flex-row {\n    flex-direction: row;\n  }\n  .md\\:items-center {\n    align-items: center;\n  }\n  .md\\:gap-4 {\n    gap: 1rem;\n  }\n  .md\\:gap-\\[24px\\] {\n    gap: 24px;\n  }\n  .md\\:font-semibold {\n    font-weight: 600;\n  }\n  .md\\:leading-tight {\n    line-height: 1.25;\n  }\n}\n@media (min-width:1024px) {\n  .lg\\:grid-cols-5 {\n    grid-template-columns: repeat(5, minmax(0, 1fr));\n  }\n  .lg\\:px-8 {\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n}\n@media (min-width:1280px) {\n  .xl\\:block {\n    display: block;\n  }\n  .xl\\:h-6 {\n    height: 1.5rem;\n  }\n  .xl\\:border-2 {\n    border-width: 2px;\n  }\n}\n');
 
 // src/components/button/Button.tsx
 var Button = ({
@@ -50,15 +50,7 @@ var Button = ({
     ${sizeStyles[size]}
     ${disabled ? "opacity-50 cursor-not-allowed" : ""}
   `.trim();
-  return /* @__PURE__ */ React.createElement(
-    "button",
-    {
-      className,
-      onClick,
-      disabled
-    },
-    label
-  );
+  return /* @__PURE__ */ React.createElement("button", { className, onClick, disabled }, label);
 };
 
 // src/components/footer/Footer.tsx
@@ -73,16 +65,32 @@ var FooterAbout = (props) => {
   if (children) {
     /* @__PURE__ */ React2.createElement("div", { ...rest, className }, props.children);
   }
-  return /* @__PURE__ */ React2.createElement("div", { ...rest, className: twMerge(clsx("leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400", className)) }, "Built with ", /* @__PURE__ */ React2.createElement("span", null, "\u{1F9E1}"), " by the", " ", /* @__PURE__ */ React2.createElement(
-    "a",
+  return /* @__PURE__ */ React2.createElement(
+    "div",
     {
-      href: entityLink != null ? entityLink : "https://bitcoindevs.xyz/",
-      target: "_blank",
-      rel: "noreferrer",
-      className: "underline font-medium text-custom-brightOrange-100"
+      ...rest,
+      className: twMerge(
+        clsx(
+          "leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400",
+          className
+        )
+      )
     },
-    entityName != null ? entityName : "Bitcoin Dev Project"
-  ));
+    "Built with ",
+    /* @__PURE__ */ React2.createElement("span", null, "\u{1F9E1}"),
+    " by the",
+    " ",
+    /* @__PURE__ */ React2.createElement(
+      "a",
+      {
+        href: entityLink != null ? entityLink : "https://bitcoindevs.xyz/",
+        target: "_blank",
+        rel: "noreferrer",
+        className: "underline font-medium text-custom-brightOrange-100"
+      },
+      entityName != null ? entityName : "Bitcoin Dev Project"
+    )
+  );
 };
 FooterAbout.displayName = "FooterAbout";
 var FooterAbout_default = FooterAbout;
@@ -100,7 +108,12 @@ var FooterFeedback = (props) => {
     "div",
     {
       ...rest,
-      className: twMerge2(clsx2("leading-none md:leading-tight flex flex-col sm:flex-row items-stretch sm:items-center text-sm text-gray-500 dark:text-gray-400 gap-[20px] md:gap-[24px]", className))
+      className: twMerge2(
+        clsx2(
+          "leading-none md:leading-tight flex flex-col sm:flex-row items-stretch sm:items-center text-sm text-gray-500 dark:text-gray-400 gap-[20px] md:gap-[24px]",
+          className
+        )
+      )
     },
     /* @__PURE__ */ React3.createElement("span", null, "We'd love to hear your feedback on this project?"),
     /* @__PURE__ */ React3.createElement(
@@ -164,7 +177,9 @@ import * as React16 from "react";
 import * as React17 from "react";
 var DiscordIcon = ({
   width = 45,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   pathProps,
   ...props
 }) => (
@@ -202,6 +217,7 @@ import * as React19 from "react";
 import * as React20 from "react";
 var GithubIcon = ({
   width = 52,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   ...props
 }) => (
@@ -251,7 +267,13 @@ var NostrIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React23.createElement("path", { d: "M31.5 13.5114V29.8827C31.5 30.4984 31.0041 30.998 30.3929 30.998H17.1081C16.4969 30.998 16.001 30.4984 16.001 29.8827V26.8339C16.0615 23.0966 16.454 19.5166 17.2779 17.8879C17.7719 16.9084 18.5861 16.3753 19.5214 16.0901C21.2884 15.5551 24.389 15.9209 25.705 15.858C25.705 15.858 29.6803 16.0173 29.6803 13.7494C29.6803 11.924 27.9035 12.0676 27.9035 12.0676C25.9451 12.1187 24.4534 11.985 23.4869 11.6014C21.8683 10.9602 21.8136 9.78388 21.8077 9.39048C21.7277 4.8467 15.0774 4.30184 9.21796 5.42893C2.81177 6.65635 9.28825 15.9072 9.28825 28.256V29.9044C9.27653 30.5102 8.79036 31 8.18508 31H1.60707C0.995937 31 0.5 30.5004 0.5 29.8847V1.56967C0.5 0.953998 0.995937 0.454378 1.60707 0.454378H7.79067C8.40181 0.454378 8.89775 0.953998 8.89775 1.56967C8.89775 2.48433 9.91891 2.99378 10.657 2.46072C12.8809 0.855648 15.7354 0 18.9297 0C26.0857 0 31.4961 4.20152 31.4961 13.5114H31.5ZM19.6209 10.1891C19.6209 8.87119 18.5607 7.80311 17.2525 7.80311C15.9444 7.80311 14.8841 8.87119 14.8841 10.1891C14.8841 11.507 15.9444 12.5751 17.2525 12.5751C18.5607 12.5751 19.6209 11.507 19.6209 10.1891Z", fill: "currentColor" })
+    /* @__PURE__ */ React23.createElement(
+      "path",
+      {
+        d: "M31.5 13.5114V29.8827C31.5 30.4984 31.0041 30.998 30.3929 30.998H17.1081C16.4969 30.998 16.001 30.4984 16.001 29.8827V26.8339C16.0615 23.0966 16.454 19.5166 17.2779 17.8879C17.7719 16.9084 18.5861 16.3753 19.5214 16.0901C21.2884 15.5551 24.389 15.9209 25.705 15.858C25.705 15.858 29.6803 16.0173 29.6803 13.7494C29.6803 11.924 27.9035 12.0676 27.9035 12.0676C25.9451 12.1187 24.4534 11.985 23.4869 11.6014C21.8683 10.9602 21.8136 9.78388 21.8077 9.39048C21.7277 4.8467 15.0774 4.30184 9.21796 5.42893C2.81177 6.65635 9.28825 15.9072 9.28825 28.256V29.9044C9.27653 30.5102 8.79036 31 8.18508 31H1.60707C0.995937 31 0.5 30.5004 0.5 29.8847V1.56967C0.5 0.953998 0.995937 0.454378 1.60707 0.454378H7.79067C8.40181 0.454378 8.89775 0.953998 8.89775 1.56967C8.89775 2.48433 9.91891 2.99378 10.657 2.46072C12.8809 0.855648 15.7354 0 18.9297 0C26.0857 0 31.4961 4.20152 31.4961 13.5114H31.5ZM19.6209 10.1891C19.6209 8.87119 18.5607 7.80311 17.2525 7.80311C15.9444 7.80311 14.8841 8.87119 14.8841 10.1891C14.8841 11.507 15.9444 12.5751 17.2525 12.5751C18.5607 12.5751 19.6209 11.507 19.6209 10.1891Z",
+        fill: "currentColor"
+      }
+    )
   )
 );
 var NostrIcon_default = NostrIcon;
@@ -312,7 +334,13 @@ var Platform = ({ platform }) => {
       return React30.cloneElement(icon, { ...rest, className });
     }
     if (entity2 === "twitter") {
-      return /* @__PURE__ */ React30.createElement(TwitterXIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
+      return /* @__PURE__ */ React30.createElement(
+        TwitterXIcon_default,
+        {
+          className: twMerge3(clsx3("w-full", className)),
+          ...rest
+        }
+      );
     }
     if (entity2 === "github") {
       return /* @__PURE__ */ React30.createElement(GithubIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
@@ -341,15 +369,13 @@ var FooterSocials = (props) => {
   if (children) {
     /* @__PURE__ */ React30.createElement("div", { ...rest, className: classname }, props.children);
   }
-  const resolvedClassName = twMerge3(clsx3("text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px]", classname));
-  return /* @__PURE__ */ React30.createElement(
-    "div",
-    {
-      ...rest,
-      className: resolvedClassName
-    },
-    platforms.map((platform) => /* @__PURE__ */ React30.createElement(Platform, { key: platform.entity, platform }))
+  const resolvedClassName = twMerge3(
+    clsx3(
+      "text-black mb-[6px] md:mb-0 dark:text-white flex w-fit max-w-full gap-[24px]",
+      classname
+    )
   );
+  return /* @__PURE__ */ React30.createElement("div", { ...rest, className: resolvedClassName }, platforms.map((platform) => /* @__PURE__ */ React30.createElement(Platform, { key: platform.entity, platform })));
 };
 FooterSocials.displayName = "FooterSocials";
 
@@ -357,14 +383,23 @@ FooterSocials.displayName = "FooterSocials";
 import React31 from "react";
 import { twMerge as twMerge4 } from "tailwind-merge";
 import clsx4 from "clsx";
-var FooterPublic = ({ className, dashboardLink, ...rest }) => {
+var FooterPublic = ({
+  className,
+  dashboardLink,
+  ...rest
+}) => {
   return /* @__PURE__ */ React31.createElement(
     "a",
     {
       href: dashboardLink,
       target: "_blank",
       rel: "noreferrer",
-      className: twMerge4(clsx4("leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 underline", className)),
+      className: twMerge4(
+        clsx4(
+          "leading-none md:leading-tight text-sm text-gray-500 dark:text-gray-400 underline",
+          className
+        )
+      ),
       ...rest
     },
     "View our public visitor count"
@@ -385,13 +420,29 @@ var Footer = ({ children, className, separator, ...rest }) => {
         const displayName = child.type.displayName;
         newChildren.push(child);
         if (index < React32.Children.count(children) - 1) {
-          newChildren.push(React32.cloneElement(viewSeparator, { key: `${displayName}-separator-${index}` }));
+          newChildren.push(
+            React32.cloneElement(viewSeparator, {
+              key: `${displayName}-separator-${index}`
+            })
+          );
         }
       }
     });
     return newChildren;
   };
-  return /* @__PURE__ */ React32.createElement("div", { className: twMerge5(clsx5("flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2", className)), ...rest }, renderChildrenWithSeparator());
+  return /* @__PURE__ */ React32.createElement(
+    "div",
+    {
+      className: twMerge5(
+        clsx5(
+          "flex flex-col md:flex-row w-full justify-between sm:items-stretch md:items-center bg-white dark:bg-black gap-[20px] md:gap-[24px] mx-auto max-w-[1920px] p-2",
+          className
+        )
+      ),
+      ...rest
+    },
+    renderChildrenWithSeparator()
+  );
 };
 Footer.About = FooterAbout_default;
 Footer.Feedback = FooterFeedback_default;
@@ -432,43 +483,120 @@ function throttledDebounce(func, limit) {
 import React33 from "react";
 import { twMerge as twMerge6 } from "tailwind-merge";
 import clsx6 from "clsx";
-var CarouselContainer = ({ children, ...props }) => {
+var CarouselContainer = ({
+  children,
+  ...props
+}) => {
   const { className, ...rest } = props;
   const { containerRef } = useCarousel();
-  return /* @__PURE__ */ React33.createElement("div", { ref: containerRef, className: twMerge6(clsx6("max-w-full h-full flex overflow-scroll gap-2 no-scrollbar", className)), ...rest }, children);
+  return /* @__PURE__ */ React33.createElement(
+    "div",
+    {
+      ref: containerRef,
+      className: twMerge6(
+        clsx6(
+          "max-w-full h-full flex overflow-scroll gap-2 no-scrollbar",
+          className
+        )
+      ),
+      ...rest
+    },
+    children
+  );
 };
-var CarouselItem = ({ children, ...props }) => {
+var CarouselItem = ({
+  children,
+  ...props
+}) => {
   const { className, ...rest } = props;
-  return /* @__PURE__ */ React33.createElement("div", { className: twMerge6(clsx6("flex-shrink-0 relative", className)), ...rest }, children);
+  return /* @__PURE__ */ React33.createElement(
+    "div",
+    {
+      className: twMerge6(clsx6("flex-shrink-0 relative", className)),
+      ...rest
+    },
+    children
+  );
 };
-var CarouselControls = ({ children, className, ...props }) => {
-  return /* @__PURE__ */ React33.createElement("div", { className: twMerge6(clsx6("flex items-center gap-2 md:gap-4 w-fit mx-auto pt-4", className)), ...props }, children);
+var CarouselControls = ({
+  children,
+  className,
+  ...props
+}) => {
+  return /* @__PURE__ */ React33.createElement(
+    "div",
+    {
+      className: twMerge6(
+        clsx6("flex items-center gap-2 md:gap-4 w-fit mx-auto pt-4", className)
+      ),
+      ...props
+    },
+    children
+  );
 };
-var CarouselPreviousButton = ({ children, ...props }) => {
+var CarouselPreviousButton = ({
+  children,
+  ...props
+}) => {
   const { goToPreviousSlide, possibleDirection } = useCarousel();
   if (children) {
     if (typeof children === "function") {
       return /* @__PURE__ */ React33.createElement(React33.Fragment, null, children(goToPreviousSlide, possibleDirection));
     } else {
-      console.warn("CarouselPreviousButton: Children prop is not a function (opts out of navigation logic). Rendering children as-is.");
+      console.warn(
+        "CarouselPreviousButton: Children prop is not a function (opts out of navigation logic). Rendering children as-is."
+      );
       return /* @__PURE__ */ React33.createElement(React33.Fragment, null, children);
     }
   }
   const { icon, className, ...rest } = props;
-  return /* @__PURE__ */ React33.createElement("button", { onClick: goToPreviousSlide, disabled: !possibleDirection.canGoToPreviousSlide, className: twMerge6(clsx6("w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent", className)), ...rest }, icon);
+  return /* @__PURE__ */ React33.createElement(
+    "button",
+    {
+      onClick: goToPreviousSlide,
+      disabled: !possibleDirection.canGoToPreviousSlide,
+      className: twMerge6(
+        clsx6(
+          "w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent",
+          className
+        )
+      ),
+      ...rest
+    },
+    icon
+  );
 };
-var CarouselNextButton = ({ children, ...props }) => {
+var CarouselNextButton = ({
+  children,
+  ...props
+}) => {
   const { goToNextSlide, possibleDirection } = useCarousel();
   if (children) {
     if (typeof children === "function") {
       return /* @__PURE__ */ React33.createElement(React33.Fragment, null, children(goToNextSlide, possibleDirection));
     } else {
-      console.warn("CarouselNextButton: Children prop is not a function (opts out of navigation logic). Rendering children as-is.");
+      console.warn(
+        "CarouselNextButton: Children prop is not a function (opts out of navigation logic). Rendering children as-is."
+      );
       return /* @__PURE__ */ React33.createElement(React33.Fragment, null, children);
     }
   }
   const { icon, className, ...rest } = props;
-  return /* @__PURE__ */ React33.createElement("button", { onClick: goToNextSlide, disabled: !possibleDirection.canGoToNextSlide, className: twMerge6(clsx6("w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent", className)), ...rest }, icon);
+  return /* @__PURE__ */ React33.createElement(
+    "button",
+    {
+      onClick: goToNextSlide,
+      disabled: !possibleDirection.canGoToNextSlide,
+      className: twMerge6(
+        clsx6(
+          "w-10 h-10 flex items-center justify-center rounded-full border border-gray-600  dark:border-gray-300 p-2 text-gray-600 dark:text-gray-300 transition-colors hover:bg-gray-100 dark:hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:dark:hover:bg-transparent",
+          className
+        )
+      ),
+      ...rest
+    },
+    icon
+  );
 };
 
 // src/components/carousel/Carousel.tsx
@@ -480,14 +608,18 @@ var useCarousel = () => {
   }
   return context;
 };
-var CarouselProvider = ({ children, containerRef, config = DefaultCarouselConfig }) => {
+var CarouselProvider = ({
+  children,
+  containerRef,
+  config = DefaultCarouselConfig
+}) => {
   const { stepWidthInPercent } = config;
   const [carouselWidth, setCarouselWidth] = React34.useState(0);
   const [scrollableWidth, setScrollableWidth] = React34.useState(0);
   const [scrollLeft, setScrollLeft] = React34.useState(0);
   const possibleDirection = useMemo(() => {
-    console.log("I ran update direction");
-    if (!containerRef.current) return { canGoToNextSlide: false, canGoToPreviousSlide: false };
+    if (!containerRef.current)
+      return { canGoToNextSlide: false, canGoToPreviousSlide: false };
     const canGoToNextSlide = scrollLeft < scrollableWidth - carouselWidth;
     const canGoToPreviousSlide = scrollLeft > 0;
     return { canGoToNextSlide, canGoToPreviousSlide };
@@ -500,11 +632,10 @@ var CarouselProvider = ({ children, containerRef, config = DefaultCarouselConfig
   useLayoutEffect(() => {
     if (!containerRef.current) return;
     const updateSize = throttledDebounce(() => {
-      var _a, _b, _c, _d, _e, _f, _g, _h;
+      var _a, _b, _c, _d, _e, _f;
       setCarouselWidth((_b = (_a = containerRef.current) == null ? void 0 : _a.clientWidth) != null ? _b : 0);
       setScrollableWidth((_d = (_c = containerRef.current) == null ? void 0 : _c.scrollWidth) != null ? _d : 0);
       setScrollLeft((_f = (_e = containerRef.current) == null ? void 0 : _e.scrollLeft) != null ? _f : 0);
-      console.log("i updated size", "width", (_g = containerRef.current) == null ? void 0 : _g.clientWidth, "scrollable", (_h = containerRef.current) == null ? void 0 : _h.scrollWidth);
     }, 200);
     const resizeObserver = new ResizeObserver(updateSize);
     resizeObserver.observe(containerRef.current);
@@ -527,7 +658,6 @@ var CarouselProvider = ({ children, containerRef, config = DefaultCarouselConfig
   }, []);
   const totalCarouselItems = useMemo(() => {
     var _a, _b;
-    console.log(containerRef.current);
     return (_b = (_a = containerRef.current) == null ? void 0 : _a.children.length) != null ? _b : 0;
   }, [containerRef]);
   const goToNextSlide = useCallback(() => {
@@ -544,13 +674,28 @@ var CarouselProvider = ({ children, containerRef, config = DefaultCarouselConfig
     if (!containerRef.current) return;
     const stepWidth = containerRef.current.clientWidth * stepWidthInPercent / 100;
     const responsiveStepWidth = stepWidth < containerRef.current.children[0].clientWidth ? containerRef.current.clientWidth : stepWidth;
-    const scrollLeft2 = Math.max(0, containerRef.current.scrollLeft - responsiveStepWidth);
+    const scrollLeft2 = Math.max(
+      0,
+      containerRef.current.scrollLeft - responsiveStepWidth
+    );
     containerRef.current.scrollTo({
       left: scrollLeft2,
       behavior: "smooth"
     });
   }, [containerRef, stepWidthInPercent]);
-  return /* @__PURE__ */ React34.createElement(CarouselContext.Provider, { value: { containerRef, totalCarouselItems, goToNextSlide, goToPreviousSlide, possibleDirection } }, children);
+  return /* @__PURE__ */ React34.createElement(
+    CarouselContext.Provider,
+    {
+      value: {
+        containerRef,
+        totalCarouselItems,
+        goToNextSlide,
+        goToPreviousSlide,
+        possibleDirection
+      }
+    },
+    children
+  );
 };
 var Carousel = ({ children, config }) => {
   const containerRef = useRef(null);

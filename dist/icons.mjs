@@ -1,6 +1,11 @@
 // src/icons/AppsIcon.tsx
 import * as React from "react";
-var AppsIcon = ({ width = 24, height, ...props }) => (
+var AppsIcon = ({
+  width = 24,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React.createElement("svg", { width, viewBox: "0 0 22 22", fill: "none", ...props }, /* @__PURE__ */ React.createElement(
     "path",
@@ -14,7 +19,13 @@ var AppsIcon_default = AppsIcon;
 
 // src/icons/ArrowLeft.tsx
 import * as React2 from "react";
-var ArrowLeft = ({ width = 7, height, pathProps, ...props }) => {
+var ArrowLeft = ({
+  width = 7,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  pathProps,
+  ...props
+}) => {
   return /* @__PURE__ */ React2.createElement(
     "svg",
     {
@@ -42,6 +53,7 @@ var ArrowLeft_default = ArrowLeft;
 import * as React3 from "react";
 var ArrowLinkRight = ({
   width = 24,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   pathProps,
   ...props
@@ -86,6 +98,7 @@ var ArrowLinkRight_default = ArrowLinkRight;
 import * as React4 from "react";
 var ArrowLinkUpRight = ({
   width = 24,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   pathProps,
   ...props
@@ -127,7 +140,13 @@ var ArrowLinkUpRight_default = ArrowLinkUpRight;
 
 // src/icons/ArrowRight.tsx
 import * as React5 from "react";
-var ArrowRight = ({ width = 7, height, pathProps, ...props }) => {
+var ArrowRight = ({
+  width = 7,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  pathProps,
+  ...props
+}) => {
   return /* @__PURE__ */ React5.createElement(
     "svg",
     {
@@ -153,7 +172,12 @@ var ArrowRight_default = ArrowRight;
 
 // src/icons/AuthorIcon.tsx
 import * as React6 from "react";
-var AuthorIcon = ({ width = 20, height, ...props }) => (
+var AuthorIcon = ({
+  width = 20,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React6.createElement(
     "svg",
@@ -177,7 +201,12 @@ var AuthorIcon_default = AuthorIcon;
 
 // src/icons/BitcoinIcon.tsx
 import * as React7 from "react";
-var BitcoinIcon = ({ width = 18, height, ...props }) => (
+var BitcoinIcon = ({
+  width = 18,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React7.createElement(
     "svg",
@@ -188,7 +217,13 @@ var BitcoinIcon = ({ width = 18, height, ...props }) => (
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React7.createElement("path", { d: "M8.28312 7.967L8.23312 7.952L8.76112 5.83496L8.97312 5.88496C9.67912 6.04196 11.1981 6.38296 10.9231 7.498C10.6281 8.671 8.87412 8.144 8.28312 7.967ZM7.37012 11.405L7.45612 11.43C8.18412 11.647 10.2521 12.262 10.5321 11.097C10.8211 9.976 8.96212 9.539 8.13012 9.344C8.03912 9.322 7.96012 9.304 7.89812 9.288L7.37012 11.405Z", fill: "currentColor" }),
+    /* @__PURE__ */ React7.createElement(
+      "path",
+      {
+        d: "M8.28312 7.967L8.23312 7.952L8.76112 5.83496L8.97312 5.88496C9.67912 6.04196 11.1981 6.38296 10.9231 7.498C10.6281 8.671 8.87412 8.144 8.28312 7.967ZM7.37012 11.405L7.45612 11.43C8.18412 11.647 10.2521 12.262 10.5321 11.097C10.8211 9.976 8.96212 9.539 8.13012 9.344C8.03912 9.322 7.96012 9.304 7.89812 9.288L7.37012 11.405Z",
+        fill: "currentColor"
+      }
+    ),
     /* @__PURE__ */ React7.createElement(
       "path",
       {
@@ -204,7 +239,12 @@ var BitcoinIcon_default = BitcoinIcon;
 
 // src/icons/BookmarkIcon.tsx
 import * as React8 from "react";
-var BookmarkIcon = ({ width = 25, height, ...props }) => (
+var BookmarkIcon = ({
+  width = 25,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React8.createElement(
     "svg",
@@ -215,8 +255,26 @@ var BookmarkIcon = ({ width = 25, height, ...props }) => (
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React8.createElement("path", { d: "M3.75195 20.5604V14.7496C3.75195 10.7459 3.75195 8.74403 4.96226 7.50023C6.17257 6.25644 8.12053 6.25644 12.0164 6.25644C15.9123 6.25644 17.8603 6.25644 19.0707 7.50023C20.2809 8.74403 20.2809 10.7459 20.2809 14.7496V20.5604C20.2809 23.1013 20.2809 24.3717 19.4826 24.8265C17.9365 25.7071 15.0363 22.7691 13.659 21.8845C12.8602 21.3714 12.4608 21.1149 12.0164 21.1149C11.572 21.1149 11.1726 21.3714 10.3739 21.8845C8.9966 22.7691 6.09646 25.7071 4.55035 24.8265C3.75195 24.3717 3.75195 23.1013 3.75195 20.5604Z", stroke: "currentColor", strokeWidth: "1.6529", strokeLinecap: "round", strokeLinejoin: "round" }),
-    /* @__PURE__ */ React8.createElement("path", { d: "M10.3638 2.95062H12.5676C17.7621 2.95062 20.3595 2.95062 21.9732 4.56437C23.5869 6.1781 23.5869 8.77538 23.5869 13.9699V20.5815", stroke: "currentColor", strokeWidth: "1.6529", strokeLinecap: "round", strokeLinejoin: "round" })
+    /* @__PURE__ */ React8.createElement(
+      "path",
+      {
+        d: "M3.75195 20.5604V14.7496C3.75195 10.7459 3.75195 8.74403 4.96226 7.50023C6.17257 6.25644 8.12053 6.25644 12.0164 6.25644C15.9123 6.25644 17.8603 6.25644 19.0707 7.50023C20.2809 8.74403 20.2809 10.7459 20.2809 14.7496V20.5604C20.2809 23.1013 20.2809 24.3717 19.4826 24.8265C17.9365 25.7071 15.0363 22.7691 13.659 21.8845C12.8602 21.3714 12.4608 21.1149 12.0164 21.1149C11.572 21.1149 11.1726 21.3714 10.3739 21.8845C8.9966 22.7691 6.09646 25.7071 4.55035 24.8265C3.75195 24.3717 3.75195 23.1013 3.75195 20.5604Z",
+        stroke: "currentColor",
+        strokeWidth: "1.6529",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }
+    ),
+    /* @__PURE__ */ React8.createElement(
+      "path",
+      {
+        d: "M10.3638 2.95062H12.5676C17.7621 2.95062 20.3595 2.95062 21.9732 4.56437C23.5869 6.1781 23.5869 8.77538 23.5869 13.9699V20.5815",
+        stroke: "currentColor",
+        strokeWidth: "1.6529",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }
+    )
   )
 );
 var BookmarkIcon_default = BookmarkIcon;
@@ -225,7 +283,9 @@ var BookmarkIcon_default = BookmarkIcon;
 import * as React9 from "react";
 var CalendarIcon = ({
   width = 23,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   pathProps,
   ...props
 }) => (
@@ -296,7 +356,12 @@ var CalendarIcon_default = CalendarIcon;
 
 // src/icons/CloseIconOutlined.tsx
 import * as React10 from "react";
-var CloseIconOutlined = ({ width = 14, height, ...props }) => (
+var CloseIconOutlined = ({
+  width = 14,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React10.createElement(
     "svg",
@@ -322,7 +387,12 @@ var CloseIconOutlined_default = CloseIconOutlined;
 
 // src/icons/DateIcon.tsx
 import * as React11 from "react";
-var DateIcon = ({ width = 12, height, ...props }) => (
+var DateIcon = ({
+  width = 12,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React11.createElement(
     "svg",
@@ -364,7 +434,9 @@ var DayIcon_default = DayIcon;
 import * as React13 from "react";
 var DiceIcon = ({
   width = 23,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   pathProps,
   ...props
 }) => (
@@ -421,7 +493,9 @@ var DiceIcon_default = DiceIcon;
 import * as React14 from "react";
 var DiscordIcon = ({
   width = 45,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   pathProps,
   ...props
 }) => (
@@ -451,7 +525,12 @@ var DiscordIcon_default = DiscordIcon;
 
 // src/icons/FilterIcon.tsx
 import * as React15 from "react";
-var FilterIcon = ({ width = 13, height, ...props }) => (
+var FilterIcon = ({
+  width = 13,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React15.createElement(
     "svg",
@@ -476,7 +555,12 @@ var FilterIcon_default = FilterIcon;
 
 // src/icons/FilterCloseIcon.tsx
 import * as React16 from "react";
-var FilterCloseIcon = ({ width = 20, height, ...props }) => (
+var FilterCloseIcon = ({
+  width = 20,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React16.createElement(
     "svg",
@@ -502,6 +586,7 @@ var FilterCloseIcon_default = FilterCloseIcon;
 import * as React17 from "react";
 var GithubIcon = ({
   width = 52,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   ...props
 }) => (
@@ -530,6 +615,7 @@ var GithubIcon_default = GithubIcon;
 import * as React18 from "react";
 var MicIcon = ({
   width = 27,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   pathProps,
   ...props
@@ -579,6 +665,7 @@ var MicIcon_default = MicIcon;
 import * as React19 from "react";
 var NightIcon = ({
   width = 12,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
   pathProps,
   ...svgProps
@@ -626,14 +713,25 @@ var NostrIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React20.createElement("path", { d: "M31.5 13.5114V29.8827C31.5 30.4984 31.0041 30.998 30.3929 30.998H17.1081C16.4969 30.998 16.001 30.4984 16.001 29.8827V26.8339C16.0615 23.0966 16.454 19.5166 17.2779 17.8879C17.7719 16.9084 18.5861 16.3753 19.5214 16.0901C21.2884 15.5551 24.389 15.9209 25.705 15.858C25.705 15.858 29.6803 16.0173 29.6803 13.7494C29.6803 11.924 27.9035 12.0676 27.9035 12.0676C25.9451 12.1187 24.4534 11.985 23.4869 11.6014C21.8683 10.9602 21.8136 9.78388 21.8077 9.39048C21.7277 4.8467 15.0774 4.30184 9.21796 5.42893C2.81177 6.65635 9.28825 15.9072 9.28825 28.256V29.9044C9.27653 30.5102 8.79036 31 8.18508 31H1.60707C0.995937 31 0.5 30.5004 0.5 29.8847V1.56967C0.5 0.953998 0.995937 0.454378 1.60707 0.454378H7.79067C8.40181 0.454378 8.89775 0.953998 8.89775 1.56967C8.89775 2.48433 9.91891 2.99378 10.657 2.46072C12.8809 0.855648 15.7354 0 18.9297 0C26.0857 0 31.4961 4.20152 31.4961 13.5114H31.5ZM19.6209 10.1891C19.6209 8.87119 18.5607 7.80311 17.2525 7.80311C15.9444 7.80311 14.8841 8.87119 14.8841 10.1891C14.8841 11.507 15.9444 12.5751 17.2525 12.5751C18.5607 12.5751 19.6209 11.507 19.6209 10.1891Z", fill: "currentColor" })
+    /* @__PURE__ */ React20.createElement(
+      "path",
+      {
+        d: "M31.5 13.5114V29.8827C31.5 30.4984 31.0041 30.998 30.3929 30.998H17.1081C16.4969 30.998 16.001 30.4984 16.001 29.8827V26.8339C16.0615 23.0966 16.454 19.5166 17.2779 17.8879C17.7719 16.9084 18.5861 16.3753 19.5214 16.0901C21.2884 15.5551 24.389 15.9209 25.705 15.858C25.705 15.858 29.6803 16.0173 29.6803 13.7494C29.6803 11.924 27.9035 12.0676 27.9035 12.0676C25.9451 12.1187 24.4534 11.985 23.4869 11.6014C21.8683 10.9602 21.8136 9.78388 21.8077 9.39048C21.7277 4.8467 15.0774 4.30184 9.21796 5.42893C2.81177 6.65635 9.28825 15.9072 9.28825 28.256V29.9044C9.27653 30.5102 8.79036 31 8.18508 31H1.60707C0.995937 31 0.5 30.5004 0.5 29.8847V1.56967C0.5 0.953998 0.995937 0.454378 1.60707 0.454378H7.79067C8.40181 0.454378 8.89775 0.953998 8.89775 1.56967C8.89775 2.48433 9.91891 2.99378 10.657 2.46072C12.8809 0.855648 15.7354 0 18.9297 0C26.0857 0 31.4961 4.20152 31.4961 13.5114H31.5ZM19.6209 10.1891C19.6209 8.87119 18.5607 7.80311 17.2525 7.80311C15.9444 7.80311 14.8841 8.87119 14.8841 10.1891C14.8841 11.507 15.9444 12.5751 17.2525 12.5751C18.5607 12.5751 19.6209 11.507 19.6209 10.1891Z",
+        fill: "currentColor"
+      }
+    )
   )
 );
 var NostrIcon_default = NostrIcon;
 
 // src/icons/PlusIcon.tsx
 import * as React21 from "react";
-var PlusIcon = ({ width = 12, height, ...props }) => (
+var PlusIcon = ({
+  width = 12,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React21.createElement(
     "svg",
@@ -659,7 +757,12 @@ var PlusIcon_default = PlusIcon;
 
 // src/icons/SearchIcon.tsx
 import * as React22 from "react";
-var SearchIcon = ({ width = 20, height, ...props }) => (
+var SearchIcon = ({
+  width = 20,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React22.createElement(
     "svg",
@@ -692,7 +795,12 @@ var SearchIcon_default = SearchIcon;
 
 // src/icons/SortIcon.tsx
 import * as React23 from "react";
-var SortIcon = ({ width = 20, height, ...props }) => (
+var SortIcon = ({
+  width = 20,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React23.createElement(
     "svg",
@@ -754,7 +862,12 @@ var SortIcon_default = SortIcon;
 
 // src/icons/SourceIcon.tsx
 import * as React24 from "react";
-var SourceIcon = ({ width = 20, height, ...props }) => (
+var SourceIcon = ({
+  width = 20,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React24.createElement(
     "svg",
@@ -778,7 +891,12 @@ var SourceIcon_default = SourceIcon;
 
 // src/icons/TimeIcon.tsx
 import * as React25 from "react";
-var TimeIcon = ({ width = 14, height, ...props }) => (
+var TimeIcon = ({
+  width = 14,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
   // height is destructed and unused, scaling is defined by width
   /* @__PURE__ */ React25.createElement(
     "svg",

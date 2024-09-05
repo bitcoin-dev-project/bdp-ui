@@ -3,8 +3,8 @@ import React__default from 'react';
 interface ButtonProps {
     label: string;
     onClick?: () => void;
-    variant?: 'primary' | 'secondary';
-    size?: 'small' | 'medium' | 'large';
+    variant?: "primary" | "secondary";
+    size?: "small" | "medium" | "large";
     disabled?: boolean;
 }
 declare const Button: React__default.FC<ButtonProps>;
@@ -64,13 +64,12 @@ interface ComponentStylePrimitiveProps<T> extends React.HTMLAttributes<T> {
 interface CarouselContainerProps extends ComponentStylePrimitiveProps<HTMLDivElement> {
     children: React__default.ReactNode;
 }
-interface CarouselItemProps extends CarouselContainerProps {
-}
+type CarouselItemProps = CarouselContainerProps;
 interface CarouselControlProps extends ComponentStylePrimitiveProps<HTMLDivElement> {
     children: React__default.ReactNode;
 }
-interface CarouselButtonProps extends Omit<ComponentStylePrimitiveProps<HTMLButtonElement>, 'children'> {
-    children?: React__default.ReactNode | ((goToPreviousSlide: () => void, possibleDirection: CarouselContextType['possibleDirection']) => React__default.ReactNode);
+interface CarouselButtonProps extends Omit<ComponentStylePrimitiveProps<HTMLButtonElement>, "children"> {
+    children?: React__default.ReactNode | ((goToPreviousSlide: () => void, possibleDirection: CarouselContextType["possibleDirection"]) => React__default.ReactNode);
     icon: React__default.ReactNode;
 }
 
@@ -89,7 +88,7 @@ interface CarouselProviderProps {
     containerRef: React__default.RefObject<HTMLDivElement>;
     config?: CarouselConfig;
 }
-declare const Carousel: React__default.FC<Omit<CarouselProviderProps, 'containerRef'>> & {
+declare const Carousel: React__default.FC<Omit<CarouselProviderProps, "containerRef">> & {
     Container: React__default.FC<CarouselContainerProps>;
     Item: React__default.FC<CarouselItemProps>;
     Controls: React__default.FC<CarouselControlProps>;
