@@ -66,6 +66,7 @@
     "@storybook/react": "^8.1.10",
     "@storybook/react-webpack5": "^8.1.10",
     "@storybook/test": "^8.1.10",
+    "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@types/eslint": "^9",
