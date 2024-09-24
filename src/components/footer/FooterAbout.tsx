@@ -32,7 +32,7 @@ const FooterAbout = (props: React.PropsWithChildren<FooterAboutProps>) => {
         href={entityLink ?? "https://bitcoindevs.xyz/"}
         target="_blank"
         rel="noreferrer"
-        className="underline font-medium text-custom-brightOrange-100"
+        className="underline font-medium text-bdp-brightOrange-100"
       >
         {entityName ?? "Bitcoin Dev Project"}
       </a>

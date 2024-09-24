@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "style": "./dist/styles.css",
   "license": "MIT",
   "files": [
     "dist",
@@ -12,15 +13,16 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./icons": {
+      "types": "./dist/icons.d.ts",
       "import": "./dist/icons.mjs",
-      "require": "./dist/icons.js",
-      "types": "./dist/icons.d.ts"
-    }
+      "require": "./dist/icons.js"
+    },
+    "./styles.css": "./dist/styles.css"
   },
   "homepage": "https://github.com/bitcoin-dev-project/bdp-ui",
   "repository": {
