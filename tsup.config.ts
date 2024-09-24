@@ -1,4 +1,5 @@
 import { defineConfig } from 'tsup';
+import fs from 'fs';
 
 export default defineConfig({
   entry: ['src/index.ts', 'src/icons.ts'],
@@ -9,5 +10,8 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   external: ['react', 'react-dom'],
-  injectStyle: true,
+  injectStyle: false,
+  async onSuccess() {
+    await fs.promises.copyFile('src/styles/tailwind.output.css', 'dist/styles.css');
+  },
 });

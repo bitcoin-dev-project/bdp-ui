@@ -3,19 +3,9 @@ module.exports = {
   darkMode: "class",
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    fontFamily: {
-      sans: ["ui-sans-serif", "system-ui"],
-      serif: ["ui-serif", "Georgia"],
-      mono: ["ui-monospace", "SFMono-Regular"],
-      geist: ['"Geist Sans"', "sans-serif"],
-      mona: ['"Mona Sans"', "sans-serif"],
-    },
     extend: {
-      boxShadow: {
-        "custom-sm": "2px 3px 10px 0px rgba(255, 128, 0, 0.18);",
-      },
       colors: {
-        custom: {
+        bdp: {
           background: "var(--background)",
           "hover-primary": "var(--hover-primary)",
           "hover-state": "var(--hover-state)",

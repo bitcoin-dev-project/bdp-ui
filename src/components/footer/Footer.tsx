@@ -13,7 +13,7 @@ export interface FooterRootProps
 }
 
 const Separator = () => (
-  <div className="h-5 border xl:h-6 xl:border-2 border-custom-stroke hidden xl:block" />
+  <div className="h-5 border xl:h-6 xl:border-2 border-bdp-stroke hidden xl:block" />
 );
 
 const Footer: React.FC<FooterRootProps> & {
