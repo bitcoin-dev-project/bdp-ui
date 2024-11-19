@@ -19,6 +19,10 @@ declare const ArrowRight: ({ width, height, pathProps, ...props }: SVGProps<SVGS
     pathProps?: SVGProps<SVGPathElement>;
 }) => React.JSX.Element;
 
+declare const ArrowUp: ({ width, height, pathProps, ...props }: SVGProps<SVGSVGElement> & {
+    pathProps?: SVGProps<SVGPathElement>;
+}) => React.JSX.Element;
+
 declare const AuthorIcon: ({ width, height, ...props }: SVGProps<SVGSVGElement>) => React.JSX.Element;
 
 declare const BitcoinIcon: ({ width, height, ...props }: SVGProps<SVGSVGElement>) => React.JSX.Element;
@@ -49,6 +53,10 @@ declare const FilterCloseIcon: ({ width, height, ...props }: SVGProps<SVGSVGElem
 
 declare const GithubIcon: ({ width, height, ...props }: SVGProps<SVGSVGElement>) => React.JSX.Element;
 
+declare const LightningIconSolid: ({ width, height, pathProps, ...props }: SVGProps<SVGSVGElement> & {
+    pathProps?: SVGProps<SVGPathElement>;
+}) => React.JSX.Element;
+
 declare const MicIcon: ({ width, height, pathProps, ...props }: SVGProps<SVGSVGElement> & {
     pathProps?: SVGProps<SVGPathElement>;
 }) => React.JSX.Element;
@@ -75,4 +83,4 @@ declare const TwitterXIcon: ({ width, height, pathProps, ...props }: SVGProps<SV
     pathProps?: SVGProps<SVGPathElement>;
 }) => React.JSX.Element;
 
-export { AppsIcon, ArrowLeft, ArrowLinkRight, ArrowLinkUpRight, ArrowRight, AuthorIcon, BitcoinIcon, BookmarkIcon, CalendarIcon, CloseIconOutlined, DateIcon, DayIcon, DiceIcon, DiscordIcon, FilterCloseIcon, FilterIcon, GithubIcon, MicIcon, NightIcon, NostrIcon, PlusIcon, SearchIcon, SortIcon, SourceIcon, TimeIcon, TwitterXIcon };
+export { AppsIcon, ArrowLeft, ArrowLinkRight, ArrowLinkUpRight, ArrowRight, ArrowUp, AuthorIcon, BitcoinIcon, BookmarkIcon, CalendarIcon, CloseIconOutlined, DateIcon, DayIcon, DiceIcon, DiscordIcon, FilterCloseIcon, FilterIcon, GithubIcon, LightningIconSolid, MicIcon, NightIcon, NostrIcon, PlusIcon, SearchIcon, SortIcon, SourceIcon, TimeIcon, TwitterXIcon };

@@ -33,7 +33,12 @@ __export(src_exports, {
   Button: () => Button,
   Carousel: () => Carousel,
   Footer: () => Footer,
-  Separator: () => Separator
+  MultiSelect: () => MultiSelect,
+  MultiSelectProvider: () => MultiSelectProvider,
+  Separator: () => Separator,
+  SingleSelect: () => SingleSelect,
+  useMultiSelect: () => useMultiSelect,
+  useSingleSelect: () => useSingleSelect
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -160,33 +165,65 @@ var React7 = __toESM(require("react"));
 
 // src/icons/ArrowRight.tsx
 var React8 = __toESM(require("react"));
+var ArrowRight = ({
+  width = 7,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  pathProps,
+  ...props
+}) => {
+  return /* @__PURE__ */ React8.createElement(
+    "svg",
+    {
+      width,
+      viewBox: "0 0 7 12",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      ...props
+    },
+    /* @__PURE__ */ React8.createElement(
+      "path",
+      {
+        fillRule: "evenodd",
+        clipRule: "evenodd",
+        d: "M6.64522 5.17724C6.8724 5.39365 7 5.687 7 5.99287C7 6.29873 6.8724 6.59208 6.64522 6.8085L2.07091 11.1621C1.84333 11.3785 1.53471 11.5001 1.21295 11.5C0.891176 11.4999 0.582617 11.3782 0.355145 11.1617C0.127674 10.9452 -7.58015e-05 10.6516 3.37439e-08 10.3454C7.5869e-05 10.0393 0.127971 9.74573 0.35555 9.52931L4.07257 5.99287L0.35555 2.45642C0.134458 2.23884 0.0120353 1.94734 0.0146483 1.64471C0.0172613 1.34208 0.144701 1.05254 0.36952 0.83844C0.594339 0.624342 0.898547 0.50282 1.21663 0.500049C1.5347 0.497277 1.8412 0.613478 2.0701 0.823624L6.64603 5.17647L6.64522 5.17724Z",
+        fill: "currentColor",
+        ...pathProps
+      }
+    )
+  );
+};
+var ArrowRight_default = ArrowRight;
 
-// src/icons/AuthorIcon.tsx
+// src/icons/ArrowUp.tsx
 var React9 = __toESM(require("react"));
 
-// src/icons/BitcoinIcon.tsx
+// src/icons/AuthorIcon.tsx
 var React10 = __toESM(require("react"));
 
-// src/icons/BookmarkIcon.tsx
+// src/icons/BitcoinIcon.tsx
 var React11 = __toESM(require("react"));
 
-// src/icons/CalendarIcon.tsx
+// src/icons/BookmarkIcon.tsx
 var React12 = __toESM(require("react"));
 
-// src/icons/CloseIconOutlined.tsx
+// src/icons/CalendarIcon.tsx
 var React13 = __toESM(require("react"));
 
-// src/icons/DateIcon.tsx
+// src/icons/CloseIconOutlined.tsx
 var React14 = __toESM(require("react"));
 
-// src/icons/DayIcon.tsx
+// src/icons/DateIcon.tsx
 var React15 = __toESM(require("react"));
 
-// src/icons/DiceIcon.tsx
+// src/icons/DayIcon.tsx
 var React16 = __toESM(require("react"));
 
-// src/icons/DiscordIcon.tsx
+// src/icons/DiceIcon.tsx
 var React17 = __toESM(require("react"));
+
+// src/icons/DiscordIcon.tsx
+var React18 = __toESM(require("react"));
 var DiscordIcon = ({
   width = 45,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -197,7 +234,7 @@ var DiscordIcon = ({
 }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  /* @__PURE__ */ React17.createElement(
+  /* @__PURE__ */ React18.createElement(
     "svg",
     {
       width,
@@ -206,7 +243,7 @@ var DiscordIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React17.createElement(
+    /* @__PURE__ */ React18.createElement(
       "path",
       {
         fillRule: "evenodd",
@@ -220,13 +257,13 @@ var DiscordIcon = ({
 var DiscordIcon_default = DiscordIcon;
 
 // src/icons/FilterIcon.tsx
-var React18 = __toESM(require("react"));
-
-// src/icons/FilterCloseIcon.tsx
 var React19 = __toESM(require("react"));
 
-// src/icons/GithubIcon.tsx
+// src/icons/FilterCloseIcon.tsx
 var React20 = __toESM(require("react"));
+
+// src/icons/GithubIcon.tsx
+var React21 = __toESM(require("react"));
 var GithubIcon = ({
   width = 52,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -234,7 +271,7 @@ var GithubIcon = ({
   ...props
 }) => (
   // height is destructed and unused, scaling is defined by width
-  /* @__PURE__ */ React20.createElement(
+  /* @__PURE__ */ React21.createElement(
     "svg",
     {
       width,
@@ -243,7 +280,7 @@ var GithubIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React20.createElement(
+    /* @__PURE__ */ React21.createElement(
       "path",
       {
         d: "M20 0C17.3736 0 14.7728 0.530159 12.3463 1.56021C9.91982 2.59025 7.71504 4.10002 5.85786 6.0033C2.10714 9.84714 0 15.0605 0 20.4965C0 29.556 5.74 37.2422 13.68 39.9683C14.68 40.1322 15 39.4968 15 38.9434V35.4795C9.46 36.7093 8.28 32.733 8.28 32.733C7.36 30.3554 6.06 29.72 6.06 29.72C4.24 28.4492 6.2 28.4902 6.2 28.4902C8.2 28.6337 9.26 30.6013 9.26 30.6013C11 33.7168 13.94 32.7945 15.08 32.3025C15.26 30.9703 15.78 30.0684 16.34 29.556C11.9 29.0436 7.24 27.2809 7.24 19.4717C7.24 17.1966 8 15.3724 9.3 13.9172C9.1 13.4047 8.4 11.2731 9.5 8.50606C9.5 8.50606 11.18 7.95266 15 10.5967C16.58 10.1458 18.3 9.92033 20 9.92033C21.7 9.92033 23.42 10.1458 25 10.5967C28.82 7.95266 30.5 8.50606 30.5 8.50606C31.6 11.2731 30.9 13.4047 30.7 13.9172C32 15.3724 32.76 17.1966 32.76 19.4717C32.76 27.3014 28.08 29.0231 23.62 29.5355C24.34 30.1709 25 31.4212 25 33.3274V38.9434C25 39.4968 25.32 40.1527 26.34 39.9683C34.28 37.2217 40 29.556 40 20.4965C40 17.8049 39.4827 15.1396 38.4776 12.6529C37.4725 10.1661 35.9993 7.90658 34.1421 6.0033C32.285 4.10002 30.0802 2.59025 27.6537 1.56021C25.2272 0.530159 22.6264 0 20 0Z",
@@ -254,14 +291,44 @@ var GithubIcon = ({
 );
 var GithubIcon_default = GithubIcon;
 
+// src/icons/LightningIconSolid.tsx
+var React22 = __toESM(require("react"));
+var LightningIconSolid = ({
+  width = 14,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  pathProps,
+  ...props
+}) => {
+  return /* @__PURE__ */ React22.createElement(
+    "svg",
+    {
+      width,
+      viewBox: "0 0 14 17",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      ...props
+    },
+    /* @__PURE__ */ React22.createElement(
+      "path",
+      {
+        d: "M13.0778 7.33566L4.44176 16.2157C4.20176 16.4617 3.80376 16.1767 3.95976 15.8707L7.03376 9.80466C7.05704 9.75888 7.06818 9.70788 7.06611 9.65656C7.06404 9.60524 7.04883 9.55531 7.02193 9.51156C6.99504 9.4678 6.95736 9.43168 6.9125 9.40666C6.86765 9.38164 6.81712 9.36855 6.76576 9.36866H0.299757C0.240699 9.36861 0.182969 9.35113 0.133802 9.31841C0.0846347 9.2857 0.046218 9.23919 0.0233668 9.18473C0.000515729 9.13028 -0.00575341 9.07028 0.00534526 9.01228C0.0164439 8.95427 0.0444169 8.90083 0.0857577 8.85866L8.09576 0.743657C8.32776 0.508657 8.71376 0.766657 8.58476 1.07166L6.28776 6.48666C6.26831 6.53256 6.26061 6.5826 6.26535 6.63223C6.2701 6.68186 6.28714 6.72952 6.31493 6.77092C6.34272 6.81231 6.38039 6.84612 6.42454 6.8693C6.46868 6.89247 6.5179 6.90428 6.56776 6.90366L12.8588 6.82566C12.9181 6.8247 12.9764 6.84139 13.0263 6.8736C13.0762 6.90581 13.1154 6.95209 13.139 7.00659C13.1625 7.0611 13.1694 7.12136 13.1587 7.17976C13.1479 7.23816 13.1201 7.29207 13.0788 7.33466L13.0778 7.33566Z",
+        fill: "currentColor",
+        ...pathProps
+      }
+    )
+  );
+};
+var LightningIconSolid_default = LightningIconSolid;
+
 // src/icons/MicIcon.tsx
-var React21 = __toESM(require("react"));
+var React23 = __toESM(require("react"));
 
 // src/icons/NightIcon.tsx
-var React22 = __toESM(require("react"));
+var React24 = __toESM(require("react"));
 
 // src/icons/NostrIcon.tsx
-var React23 = __toESM(require("react"));
+var React25 = __toESM(require("react"));
 var NostrIcon = ({
   width = 31,
   height,
@@ -270,7 +337,7 @@ var NostrIcon = ({
 }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  /* @__PURE__ */ React23.createElement(
+  /* @__PURE__ */ React25.createElement(
     "svg",
     {
       width,
@@ -279,7 +346,7 @@ var NostrIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React23.createElement(
+    /* @__PURE__ */ React25.createElement(
       "path",
       {
         d: "M31.5 13.5114V29.8827C31.5 30.4984 31.0041 30.998 30.3929 30.998H17.1081C16.4969 30.998 16.001 30.4984 16.001 29.8827V26.8339C16.0615 23.0966 16.454 19.5166 17.2779 17.8879C17.7719 16.9084 18.5861 16.3753 19.5214 16.0901C21.2884 15.5551 24.389 15.9209 25.705 15.858C25.705 15.858 29.6803 16.0173 29.6803 13.7494C29.6803 11.924 27.9035 12.0676 27.9035 12.0676C25.9451 12.1187 24.4534 11.985 23.4869 11.6014C21.8683 10.9602 21.8136 9.78388 21.8077 9.39048C21.7277 4.8467 15.0774 4.30184 9.21796 5.42893C2.81177 6.65635 9.28825 15.9072 9.28825 28.256V29.9044C9.27653 30.5102 8.79036 31 8.18508 31H1.60707C0.995937 31 0.5 30.5004 0.5 29.8847V1.56967C0.5 0.953998 0.995937 0.454378 1.60707 0.454378H7.79067C8.40181 0.454378 8.89775 0.953998 8.89775 1.56967C8.89775 2.48433 9.91891 2.99378 10.657 2.46072C12.8809 0.855648 15.7354 0 18.9297 0C26.0857 0 31.4961 4.20152 31.4961 13.5114H31.5ZM19.6209 10.1891C19.6209 8.87119 18.5607 7.80311 17.2525 7.80311C15.9444 7.80311 14.8841 8.87119 14.8841 10.1891C14.8841 11.507 15.9444 12.5751 17.2525 12.5751C18.5607 12.5751 19.6209 11.507 19.6209 10.1891Z",
@@ -291,22 +358,57 @@ var NostrIcon = ({
 var NostrIcon_default = NostrIcon;
 
 // src/icons/PlusIcon.tsx
-var React24 = __toESM(require("react"));
-
-// src/icons/SearchIcon.tsx
-var React25 = __toESM(require("react"));
-
-// src/icons/SortIcon.tsx
 var React26 = __toESM(require("react"));
 
-// src/icons/SourceIcon.tsx
+// src/icons/SearchIcon.tsx
 var React27 = __toESM(require("react"));
+var SearchIcon = ({
+  width = 20,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
+  // height is destructed and unused, scaling is defined by width
+  /* @__PURE__ */ React27.createElement(
+    "svg",
+    {
+      width,
+      viewBox: "0 0 20 20",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg",
+      ...props
+    },
+    /* @__PURE__ */ React27.createElement(
+      "path",
+      {
+        d: "M9.00001 17C13.4183 17 17 13.4183 17 9.00001C17 4.58173 13.4183 1 9.00001 1C4.58173 1 1 4.58173 1 9.00001C1 13.4183 4.58173 17 9.00001 17Z",
+        stroke: "currentColor",
+        strokeWidth: 2
+      }
+    ),
+    /* @__PURE__ */ React27.createElement(
+      "path",
+      {
+        d: "M18.9992 19.0002L14.6992 14.7002",
+        stroke: "currentColor",
+        strokeWidth: 2
+      }
+    )
+  )
+);
+var SearchIcon_default = SearchIcon;
 
-// src/icons/TimeIcon.tsx
+// src/icons/SortIcon.tsx
 var React28 = __toESM(require("react"));
 
-// src/icons/TwitterXIcon.tsx
+// src/icons/SourceIcon.tsx
 var React29 = __toESM(require("react"));
+
+// src/icons/TimeIcon.tsx
+var React30 = __toESM(require("react"));
+
+// src/icons/TwitterXIcon.tsx
+var React31 = __toESM(require("react"));
 var TwitterXIcon = ({
   width = 37,
   height,
@@ -315,7 +417,7 @@ var TwitterXIcon = ({
 }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  /* @__PURE__ */ React29.createElement(
+  /* @__PURE__ */ React31.createElement(
     "svg",
     {
       width,
@@ -324,7 +426,7 @@ var TwitterXIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React29.createElement(
+    /* @__PURE__ */ React31.createElement(
       "path",
       {
         d: "M28.5659 3.46875H33.6657L22.5241 16.2029L35.6313 33.5312H25.3685L17.3302 23.0217L8.13271 33.5312H3.0298L14.9469 19.9106L2.37305 3.46875H12.8965L20.1623 13.0749L28.5659 3.46875ZM26.776 30.4788H29.6019L11.361 6.36092H8.3285L26.776 30.4788Z",
@@ -490,6 +592,10 @@ function throttledDebounce(func, limit) {
     }
   };
 }
+var numberFormat = new Intl.NumberFormat("en-US", {
+  compactDisplay: "short",
+  notation: "compact"
+});
 
 // src/components/carousel/CarouselComponents.tsx
 var import_react7 = __toESM(require("react"));
@@ -718,11 +824,552 @@ Carousel.Item = CarouselItem;
 Carousel.Controls = CarouselControls;
 Carousel.PreviousButton = CarouselPreviousButton;
 Carousel.NextButton = CarouselNextButton;
+
+// src/components/select/MultiSelect.tsx
+var import_react13 = __toESM(require("react"));
+
+// src/components/select/useSelectNavigate.tsx
+var import_react9 = require("react");
+
+// src/utils/navigation.ts
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+}
+
+// src/components/select/useSelectNavigate.tsx
+var useCheckboxNavigate = ({
+  checkboxContainer,
+  searchEl,
+  options
+}) => {
+  const checkboxNavIndex = (0, import_react9.useRef)(null);
+  const [currentNavigateCheckbox, setcurrentNavigateCheckbox] = (0, import_react9.useState)("");
+  const refocus = (0, import_react9.useRef)(false);
+  const toggleRefocus = () => {
+    refocus.current = !refocus.current;
+  };
+  (0, import_react9.useEffect)(() => {
+    if (!checkboxContainer || !searchEl) return;
+    const multiCheckboxWrapper = checkboxContainer.current;
+    const multiCheckboxList = multiCheckboxWrapper && Array.from(multiCheckboxWrapper == null ? void 0 : multiCheckboxWrapper.children);
+    const searchInput = searchEl.current;
+    if (refocus.current) {
+      if (searchInput) {
+        searchInput.focus();
+      }
+      toggleRefocus();
+    }
+    let currentCheckboxNavIndex = checkboxNavIndex.current;
+    const handleOptionNavigation = (e) => {
+      var _a, _b, _c;
+      if (currentNavigateCheckbox && currentCheckboxNavIndex === null) {
+        const isPrevCheckInListIdx = multiCheckboxList.findIndex(
+          (label) => {
+            var _a2;
+            return ((_a2 = label == null ? void 0 : label.dataset) == null ? void 0 : _a2.checkbox) === currentNavigateCheckbox;
+          }
+        );
+        if (isPrevCheckInListIdx !== -1) {
+          currentCheckboxNavIndex = isPrevCheckInListIdx;
+        }
+      }
+      switch (e.key) {
+        // downArrow
+        case "ArrowDown":
+          e.preventDefault();
+          if (currentCheckboxNavIndex === null) {
+            currentCheckboxNavIndex = 0;
+          } else {
+            if (currentCheckboxNavIndex >= multiCheckboxList.length - 1) {
+              currentCheckboxNavIndex = 0;
+            } else {
+              currentCheckboxNavIndex += 1;
+            }
+          }
+          break;
+        // upArrow
+        case "ArrowUp":
+          e.preventDefault();
+          if (currentCheckboxNavIndex === null) {
+            currentCheckboxNavIndex = multiCheckboxList.length - 1;
+          } else {
+            if (currentCheckboxNavIndex === 0) {
+              currentCheckboxNavIndex = multiCheckboxList.length - 1;
+            } else {
+              currentCheckboxNavIndex -= 1;
+            }
+          }
+          break;
+        // Enter
+        case "Enter": {
+          e.preventDefault();
+          if (currentCheckboxNavIndex) {
+            const input = (_a = multiCheckboxList[currentCheckboxNavIndex]) == null ? void 0 : _a.querySelector(
+              '[role="button"]'
+            );
+            if (input) {
+              input.click();
+            }
+          }
+          break;
+        }
+        default:
+          break;
+      }
+      const currentLabel = typeof currentCheckboxNavIndex === "number" ? multiCheckboxList[currentCheckboxNavIndex] : null;
+      if (currentLabel) {
+        const inViewPort = isInViewport(currentLabel);
+        if (!inViewPort) {
+          currentLabel.scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "nearest"
+          });
+        }
+      }
+      setcurrentNavigateCheckbox((_c = (_b = currentLabel == null ? void 0 : currentLabel.dataset) == null ? void 0 : _b.checkbox) != null ? _c : "");
+    };
+    if (searchInput) {
+      searchInput.addEventListener("keydown", handleOptionNavigation);
+      searchInput.addEventListener(
+        "focusout",
+        () => setcurrentNavigateCheckbox("")
+      );
+    }
+    return () => {
+      if (searchInput) {
+        searchInput.removeEventListener("keydown", handleOptionNavigation);
+        searchInput.removeEventListener(
+          "focusout",
+          () => setcurrentNavigateCheckbox("")
+        );
+      }
+    };
+  }, [options, checkboxContainer, searchEl, currentNavigateCheckbox]);
+  return { currentNavigateCheckbox, toggleRefocus };
+};
+var useSelectNavigate_default = useCheckboxNavigate;
+
+// src/components/select/SelectInput.tsx
+var import_react10 = __toESM(require("react"));
+
+// src/utils/cn.ts
+var import_tailwind_merge7 = require("tailwind-merge");
+var import_clsx7 = require("clsx");
+function cn(...inputs) {
+  return (0, import_tailwind_merge7.twMerge)((0, import_clsx7.clsx)(inputs));
+}
+
+// src/components/select/SelectInput.tsx
+var defaultStyles = {
+  container: "relative text-bdp-primary-text",
+  input: "bg-transparent text-base 2xl:text-base font-medium w-full pl-12 pr-10 py-4 rounded-xl border-[1px] border-bdp-stroke focus:outline-none focus:outline-bdp-secondary-text focus:outline-offset-0 leading-none",
+  searchIcon: "stroke-bdp-secondary-text w-[16px] h-[16px]",
+  searchIconWrapper: "absolute top-1/2 -translate-y-1/2 left-[18px]",
+  arrowIcon: "",
+  arrowIconWrapper: "absolute p-2 cursor-pointer top-1/2 -translate-y-1/2 right-[18px] rotate-90 data-[is-open=false]:-rotate-90 transition-transform"
+};
+var SelectInput = ({
+  defaultPlaceholder,
+  className,
+  styles = {}
+}) => {
+  const selectContextData = useMultiSelect();
+  const searchRef = (0, import_react10.useRef)(null);
+  const {
+    currentNavigateCheckbox,
+    toggleListOpen,
+    isListOpen,
+    onSearch,
+    searchInputRef,
+    setSearchInputRef
+  } = selectContextData;
+  (0, import_react10.useEffect)(() => {
+    if (searchRef.current && !searchInputRef) {
+      setSearchInputRef(searchRef);
+    }
+  }, []);
+  return /* @__PURE__ */ import_react10.default.createElement("div", { className: cn(defaultStyles.container, styles.container, className) }, /* @__PURE__ */ import_react10.default.createElement(
+    "input",
+    {
+      className: cn(defaultStyles.input, styles.input),
+      type: "text",
+      placeholder: currentNavigateCheckbox || defaultPlaceholder,
+      onChange: (e) => {
+        onSearch(e.target.value);
+      },
+      ref: searchRef
+    }
+  ), /* @__PURE__ */ import_react10.default.createElement(
+    "span",
+    {
+      className: cn(
+        defaultStyles.searchIconWrapper,
+        styles.searchIconWrapper
+      )
+    },
+    /* @__PURE__ */ import_react10.default.createElement(
+      SearchIcon_default,
+      {
+        className: cn(defaultStyles.searchIcon, styles.searchIcon)
+      }
+    )
+  ), /* @__PURE__ */ import_react10.default.createElement(
+    "span",
+    {
+      "data-is-open": isListOpen,
+      onClick: toggleListOpen,
+      className: cn(defaultStyles.arrowIconWrapper, styles.arrowIconWrapper)
+    },
+    /* @__PURE__ */ import_react10.default.createElement(ArrowRight_default, { className: cn(defaultStyles.arrowIcon, styles.arrowIcon) })
+  ));
+};
+var SelectInput_default = SelectInput;
+
+// src/components/select/SelectList.tsx
+var import_react12 = __toESM(require("react"));
+
+// src/utils/filter.ts
+function matchCharactersWithRegex(word, searchTerm) {
+  const escapedSearchTerm = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regexPattern = escapedSearchTerm.split("").map((char) => `(?=.*${char})`).join("");
+  const regex = new RegExp(regexPattern, "i");
+  return regex.test(word);
+}
+
+// src/components/select/BaseSelectList.tsx
+var import_react11 = __toESM(require("react"));
+var defaultStyles2 = {
+  container: "scroller font-medium mt-2 max-h-[300px] py-[6px] overflow-auto border border-bdp-stroke rounded-xl data-[is-open='false']:hidden",
+  optionWrapper: `flex gap-1 py-1 2xl:py-2 px-[14px] group/checkOption hover:bg-bdp-hover-state data-[current-navigated=true]:bg-bdp-hover-state
+                  group-hover/container:data-[current-navigated=true]:bg-transparent
+                  group-hover/container:data-[current-navigated=true]:hover:bg-bdp-hover-state
+                  data-[selected=true]:text-bdp-accent text-bdp-primary-text`,
+  optionInner: "selectable-option flex grow items-center gap-3",
+  icon: "shrink-0 group-data-[selected=false]/checkOption:invisible w-[12px] 2xl:w-[16px] h-auto",
+  label: "grow capitalize text-sm 2xl:text-base group-data-[selected=true]/checkOption:font-bold",
+  count: "shrink-0 group-data-[selected=true]/checkOption:font-medium",
+  noResults: "w-full text-sm 2xl:text-base text-center px-2"
+};
+var BaseSelectList = ({
+  options,
+  label,
+  onOptionSelect,
+  className,
+  styles = {},
+  noResultsMessage = "No matching options",
+  selectContextData
+}) => {
+  const { isListOpen, currentNavigateCheckbox, containerRef } = selectContextData;
+  return /* @__PURE__ */ import_react11.default.createElement(
+    "div",
+    {
+      "data-is-open": isListOpen,
+      ref: containerRef,
+      className: cn(
+        defaultStyles2.container,
+        // "data-[is-open='false']:hidden",
+        styles.container,
+        className
+      )
+    },
+    options.length < 1 && /* @__PURE__ */ import_react11.default.createElement("p", { className: cn(defaultStyles2.noResults, styles.noResults) }, noResultsMessage),
+    options == null ? void 0 : options.map((option) => {
+      const checked = option.selected;
+      const value = option.value;
+      return /* @__PURE__ */ import_react11.default.createElement(
+        "label",
+        {
+          key: option.label,
+          htmlFor: `checkbox-${label}-${option.label}`,
+          "data-checkbox": option.label
+        },
+        /* @__PURE__ */ import_react11.default.createElement(
+          "div",
+          {
+            "data-selected": checked,
+            "data-current-navigated": option.label === currentNavigateCheckbox,
+            className: cn(defaultStyles2.optionWrapper, styles.optionWrapper),
+            onClick: (event) => onOptionSelect({ action: "select", value, event }),
+            role: "button",
+            "aria-label": `${checked ? "uncheck" : "check"} filter ${label}:${option.label}`
+          },
+          /* @__PURE__ */ import_react11.default.createElement(
+            "div",
+            {
+              className: cn(defaultStyles2.optionInner, styles.optionInner),
+              id: `example_facet_${label}${option.label}`
+            },
+            /* @__PURE__ */ import_react11.default.createElement(
+              LightningIconSolid_default,
+              {
+                className: cn(defaultStyles2.icon, styles.icon)
+              }
+            ),
+            /* @__PURE__ */ import_react11.default.createElement("span", { className: cn(defaultStyles2.label, styles.label) }, option.label)
+          ),
+          option.count ? /* @__PURE__ */ import_react11.default.createElement("span", { className: cn(defaultStyles2.count, styles.count) }, numberFormat.format(option.count)) : null
+        )
+      );
+    })
+  );
+};
+var BaseSelectList_default = BaseSelectList;
+
+// src/components/select/SelectList.tsx
+var SelectList = (props) => {
+  const selectContextData = useMultiSelect();
+  const containerRef = (0, import_react12.useRef)(null);
+  const {
+    containerRef: containerRefProvider,
+    setContainerRef,
+    isListOpen,
+    currentNavigateCheckbox,
+    inputValue: searchTerm
+  } = selectContextData;
+  (0, import_react12.useEffect)(() => {
+    if (!containerRefProvider && containerRef.current) {
+      setContainerRef(containerRef);
+    }
+  }, []);
+  const filteredOptions = (0, import_react12.useMemo)(() => {
+    if (searchTerm.trim()) {
+      return props.options.filter((option) => {
+        return matchCharactersWithRegex(option.label, searchTerm.trim());
+      });
+    }
+    return props.options;
+  }, [props.options, searchTerm]);
+  return /* @__PURE__ */ import_react12.default.createElement(
+    BaseSelectList_default,
+    {
+      ...props,
+      options: filteredOptions,
+      selectContextData: { isListOpen, containerRef, currentNavigateCheckbox }
+    }
+  );
+};
+var SelectList_default = SelectList;
+
+// src/components/select/MultiSelect.tsx
+var SelectContext = import_react13.default.createContext(null);
+var useMultiSelect = () => {
+  const context = import_react13.default.useContext(SelectContext);
+  if (!context) {
+    throw new Error("useMultiSelect must be used within a MultiSelectProvider");
+  }
+  return context;
+};
+var MultiSelectProvider = ({
+  children,
+  isCollapsible = true
+}) => {
+  const [containerRef, setContainerRef] = (0, import_react13.useState)(null);
+  const [searchInputRef, setSearchInputRef] = (0, import_react13.useState)(null);
+  const [isListOpen, setIsListOpen] = (0, import_react13.useState)(true);
+  const toggleListOpen = () => {
+    if (!isCollapsible) return;
+    setIsListOpen((prev) => !prev);
+  };
+  const [inputValue, setInputValue] = (0, import_react13.useState)("");
+  const { currentNavigateCheckbox, toggleRefocus } = useSelectNavigate_default({
+    checkboxContainer: containerRef,
+    searchEl: searchInputRef,
+    options: []
+  });
+  const onSearch = (value) => {
+    const newValue = value.trim();
+    setInputValue(newValue);
+  };
+  return /* @__PURE__ */ import_react13.default.createElement(
+    SelectContext.Provider,
+    {
+      value: {
+        containerRef,
+        setContainerRef,
+        searchInputRef,
+        setSearchInputRef,
+        isListOpen,
+        toggleListOpen,
+        currentNavigateCheckbox,
+        toggleRefocus,
+        onSearch,
+        inputValue
+      }
+    },
+    children
+  );
+};
+var MultiSelect = ({ children, isCollapsible = true }) => {
+  return /* @__PURE__ */ import_react13.default.createElement(MultiSelectProvider, { isCollapsible }, children);
+};
+MultiSelect.Input = SelectInput_default;
+MultiSelect.List = SelectList_default;
+
+// src/components/select/Dropdown.tsx
+var import_react16 = __toESM(require("react"));
+
+// src/components/select/SingleSelectList.tsx
+var import_react14 = __toESM(require("react"));
+var SingleSelectList = (props) => {
+  const {
+    isListOpen,
+    containerRef: containerRefProvider,
+    setContainerRef,
+    handleSelectOption,
+    setSelectedOption
+  } = useSingleSelect();
+  const containerRef = import_react14.default.useRef(null);
+  (0, import_react14.useEffect)(() => {
+    if (!containerRefProvider && containerRef.current) {
+      setContainerRef(containerRef);
+    }
+  }, []);
+  const handleOption = ({
+    value
+  }) => {
+    const option = props.options.find((option2) => option2.value === value);
+    if (option) {
+      handleSelectOption(option);
+      props.onOptionSelect(option);
+    }
+  };
+  const managedOptions = props.options.map((option) => ({
+    ...option,
+    selected: option.value === props.value
+  }));
+  (0, import_react14.useEffect)(() => {
+    setSelectedOption(
+      props.options.find((option) => option.value === props.value) || null
+    );
+  }, [props.value, props.options]);
+  return /* @__PURE__ */ import_react14.default.createElement(
+    BaseSelectList_default,
+    {
+      ...props,
+      options: managedOptions,
+      onOptionSelect: handleOption,
+      selectContextData: {
+        isListOpen,
+        containerRef,
+        currentNavigateCheckbox: ""
+      },
+      styles: {
+        container: "absolute w-full bg-bdp-background",
+        ...props.styles
+      }
+    }
+  );
+};
+var SingleSelectList_default = SingleSelectList;
+
+// src/components/select/SingleSelectInput.tsx
+var import_react15 = __toESM(require("react"));
+var defaultStyles3 = {
+  container: "relative text-bdp-primary-text",
+  trigger: "block bg-transparent text-base text-bdp-accent 2xl:text-base font-medium w-full pl-6 py-4 rounded-xl border-[1px] border-bdp-stroke focus:outline-none focus:outline-bdp-secondary-text focus:outline-offset-0 leading-none",
+  arrowIcon: "",
+  arrowIconWrapper: "absolute p-2 cursor-pointer top-1/2 -translate-y-1/2 right-[18px] rotate-90 data-[is-open=false]:-rotate-90 transition-transform"
+};
+var SingleSelectTrigger = ({
+  defaultPlaceholder,
+  className,
+  styles = {}
+}) => {
+  const { selectedOption, toggleListOpen, isListOpen, triggerRef } = useSingleSelect();
+  return /* @__PURE__ */ import_react15.default.createElement(
+    "div",
+    {
+      ref: triggerRef,
+      className: cn(defaultStyles3.container, styles.container, className),
+      onClick: toggleListOpen
+    },
+    /* @__PURE__ */ import_react15.default.createElement("label", { className: cn(defaultStyles3.trigger, styles.trigger) }, (selectedOption == null ? void 0 : selectedOption.label) || defaultPlaceholder),
+    /* @__PURE__ */ import_react15.default.createElement(
+      "span",
+      {
+        "data-is-open": isListOpen,
+        className: cn(defaultStyles3.arrowIconWrapper, styles.arrowIconWrapper)
+      },
+      /* @__PURE__ */ import_react15.default.createElement(ArrowRight_default, { className: cn(defaultStyles3.arrowIcon, styles.arrowIcon) })
+    )
+  );
+};
+var SingleSelectInput_default = SingleSelectTrigger;
+
+// src/components/select/Dropdown.tsx
+var SingleSelectContext = (0, import_react16.createContext)(null);
+var useSingleSelect = () => {
+  const context = import_react16.default.useContext(SingleSelectContext);
+  if (!context) {
+    throw new Error(
+      "useSingleSelect must be used within a SingleSelectProvider"
+    );
+  }
+  return context;
+};
+var SingleSelectProvider = ({
+  children,
+  triggerRef,
+  disabled = false
+}) => {
+  const [isListOpen, setIsListOpen] = (0, import_react16.useState)(false);
+  const [containerRef, setContainerRef] = (0, import_react16.useState)(null);
+  const [selectedOption, setSelectedOption] = (0, import_react16.useState)(null);
+  const toggleListOpen = () => {
+    if (!disabled) {
+      setIsListOpen((prev) => !prev);
+    }
+  };
+  const handleSelectOption = (_option) => {
+    setIsListOpen(false);
+  };
+  const handleClickOutside = (0, import_react16.useCallback)(
+    (event) => {
+      if ((containerRef == null ? void 0 : containerRef.current) && (triggerRef == null ? void 0 : triggerRef.current) && !containerRef.current.contains(event.target) && !triggerRef.current.contains(event.target)) {
+        setIsListOpen(false);
+      }
+    },
+    [containerRef, isListOpen]
+  );
+  import_react16.default.useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [containerRef]);
+  const contextValue = {
+    isListOpen,
+    toggleListOpen,
+    selectedOption,
+    setSelectedOption,
+    handleSelectOption,
+    containerRef,
+    setContainerRef,
+    triggerRef
+  };
+  return /* @__PURE__ */ import_react16.default.createElement(SingleSelectContext.Provider, { value: contextValue }, /* @__PURE__ */ import_react16.default.createElement("div", { className: "relative" }, children));
+};
+var SingleSelect = ({
+  children,
+  disabled = false
+}) => {
+  const triggerRef = import_react16.default.useRef(null);
+  return /* @__PURE__ */ import_react16.default.createElement(SingleSelectProvider, { disabled, triggerRef }, children);
+};
+SingleSelect.List = SingleSelectList_default;
+SingleSelect.Trigger = SingleSelectInput_default;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Button,
   Carousel,
   Footer,
-  Separator
+  MultiSelect,
+  MultiSelectProvider,
+  Separator,
+  SingleSelect,
+  useMultiSelect,
+  useSingleSelect
 });
 //# sourceMappingURL=index.js.map
