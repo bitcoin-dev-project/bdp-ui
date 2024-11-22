@@ -45,6 +45,47 @@ html {
   scroll-behavior: smooth !important;
 }
 
+/* custom scrollbar */
+.scroller {
+  --scrollbar-color-thumb: #aaa;
+  --scrollbar-color-track: rgba(60, 60, 60, 0.05);
+  --scrollbar-width: auto;
+  --scrollbar-width-legacy: 10px;
+}
+
+.dark .scroller {
+  --scrollbar-color-thumb: #777;
+  --scrollbar-color-track: rgba(60, 60, 60, 0.1);
+}
+
+/* Modern browsers with `scrollbar-*` support */
+@supports (scrollbar-width: auto) {
+  .scroller {
+    scrollbar-color: var(--scrollbar-color-thumb) var(--scrollbar-color-track);
+    scrollbar-width: var(--scrollbar-width);
+  }
+}
+
+/* Legacy browsers with `::-webkit-scrollbar-*` support */
+@supports selector(::-webkit-scrollbar) {
+  .scroller::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .scroller::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scroller:hover::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color-thumb);
+  }
+  .scroller:hover::-webkit-scrollbar-track {
+    background: var(--scrollbar-color-track);
+  }
+  .scroller::-webkit-scrollbar {
+    max-width: var(--scrollbar-width-legacy);
+    max-height: var(--scrollbar-width-legacy);
+  }
+}
+
 .dark {
   --background: #1c1c1e;
   --hover-state: #2c2c2e;

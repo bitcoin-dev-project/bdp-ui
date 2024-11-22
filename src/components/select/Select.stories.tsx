@@ -41,6 +41,42 @@ const testOptions = [
     value: "option-4",
     selected: false,
   },
+  {
+    label: "Option 5",
+    count: 50,
+    value: "option-5",
+    selected: false,
+  },
+  {
+    label: "Option 6",
+    count: 60,
+    value: "option-6",
+    selected: false,
+  },
+  {
+    label: "Option 7",
+    count: 70,
+    value: "option-7",
+    selected: false,
+  },
+  {
+    label: "Option 8",
+    count: 80,
+    value: "option-8",
+    selected: false,
+  },
+  {
+    label: "Option 9",
+    count: 90,
+    value: "option-9",
+    selected: false,
+  },
+  {
+    label: "Option 10",
+    count: 100,
+    value: "option-10",
+    selected: false,
+  },
 ];
 
 export const UnModifiedSelect = (args: { colorMode: "light" | "dark" }) => {
@@ -86,6 +122,9 @@ export const UnModifiedSelect = (args: { colorMode: "light" | "dark" }) => {
             label="Select options"
             onOptionSelect={({ action, value, event }) => {
               markAsSelected(action, value, event);
+            }}
+            styles={{
+              noResults: "text-red-500",
             }}
           />
         </MultiSelect>
