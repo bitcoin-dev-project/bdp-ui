@@ -7,34 +7,50 @@
 To install the BDP-UI library, you can use the following command:
 
 ```bash
-yarn add github:bitcoin-dev-project/bdp-ui 
+yarn add @bitcoin-dev-project/bdp-ui
 ```
 or 
 ```bash
-npm install github:bitcoin-dev-project/bdp-ui
+npm i @bitcoin-dev-project/bdp-ui
 ```
 
 ## Usage
 
-Once installed, you can import the components you need from the library:
+Once installed, you can import the components or icons you need from the library:
 
-note: you can set up an entry point in your project config to `/dist` to fix the autocomplete and linting issues. Or in typescript you can use the `paths` property in tsconfig.json to fix the import paths.
+## CSS workaround
+Kindly import the css file to your global entry point.
+Usually, that is `app/layout.tsx`
 
-```json
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "bdp-ui/*": ["./node_modules/bdp-ui/dist/*"]
-    }
-  }
-}
+_note: import the css before your global css so if there are any conflicts your css takes precedence_
+```tsx
+// app/layout.tsx
+...
+import "@bitcoin-dev-project/bdp-ui/styles.css"
+import "./globals.css";
+...
+```
+
+If you use tailwind for styling, also point your tailwind config to the library
+i.e
+```tsx
+// tailwind.config.ts
+...
+const config: Config = {
+  darkMode: "class",
+  content: [
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "node_modules/@bitcoin-dev-project/bdp-ui/dist/**/*.{js,mjs,jsx,ts,tsx}", // add it here
+  ],
+...
 ```
 
 ### Components
+Here is how you can import and use components
 
 ```jsx
-import { Button } from 'bdp-ui';
+import { Button } from '@bitcoin-dev-project/bdp-ui';
 
 function App() {
   return (
@@ -44,8 +60,10 @@ function App() {
 ```
 
 ### Icons
+Here is how you can import icons
+
 ```jsx
-import { GithubIcon } from 'bdp-ui/icons';
+import { GithubIcon } from '@bitcoin-dev-project/bdp-ui/icons';
 
 function App() {
   return (
