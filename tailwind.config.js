@@ -4,6 +4,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      boxShadowColor: {
+        "dark-light": "rgba(255, 255, 255, 0.05)"
+      },
       colors: {
         bdp: {
           background: "var(--background)",
