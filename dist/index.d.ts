@@ -96,7 +96,7 @@ declare const Carousel: React__default.FC<Omit<CarouselProviderProps, "container
     NextButton: React__default.FC<CarouselButtonProps>;
 };
 
-type StyleConfig$3 = {
+type StyleConfig$4 = {
     container?: string;
     input?: string;
     searchIcon?: string;
@@ -107,7 +107,7 @@ type StyleConfig$3 = {
 type SelectInputProps = {
     defaultPlaceholder: string;
     className?: string;
-    styles?: StyleConfig$3;
+    styles?: StyleConfig$4;
 };
 
 type BaseSelectContextTypeForList = {
@@ -121,7 +121,7 @@ type SelectOption = {
     value: string;
     selected: boolean;
 };
-type StyleConfig$2 = {
+type StyleConfig$3 = {
     container?: string;
     optionWrapper?: string;
     selectedOption?: string;
@@ -141,7 +141,7 @@ type SelectListProps = {
     label: string;
     onOptionSelect: OnOptionSelect;
     className?: string;
-    styles?: StyleConfig$2;
+    styles?: StyleConfig$3;
     noResultsMessage?: string;
     selectContextData: BaseSelectContextTypeForList;
 };
@@ -182,7 +182,7 @@ type SingleSelectListProps = Omit<SelectListProps, "selectContextData" | "option
     onOptionSelect: OptionSelectHandler;
 };
 
-type StyleConfig$1 = {
+type StyleConfig$2 = {
     container?: string;
     trigger?: string;
     arrowIcon?: string;
@@ -191,10 +191,10 @@ type StyleConfig$1 = {
 type SingleSelectTriggerProps = {
     defaultPlaceholder: string;
     className?: string;
-    styles?: StyleConfig$1;
+    styles?: StyleConfig$2;
 };
 
-type StyleConfig = {
+type StyleConfig$1 = {
     container?: string;
     input?: string;
     list?: string;
@@ -215,7 +215,7 @@ type SingleSelectProviderProps = {
     children: React__default.ReactNode;
     triggerRef: React__default.RefObject<HTMLDivElement>;
     className?: string;
-    styles?: StyleConfig;
+    styles?: StyleConfig$1;
     disabled?: boolean;
 };
 declare const SingleSelect: React__default.FC<Omit<SingleSelectProviderProps, "triggerRef">> & {
@@ -223,4 +223,25 @@ declare const SingleSelect: React__default.FC<Omit<SingleSelectProviderProps, "t
     Trigger: React__default.FC<SingleSelectTriggerProps>;
 };
 
-export { Button, type ButtonProps, Carousel, type CarouselContextType, Footer, type FooterRootProps, MultiSelect, MultiSelectProvider, type SelectContextType$1 as SelectContextType, Separator, SingleSelect, useMultiSelect, useSingleSelect };
+type StyleConfig = {
+    container?: string;
+    bannerInfoContainer?: string;
+    bodyText?: string;
+    headingText?: string;
+    link?: string;
+    icon?: string;
+    boss?: string;
+};
+type Links = {
+    linkText: string;
+    linkTo: string;
+};
+type Props = Links & {
+    bodyText?: string;
+    headingText: string;
+    styles?: StyleConfig;
+    hasBoss?: boolean;
+};
+declare function Banner({ bodyText, headingText, styles, hasBoss, ...rest }: Props): React__default.JSX.Element;
+
+export { Banner, Button, type ButtonProps, Carousel, type CarouselContextType, Footer, type FooterRootProps, MultiSelect, MultiSelectProvider, type SelectContextType$1 as SelectContextType, Separator, SingleSelect, useMultiSelect, useSingleSelect };

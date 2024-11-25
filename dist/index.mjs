@@ -1316,7 +1316,90 @@ var SingleSelect = ({
 };
 SingleSelect.List = SingleSelectList_default;
 SingleSelect.Trigger = SingleSelectInput_default;
+
+// src/components/banner/Banner.tsx
+import React44 from "react";
+import { useState as useState4 } from "react";
+var defaultStyles4 = {
+  container: "dark:text-bdp-white dark:shadow-dark-light gap-2 flex items-center justify-between w-full px-2 sm:px-4 shadow-md transition-all duration-200 ease-in-out text-center",
+  bannerInfoContainer: `flex flex-col flex-[1_1_auto]`,
+  headingText: "font-semibold text-sm md:text-lg",
+  bodyText: "text-sm md:text-base",
+  link: "text-bdp-accent underline font-semibold text-xs md:text-sm",
+  icon: "text-bdp-lightGrey hover:text-red-500 transition-all duration-200 ease-in-out",
+  boss: "text-bdp-accent text-base md:text-lg"
+};
+function Banner({
+  bodyText,
+  headingText,
+  styles = {},
+  hasBoss,
+  ...rest
+}) {
+  const [showBanner, setShowBanner] = useState4(true);
+  return /* @__PURE__ */ React44.createElement(
+    "div",
+    {
+      "data-show-banner": showBanner,
+      "data-has-heading": Boolean(headingText),
+      className: cn(
+        defaultStyles4.container,
+        "data-[has-heading='true']:h-16",
+        "data-[has-heading='false']:h-12",
+        "data-[show-banner='false']:h-0 overflow-hidden",
+        styles.container
+      )
+    },
+    /* @__PURE__ */ React44.createElement(
+      "div",
+      {
+        className: cn(
+          defaultStyles4.bannerInfoContainer,
+          styles.bannerInfoContainer
+        )
+      },
+      !!headingText && /* @__PURE__ */ React44.createElement("h3", { className: cn(defaultStyles4.headingText, styles.headingText) }, headingText, hasBoss && /* @__PURE__ */ React44.createElement("span", { className: cn(defaultStyles4.boss, styles.boss) }, " \u20BFOSS")),
+      !!bodyText && /* @__PURE__ */ React44.createElement("p", { className: cn(defaultStyles4.bodyText, styles.bodyText) }, bodyText),
+      !!rest.linkText && /* @__PURE__ */ React44.createElement("a", { className: cn(defaultStyles4.link, styles.link), href: rest.linkTo }, rest.linkText)
+    ),
+    /* @__PURE__ */ React44.createElement(
+      "button",
+      {
+        onClick: () => setShowBanner(false),
+        "data-show-banner": showBanner,
+        className: cn(
+          defaultStyles4.icon,
+          "opacity-1",
+          "data-[show-banner='false']:opacity-0",
+          styles.icon
+        )
+      },
+      /* @__PURE__ */ React44.createElement(
+        "svg",
+        {
+          className: "h-[20px] w-[20px] md:h-6 md:w-6",
+          xmlns: "http://www.w3.org/2000/svg",
+          fill: "none",
+          viewBox: "0 0 24 24",
+          stroke: "currentColor",
+          width: "24",
+          height: "24"
+        },
+        /* @__PURE__ */ React44.createElement(
+          "path",
+          {
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            strokeWidth: "3",
+            d: "M6 18L18 6M6 6l12 12"
+          }
+        )
+      )
+    )
+  );
+}
 export {
+  Banner,
   Button,
   Carousel,
   Footer,
