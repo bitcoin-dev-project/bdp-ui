@@ -75,7 +75,13 @@ export function Banner({
           </p>
         )}
         {!!rest.linkText && (
-          <a className={cn(defaultStyles.link, styles.link)} href={rest.linkTo}>
+          <a
+            onClick={() => setShowBanner(false)}
+            className={cn(defaultStyles.link, styles.link)}
+            href={rest.linkTo}
+            target="_blank"
+            rel="noreferrer"
+          >
             {rest.linkText}
           </a>
         )}
