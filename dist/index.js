@@ -1405,7 +1405,17 @@ function Banner({
       },
       !!headingText && /* @__PURE__ */ import_react17.default.createElement("h3", { className: cn(defaultStyles4.headingText, styles.headingText) }, headingText, hasBoss && /* @__PURE__ */ import_react17.default.createElement("span", { className: cn(defaultStyles4.boss, styles.boss) }, " \u20BFOSS")),
       !!bodyText && /* @__PURE__ */ import_react17.default.createElement("p", { className: cn(defaultStyles4.bodyText, styles.bodyText) }, bodyText),
-      !!rest.linkText && /* @__PURE__ */ import_react17.default.createElement("a", { className: cn(defaultStyles4.link, styles.link), href: rest.linkTo }, rest.linkText)
+      !!rest.linkText && /* @__PURE__ */ import_react17.default.createElement(
+        "a",
+        {
+          onClick: () => setShowBanner(false),
+          className: cn(defaultStyles4.link, styles.link),
+          href: rest.linkTo,
+          target: "_blank",
+          rel: "noreferrer"
+        },
+        rest.linkText
+      )
     ),
     /* @__PURE__ */ import_react17.default.createElement(
       "button",

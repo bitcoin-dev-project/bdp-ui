@@ -1360,7 +1360,17 @@ function Banner({
       },
       !!headingText && /* @__PURE__ */ React44.createElement("h3", { className: cn(defaultStyles4.headingText, styles.headingText) }, headingText, hasBoss && /* @__PURE__ */ React44.createElement("span", { className: cn(defaultStyles4.boss, styles.boss) }, " \u20BFOSS")),
       !!bodyText && /* @__PURE__ */ React44.createElement("p", { className: cn(defaultStyles4.bodyText, styles.bodyText) }, bodyText),
-      !!rest.linkText && /* @__PURE__ */ React44.createElement("a", { className: cn(defaultStyles4.link, styles.link), href: rest.linkTo }, rest.linkText)
+      !!rest.linkText && /* @__PURE__ */ React44.createElement(
+        "a",
+        {
+          onClick: () => setShowBanner(false),
+          className: cn(defaultStyles4.link, styles.link),
+          href: rest.linkTo,
+          target: "_blank",
+          rel: "noreferrer"
+        },
+        rest.linkText
+      )
     ),
     /* @__PURE__ */ React44.createElement(
       "button",
