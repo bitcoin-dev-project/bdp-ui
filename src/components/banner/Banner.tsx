@@ -25,7 +25,7 @@ type Props = Links & {
 
 const defaultStyles = {
   container:
-    "dark:text-bdp-white dark:shadow-dark-light gap-2 flex items-center justify-between w-full px-2 sm:px-4 shadow-md transition-all duration-200 ease-in-out text-center",
+    "dark:text-bdp-white dark:shadow-dark-light gap-2 flex items-center justify-between w-full px-2 sm:px-4 shadow-md transition-all duration-200 ease-in-out text-center h-auto opacity-100 max-h-[200px]",
   bannerInfoContainer: `flex flex-col flex-[1_1_auto]`,
   headingText: "font-semibold text-sm md:text-lg",
   bodyText: "text-sm md:text-base",
@@ -49,15 +49,14 @@ export function Banner({
       data-has-heading={Boolean(headingText)}
       className={cn(
         defaultStyles.container,
-        "data-[has-heading='true']:h-16",
-        "data-[has-heading='false']:h-12",
-        "data-[show-banner='false']:h-0 overflow-hidden",
+        "data-[show-banner='false']:max-h-[0] overflow-hidden",
         styles.container,
       )}
     >
       <div
         className={cn(
           defaultStyles.bannerInfoContainer,
+          "py-2", // padding here because it cannot be set on the parent due to transitioning height
           styles.bannerInfoContainer,
         )}
       >
