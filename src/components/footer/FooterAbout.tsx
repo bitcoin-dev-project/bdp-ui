@@ -11,7 +11,8 @@ export interface FooterAboutProps
 }
 
 const FooterAbout = (props: React.PropsWithChildren<FooterAboutProps>) => {
-  const { className, children, entityLink, entityName, entityText, ...rest } = props;
+  const { className, children, entityLink, entityName, entityText, ...rest } =
+    props;
   if (children) {
     <div {...rest} className={className}>
       {props.children}

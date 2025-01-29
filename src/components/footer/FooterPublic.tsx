@@ -28,7 +28,7 @@ const FooterPublic = ({
       )}
       {...rest}
     >
-     {entityText}
+      {entityText}
     </a>
   );
 };
