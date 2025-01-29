@@ -79,7 +79,7 @@ var import_react2 = __toESM(require("react"));
 var import_tailwind_merge = require("tailwind-merge");
 var import_clsx = __toESM(require("clsx"));
 var FooterAbout = (props) => {
-  const { className, children, entityLink, entityName, ...rest } = props;
+  const { className, children, entityLink, entityName, entityText, ...rest } = props;
   if (children) {
     /* @__PURE__ */ import_react2.default.createElement("div", { ...rest, className }, props.children);
   }
@@ -94,9 +94,7 @@ var FooterAbout = (props) => {
         )
       )
     },
-    "Built with ",
-    /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F9E1}"),
-    " by the",
+    entityText != null ? entityText : "Built with \u{1F9E1} by the ",
     " ",
     /* @__PURE__ */ import_react2.default.createElement(
       "a",
@@ -118,7 +116,14 @@ var import_react3 = __toESM(require("react"));
 var import_tailwind_merge2 = require("tailwind-merge");
 var import_clsx2 = __toESM(require("clsx"));
 var FooterFeedback = (props) => {
-  const { className, children, feedbackLink, ...rest } = props;
+  const {
+    className,
+    children,
+    feedbackLink,
+    entityText = "We'd love to hear your feedback on this project?",
+    entityCtaText = "Give feedback",
+    ...rest
+  } = props;
   if (children) {
     /* @__PURE__ */ import_react3.default.createElement("div", { ...rest, className: props.className }, props.children);
   }
@@ -133,7 +138,7 @@ var FooterFeedback = (props) => {
         )
       )
     },
-    /* @__PURE__ */ import_react3.default.createElement("span", null, "We'd love to hear your feedback on this project?"),
+    /* @__PURE__ */ import_react3.default.createElement("span", null, entityText),
     /* @__PURE__ */ import_react3.default.createElement(
       "a",
       {
@@ -142,7 +147,7 @@ var FooterFeedback = (props) => {
         rel: "noreferrer",
         className: "leading-none w-fit min-w-fit mx-auto text-base font-medium md:font-semibold py-4 px-5 rounded-[10px] text-[#FAFAFA] dark:text-[#292929] bg-[#292929] dark:bg-[#FAFAFA]"
       },
-      "Give Feedback"
+      entityCtaText
     )
   );
 };
@@ -501,6 +506,7 @@ var import_clsx4 = __toESM(require("clsx"));
 var FooterPublic = ({
   className,
   dashboardLink,
+  entityText = "View our public visitor count",
   ...rest
 }) => {
   return /* @__PURE__ */ import_react5.default.createElement(
@@ -517,7 +523,7 @@ var FooterPublic = ({
       ),
       ...rest
     },
-    "View our public visitor count"
+    entityText
   );
 };
 var FooterPublic_default = FooterPublic;
@@ -1034,7 +1040,7 @@ var import_react12 = __toESM(require("react"));
 // src/utils/filter.ts
 function matchCharactersWithRegex(word, searchTerm) {
   const escapedSearchTerm = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const regexPattern = escapedSearchTerm.split("").map((char) => `(?=.*${char})`).join("");
+  const regexPattern = escapedSearchTerm.split("").map((char, index) => index === 0 ? char : `[^${char}]{0,2}${char}`).join("");
   const regex = new RegExp(regexPattern, "i");
   return regex.test(word);
 }

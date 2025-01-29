@@ -34,7 +34,7 @@ import React2 from "react";
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 var FooterAbout = (props) => {
-  const { className, children, entityLink, entityName, ...rest } = props;
+  const { className, children, entityLink, entityName, entityText, ...rest } = props;
   if (children) {
     /* @__PURE__ */ React2.createElement("div", { ...rest, className }, props.children);
   }
@@ -49,9 +49,7 @@ var FooterAbout = (props) => {
         )
       )
     },
-    "Built with ",
-    /* @__PURE__ */ React2.createElement("span", null, "\u{1F9E1}"),
-    " by the",
+    entityText != null ? entityText : "Built with \u{1F9E1} by the ",
     " ",
     /* @__PURE__ */ React2.createElement(
       "a",
@@ -73,7 +71,14 @@ import React3 from "react";
 import { twMerge as twMerge2 } from "tailwind-merge";
 import clsx2 from "clsx";
 var FooterFeedback = (props) => {
-  const { className, children, feedbackLink, ...rest } = props;
+  const {
+    className,
+    children,
+    feedbackLink,
+    entityText = "We'd love to hear your feedback on this project?",
+    entityCtaText = "Give feedback",
+    ...rest
+  } = props;
   if (children) {
     /* @__PURE__ */ React3.createElement("div", { ...rest, className: props.className }, props.children);
   }
@@ -88,7 +93,7 @@ var FooterFeedback = (props) => {
         )
       )
     },
-    /* @__PURE__ */ React3.createElement("span", null, "We'd love to hear your feedback on this project?"),
+    /* @__PURE__ */ React3.createElement("span", null, entityText),
     /* @__PURE__ */ React3.createElement(
       "a",
       {
@@ -97,7 +102,7 @@ var FooterFeedback = (props) => {
         rel: "noreferrer",
         className: "leading-none w-fit min-w-fit mx-auto text-base font-medium md:font-semibold py-4 px-5 rounded-[10px] text-[#FAFAFA] dark:text-[#292929] bg-[#292929] dark:bg-[#FAFAFA]"
       },
-      "Give Feedback"
+      entityCtaText
     )
   );
 };
@@ -456,6 +461,7 @@ import clsx4 from "clsx";
 var FooterPublic = ({
   className,
   dashboardLink,
+  entityText = "View our public visitor count",
   ...rest
 }) => {
   return /* @__PURE__ */ React33.createElement(
@@ -472,7 +478,7 @@ var FooterPublic = ({
       ),
       ...rest
     },
-    "View our public visitor count"
+    entityText
   );
 };
 var FooterPublic_default = FooterPublic;
@@ -989,7 +995,7 @@ import React39, { useEffect as useEffect3, useMemo as useMemo2, useRef as useRef
 // src/utils/filter.ts
 function matchCharactersWithRegex(word, searchTerm) {
   const escapedSearchTerm = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const regexPattern = escapedSearchTerm.split("").map((char) => `(?=.*${char})`).join("");
+  const regexPattern = escapedSearchTerm.split("").map((char, index) => index === 0 ? char : `[^${char}]{0,2}${char}`).join("");
   const regex = new RegExp(regexPattern, "i");
   return regex.test(word);
 }

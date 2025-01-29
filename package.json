@@ -1,6 +1,6 @@
 {
   "name": "@bitcoin-dev-project/bdp-ui",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "An open-source UI component library for building high-quality, accessible design systems and web apps for the Bitcoin Dev Project.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

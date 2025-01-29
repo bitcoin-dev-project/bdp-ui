@@ -16,10 +16,13 @@ interface FooterPartsPrimitiveProps<T> extends React.HTMLAttributes<T> {
 interface FooterAboutProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
     entityLink?: string;
     entityName?: string;
+    entityText?: string;
 }
 
 interface FooterFeedbackProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
     feedbackLink: string;
+    entityText?: string;
+    entityCtaText?: string;
 }
 
 type SupportedSocialMedia = "twitter" | "github" | "discord" | "nostr";
@@ -40,6 +43,7 @@ interface FooterSocialsProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
 
 interface FooterPublicProps extends FooterPartsPrimitiveProps<HTMLAnchorElement> {
     dashboardLink: string;
+    entityText?: string;
 }
 
 interface FooterRootProps extends FooterPartsPrimitiveProps<HTMLDivElement> {
