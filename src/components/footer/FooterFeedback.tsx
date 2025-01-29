@@ -6,12 +6,14 @@ import clsx from "clsx";
 export interface FooterFeedbackProps
   extends FooterPartsPrimitiveProps<HTMLDivElement> {
   feedbackLink: string;
+  enitityText?: string;
+  entityCtaText?: string;
 }
 
 const FooterFeedback = (
   props: React.PropsWithChildren<FooterFeedbackProps>,
 ) => {
-  const { className, children, feedbackLink, ...rest } = props;
+  const { className, children, feedbackLink, enitityText="We'd love to hear your feedback on this project?", entityCtaText="Give feedback", ...rest } = props;
   if (children) {
     <div {...rest} className={props.className}>
       {props.children}
@@ -27,14 +29,14 @@ const FooterFeedback = (
         ),
       )}
     >
-      <span>We&apos;d love to hear your feedback on this project?</span>
+      <span>{enitityText}</span>
       <a
         href={feedbackLink}
         target="_blank"
         rel="noreferrer"
         className="leading-none w-fit min-w-fit mx-auto text-base font-medium md:font-semibold py-4 px-5 rounded-[10px] text-[#FAFAFA] dark:text-[#292929] bg-[#292929] dark:bg-[#FAFAFA]"
       >
-        Give Feedback
+        {entityCtaText}
       </a>
     </div>
   );

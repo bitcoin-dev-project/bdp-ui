@@ -6,11 +6,13 @@ import clsx from "clsx";
 export interface FooterPublicProps
   extends FooterPartsPrimitiveProps<HTMLAnchorElement> {
   dashboardLink: string;
+  entityText?: string;
 }
 
 const FooterPublic = ({
   className,
   dashboardLink,
+  entityText = "View our public visitor count",
   ...rest
 }: FooterPublicProps) => {
   return (
@@ -26,7 +28,7 @@ const FooterPublic = ({
       )}
       {...rest}
     >
-      View our public visitor count
+     {entityText}
     </a>
   );
 };
