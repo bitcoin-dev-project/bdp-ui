@@ -7,10 +7,11 @@ export interface FooterAboutProps
   extends FooterPartsPrimitiveProps<HTMLDivElement> {
   entityLink?: string;
   entityName?: string;
+  entityText?: string;
 }
 
 const FooterAbout = (props: React.PropsWithChildren<FooterAboutProps>) => {
-  const { className, children, entityLink, entityName, ...rest } = props;
+  const { className, children, entityLink, entityName, entityText, ...rest } = props;
   if (children) {
     <div {...rest} className={className}>
       {props.children}
@@ -27,7 +28,7 @@ const FooterAbout = (props: React.PropsWithChildren<FooterAboutProps>) => {
         ),
       )}
     >
-      Built with <span>🧡</span> by the{" "}
+      {entityText ?? "Built with 🧡 by the "}{" "}
       <a
         href={entityLink ?? "https://bitcoindevs.xyz/"}
         target="_blank"
