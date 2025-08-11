@@ -1,22 +1,32 @@
 import React from "react";
 import { FooterPartsPrimitiveProps } from "./types";
-import { TwitterXIcon, GithubIcon, DiscordIcon, NostrIcon } from "../../icons";
+import {
+  TwitterXIcon,
+  GithubIcon,
+  DiscordIcon,
+  NostrIcon,
+  LinkedinIcon,
+} from "../../icons";
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
+type SupportedSocialMedia =
+  | "twitter"
+  | "github"
+  | "discord"
+  | "nostr"
+  | "linkedin";
 
-type SupportedSocialMedia = "twitter" | "github" | "discord" | "nostr";
-
-type ManadatorySocialMediaProps<T> = {
+type MandatorySocialMediaProps<T> = {
   entityLink: string;
   iconProps?: React.SVGProps<SVGSVGElement>;
 } & T;
 
 type SocialMediaProps =
-  | ManadatorySocialMediaProps<{
+  | MandatorySocialMediaProps<{
       entity: SupportedSocialMedia;
       icon?: React.ReactElement;
     }>
-  | ManadatorySocialMediaProps<{
+  | MandatorySocialMediaProps<{
       entity: Exclude<string, SupportedSocialMedia>;
       icon: React.ReactElement;
     }>;
@@ -54,6 +64,14 @@ const Platform = ({ platform }: { platform: SocialMediaProps }) => {
     if (entity === "nostr") {
       return (
         <NostrIcon className={twMerge(clsx("w-full", className))} {...rest} />
+      );
+    }
+    if (entity === "linkedin") {
+      return (
+        <LinkedinIcon
+          className={twMerge(clsx("w-full", className))}
+          {...rest}
+        />
       );
     }
   };

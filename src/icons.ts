@@ -17,6 +17,7 @@ export { default as FilterIcon } from "./icons/FilterIcon";
 export { default as FilterCloseIcon } from "./icons/FilterCloseIcon";
 export { default as GithubIcon } from "./icons/GithubIcon";
 export { default as LightningIconSolid } from "./icons/LightningIconSolid";
+export { default as LinkedinIcon } from "./icons/LinkedinIcon";
 export { default as MicIcon } from "./icons/MicIcon";
 export { default as NightIcon } from "./icons/NightIcon";
 export { default as NostrIcon } from "./icons/NostrIcon";
