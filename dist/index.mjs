@@ -27,7 +27,7 @@ var Button = ({
 };
 
 // src/components/footer/Footer.tsx
-import React34 from "react";
+import React35 from "react";
 
 // src/components/footer/FooterAbout.tsx
 import React2 from "react";
@@ -110,7 +110,7 @@ FooterFeedback.displayName = "FooterFeedback";
 var FooterFeedback_default = FooterFeedback;
 
 // src/components/footer/FooterSocials.tsx
-import React32 from "react";
+import React33 from "react";
 
 // src/icons/AppsIcon.tsx
 import * as React4 from "react";
@@ -282,14 +282,43 @@ var LightningIconSolid = ({
 };
 var LightningIconSolid_default = LightningIconSolid;
 
-// src/icons/MicIcon.tsx
+// src/icons/LinkedinIcon.tsx
 import * as React23 from "react";
+var LinkedinIcon = ({
+  width = 52,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
+  // height is destructed and unused, scaling is defined by width
+  /* @__PURE__ */ React23.createElement(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      width,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth: 2,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      ...props
+    },
+    /* @__PURE__ */ React23.createElement("path", { d: "M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" }),
+    /* @__PURE__ */ React23.createElement("rect", { x: 2, y: 9, width: 4, height: 12 }),
+    /* @__PURE__ */ React23.createElement("circle", { cx: 4, cy: 4, r: 2 })
+  )
+);
+var LinkedinIcon_default = LinkedinIcon;
 
-// src/icons/NightIcon.tsx
+// src/icons/MicIcon.tsx
 import * as React24 from "react";
 
-// src/icons/NostrIcon.tsx
+// src/icons/NightIcon.tsx
 import * as React25 from "react";
+
+// src/icons/NostrIcon.tsx
+import * as React26 from "react";
 var NostrIcon = ({
   width = 31,
   height,
@@ -298,7 +327,7 @@ var NostrIcon = ({
 }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  /* @__PURE__ */ React25.createElement(
+  /* @__PURE__ */ React26.createElement(
     "svg",
     {
       width,
@@ -307,7 +336,7 @@ var NostrIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React25.createElement(
+    /* @__PURE__ */ React26.createElement(
       "path",
       {
         d: "M31.5 13.5114V29.8827C31.5 30.4984 31.0041 30.998 30.3929 30.998H17.1081C16.4969 30.998 16.001 30.4984 16.001 29.8827V26.8339C16.0615 23.0966 16.454 19.5166 17.2779 17.8879C17.7719 16.9084 18.5861 16.3753 19.5214 16.0901C21.2884 15.5551 24.389 15.9209 25.705 15.858C25.705 15.858 29.6803 16.0173 29.6803 13.7494C29.6803 11.924 27.9035 12.0676 27.9035 12.0676C25.9451 12.1187 24.4534 11.985 23.4869 11.6014C21.8683 10.9602 21.8136 9.78388 21.8077 9.39048C21.7277 4.8467 15.0774 4.30184 9.21796 5.42893C2.81177 6.65635 9.28825 15.9072 9.28825 28.256V29.9044C9.27653 30.5102 8.79036 31 8.18508 31H1.60707C0.995937 31 0.5 30.5004 0.5 29.8847V1.56967C0.5 0.953998 0.995937 0.454378 1.60707 0.454378H7.79067C8.40181 0.454378 8.89775 0.953998 8.89775 1.56967C8.89775 2.48433 9.91891 2.99378 10.657 2.46072C12.8809 0.855648 15.7354 0 18.9297 0C26.0857 0 31.4961 4.20152 31.4961 13.5114H31.5ZM19.6209 10.1891C19.6209 8.87119 18.5607 7.80311 17.2525 7.80311C15.9444 7.80311 14.8841 8.87119 14.8841 10.1891C14.8841 11.507 15.9444 12.5751 17.2525 12.5751C18.5607 12.5751 19.6209 11.507 19.6209 10.1891Z",
@@ -319,10 +348,10 @@ var NostrIcon = ({
 var NostrIcon_default = NostrIcon;
 
 // src/icons/PlusIcon.tsx
-import * as React26 from "react";
+import * as React27 from "react";
 
 // src/icons/SearchIcon.tsx
-import * as React27 from "react";
+import * as React28 from "react";
 var SearchIcon = ({
   width = 20,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -330,7 +359,7 @@ var SearchIcon = ({
   ...props
 }) => (
   // height is destructed and unused, scaling is defined by width
-  /* @__PURE__ */ React27.createElement(
+  /* @__PURE__ */ React28.createElement(
     "svg",
     {
       width,
@@ -339,7 +368,7 @@ var SearchIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React27.createElement(
+    /* @__PURE__ */ React28.createElement(
       "path",
       {
         d: "M9.00001 17C13.4183 17 17 13.4183 17 9.00001C17 4.58173 13.4183 1 9.00001 1C4.58173 1 1 4.58173 1 9.00001C1 13.4183 4.58173 17 9.00001 17Z",
@@ -347,7 +376,7 @@ var SearchIcon = ({
         strokeWidth: 2
       }
     ),
-    /* @__PURE__ */ React27.createElement(
+    /* @__PURE__ */ React28.createElement(
       "path",
       {
         d: "M18.9992 19.0002L14.6992 14.7002",
@@ -360,16 +389,16 @@ var SearchIcon = ({
 var SearchIcon_default = SearchIcon;
 
 // src/icons/SortIcon.tsx
-import * as React28 from "react";
-
-// src/icons/SourceIcon.tsx
 import * as React29 from "react";
 
-// src/icons/TimeIcon.tsx
+// src/icons/SourceIcon.tsx
 import * as React30 from "react";
 
-// src/icons/TwitterXIcon.tsx
+// src/icons/TimeIcon.tsx
 import * as React31 from "react";
+
+// src/icons/TwitterXIcon.tsx
+import * as React32 from "react";
 var TwitterXIcon = ({
   width = 37,
   height,
@@ -378,7 +407,7 @@ var TwitterXIcon = ({
 }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  /* @__PURE__ */ React31.createElement(
+  /* @__PURE__ */ React32.createElement(
     "svg",
     {
       width,
@@ -387,7 +416,7 @@ var TwitterXIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React31.createElement(
+    /* @__PURE__ */ React32.createElement(
       "path",
       {
         d: "M28.5659 3.46875H33.6657L22.5241 16.2029L35.6313 33.5312H25.3685L17.3302 23.0217L8.13271 33.5312H3.0298L14.9469 19.9106L2.37305 3.46875H12.8965L20.1623 13.0749L28.5659 3.46875ZM26.776 30.4788H29.6019L11.361 6.36092H8.3285L26.776 30.4788Z",
@@ -406,10 +435,10 @@ var Platform = ({ platform }) => {
   const { className, ...rest } = iconProps != null ? iconProps : {};
   const getIcon = (entity2) => {
     if (icon) {
-      return React32.cloneElement(icon, { ...rest, className });
+      return React33.cloneElement(icon, { ...rest, className });
     }
     if (entity2 === "twitter") {
-      return /* @__PURE__ */ React32.createElement(
+      return /* @__PURE__ */ React33.createElement(
         TwitterXIcon_default,
         {
           className: twMerge3(clsx3("w-full", className)),
@@ -418,17 +447,26 @@ var Platform = ({ platform }) => {
       );
     }
     if (entity2 === "github") {
-      return /* @__PURE__ */ React32.createElement(GithubIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
+      return /* @__PURE__ */ React33.createElement(GithubIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
     }
     if (entity2 === "discord") {
-      return /* @__PURE__ */ React32.createElement(DiscordIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
+      return /* @__PURE__ */ React33.createElement(DiscordIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
     }
     if (entity2 === "nostr") {
-      return /* @__PURE__ */ React32.createElement(NostrIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
+      return /* @__PURE__ */ React33.createElement(NostrIcon_default, { className: twMerge3(clsx3("w-full", className)), ...rest });
+    }
+    if (entity2 === "linkedin") {
+      return /* @__PURE__ */ React33.createElement(
+        LinkedinIcon_default,
+        {
+          className: twMerge3(clsx3("w-full", className)),
+          ...rest
+        }
+      );
     }
   };
   const iconElement = getIcon(entity);
-  return /* @__PURE__ */ React32.createElement("div", { className: "flex items-center justify-center w-full max-w-[40px] min-w-[24px]" }, /* @__PURE__ */ React32.createElement(
+  return /* @__PURE__ */ React33.createElement("div", { className: "flex items-center justify-center w-full max-w-[40px] min-w-[24px]" }, /* @__PURE__ */ React33.createElement(
     "a",
     {
       href: entityLink,
@@ -442,7 +480,7 @@ var Platform = ({ platform }) => {
 var FooterSocials = (props) => {
   const { className: classname, children, platforms, ...rest } = props;
   if (children) {
-    /* @__PURE__ */ React32.createElement("div", { ...rest, className: classname }, props.children);
+    /* @__PURE__ */ React33.createElement("div", { ...rest, className: classname }, props.children);
   }
   const resolvedClassName = twMerge3(
     clsx3(
@@ -450,12 +488,12 @@ var FooterSocials = (props) => {
       classname
     )
   );
-  return /* @__PURE__ */ React32.createElement("div", { ...rest, className: resolvedClassName }, platforms.map((platform) => /* @__PURE__ */ React32.createElement(Platform, { key: platform.entity, platform })));
+  return /* @__PURE__ */ React33.createElement("div", { ...rest, className: resolvedClassName }, platforms.map((platform) => /* @__PURE__ */ React33.createElement(Platform, { key: platform.entity, platform })));
 };
 FooterSocials.displayName = "FooterSocials";
 
 // src/components/footer/FooterPublic.tsx
-import React33 from "react";
+import React34 from "react";
 import { twMerge as twMerge4 } from "tailwind-merge";
 import clsx4 from "clsx";
 var FooterPublic = ({
@@ -464,7 +502,7 @@ var FooterPublic = ({
   entityText = "View our public visitor count",
   ...rest
 }) => {
-  return /* @__PURE__ */ React33.createElement(
+  return /* @__PURE__ */ React34.createElement(
     "a",
     {
       href: dashboardLink,
@@ -486,18 +524,18 @@ var FooterPublic_default = FooterPublic;
 // src/components/footer/Footer.tsx
 import { twMerge as twMerge5 } from "tailwind-merge";
 import clsx5 from "clsx";
-var Separator = () => /* @__PURE__ */ React34.createElement("div", { className: "h-5 border xl:h-6 xl:border-2 border-bdp-stroke hidden xl:block" });
+var Separator = () => /* @__PURE__ */ React35.createElement("div", { className: "h-5 border xl:h-6 xl:border-2 border-bdp-stroke hidden xl:block" });
 var Footer = ({ children, className, separator, ...rest }) => {
-  const viewSeparator = separator != null ? separator : /* @__PURE__ */ React34.createElement(Separator, null);
+  const viewSeparator = separator != null ? separator : /* @__PURE__ */ React35.createElement(Separator, null);
   const renderChildrenWithSeparator = () => {
     const newChildren = [];
-    React34.Children.forEach(children, (child, index) => {
-      if (React34.isValidElement(child)) {
+    React35.Children.forEach(children, (child, index) => {
+      if (React35.isValidElement(child)) {
         const displayName = child.type.displayName;
         newChildren.push(child);
-        if (index < React34.Children.count(children) - 1) {
+        if (index < React35.Children.count(children) - 1) {
           newChildren.push(
-            React34.cloneElement(viewSeparator, {
+            React35.cloneElement(viewSeparator, {
               key: `${displayName}-separator-${index}`
             })
           );
@@ -506,7 +544,7 @@ var Footer = ({ children, className, separator, ...rest }) => {
     });
     return newChildren;
   };
-  return /* @__PURE__ */ React34.createElement(
+  return /* @__PURE__ */ React35.createElement(
     "div",
     {
       className: twMerge5(
@@ -526,7 +564,7 @@ Footer.Socials = FooterSocials;
 Footer.Public = FooterPublic_default;
 
 // src/components/carousel/Carousel.tsx
-import React36, { useCallback, useLayoutEffect, useMemo, useRef } from "react";
+import React37, { useCallback, useLayoutEffect, useMemo, useRef } from "react";
 
 // src/components/carousel/defaults.ts
 var DefaultCarouselConfig = {
@@ -560,7 +598,7 @@ var numberFormat = new Intl.NumberFormat("en-US", {
 });
 
 // src/components/carousel/CarouselComponents.tsx
-import React35 from "react";
+import React36 from "react";
 import { twMerge as twMerge6 } from "tailwind-merge";
 import clsx6 from "clsx";
 var CarouselContainer = ({
@@ -569,7 +607,7 @@ var CarouselContainer = ({
 }) => {
   const { className, ...rest } = props;
   const { containerRef } = useCarousel();
-  return /* @__PURE__ */ React35.createElement(
+  return /* @__PURE__ */ React36.createElement(
     "div",
     {
       ref: containerRef,
@@ -589,7 +627,7 @@ var CarouselItem = ({
   ...props
 }) => {
   const { className, ...rest } = props;
-  return /* @__PURE__ */ React35.createElement(
+  return /* @__PURE__ */ React36.createElement(
     "div",
     {
       className: twMerge6(clsx6("flex-shrink-0 relative", className)),
@@ -603,7 +641,7 @@ var CarouselControls = ({
   className,
   ...props
 }) => {
-  return /* @__PURE__ */ React35.createElement(
+  return /* @__PURE__ */ React36.createElement(
     "div",
     {
       className: twMerge6(
@@ -621,16 +659,16 @@ var CarouselPreviousButton = ({
   const { goToPreviousSlide, possibleDirection } = useCarousel();
   if (children) {
     if (typeof children === "function") {
-      return /* @__PURE__ */ React35.createElement(React35.Fragment, null, children(goToPreviousSlide, possibleDirection));
+      return /* @__PURE__ */ React36.createElement(React36.Fragment, null, children(goToPreviousSlide, possibleDirection));
     } else {
       console.warn(
         "CarouselPreviousButton: Children prop is not a function (opts out of navigation logic). Rendering children as-is."
       );
-      return /* @__PURE__ */ React35.createElement(React35.Fragment, null, children);
+      return /* @__PURE__ */ React36.createElement(React36.Fragment, null, children);
     }
   }
   const { icon, className, ...rest } = props;
-  return /* @__PURE__ */ React35.createElement(
+  return /* @__PURE__ */ React36.createElement(
     "button",
     {
       onClick: goToPreviousSlide,
@@ -653,16 +691,16 @@ var CarouselNextButton = ({
   const { goToNextSlide, possibleDirection } = useCarousel();
   if (children) {
     if (typeof children === "function") {
-      return /* @__PURE__ */ React35.createElement(React35.Fragment, null, children(goToNextSlide, possibleDirection));
+      return /* @__PURE__ */ React36.createElement(React36.Fragment, null, children(goToNextSlide, possibleDirection));
     } else {
       console.warn(
         "CarouselNextButton: Children prop is not a function (opts out of navigation logic). Rendering children as-is."
       );
-      return /* @__PURE__ */ React35.createElement(React35.Fragment, null, children);
+      return /* @__PURE__ */ React36.createElement(React36.Fragment, null, children);
     }
   }
   const { icon, className, ...rest } = props;
-  return /* @__PURE__ */ React35.createElement(
+  return /* @__PURE__ */ React36.createElement(
     "button",
     {
       onClick: goToNextSlide,
@@ -680,9 +718,9 @@ var CarouselNextButton = ({
 };
 
 // src/components/carousel/Carousel.tsx
-var CarouselContext = React36.createContext(null);
+var CarouselContext = React37.createContext(null);
 var useCarousel = () => {
-  const context = React36.useContext(CarouselContext);
+  const context = React37.useContext(CarouselContext);
   if (!context) {
     throw new Error("useCarousel must be used within a CarouselProvider");
   }
@@ -694,9 +732,9 @@ var CarouselProvider = ({
   config = DefaultCarouselConfig
 }) => {
   const { stepWidthInPercent } = config;
-  const [carouselWidth, setCarouselWidth] = React36.useState(0);
-  const [scrollableWidth, setScrollableWidth] = React36.useState(0);
-  const [scrollLeft, setScrollLeft] = React36.useState(0);
+  const [carouselWidth, setCarouselWidth] = React37.useState(0);
+  const [scrollableWidth, setScrollableWidth] = React37.useState(0);
+  const [scrollLeft, setScrollLeft] = React37.useState(0);
   const possibleDirection = useMemo(() => {
     if (!containerRef.current)
       return { canGoToNextSlide: false, canGoToPreviousSlide: false };
@@ -763,7 +801,7 @@ var CarouselProvider = ({
       behavior: "smooth"
     });
   }, [containerRef, stepWidthInPercent]);
-  return /* @__PURE__ */ React36.createElement(
+  return /* @__PURE__ */ React37.createElement(
     CarouselContext.Provider,
     {
       value: {
@@ -779,7 +817,7 @@ var CarouselProvider = ({
 };
 var Carousel = ({ children, config }) => {
   const containerRef = useRef(null);
-  return /* @__PURE__ */ React36.createElement(CarouselProvider, { containerRef, config }, children);
+  return /* @__PURE__ */ React37.createElement(CarouselProvider, { containerRef, config }, children);
 };
 Carousel.Container = CarouselContainer;
 Carousel.Item = CarouselItem;
@@ -788,7 +826,7 @@ Carousel.PreviousButton = CarouselPreviousButton;
 Carousel.NextButton = CarouselNextButton;
 
 // src/components/select/MultiSelect.tsx
-import React40, { useState as useState2 } from "react";
+import React41, { useState as useState2 } from "react";
 
 // src/components/select/useSelectNavigate.tsx
 import { useEffect, useRef as useRef2, useState } from "react";
@@ -914,7 +952,7 @@ var useCheckboxNavigate = ({
 var useSelectNavigate_default = useCheckboxNavigate;
 
 // src/components/select/SelectInput.tsx
-import React37, { useEffect as useEffect2, useRef as useRef3 } from "react";
+import React38, { useEffect as useEffect2, useRef as useRef3 } from "react";
 
 // src/utils/cn.ts
 import { twMerge as twMerge7 } from "tailwind-merge";
@@ -952,7 +990,7 @@ var SelectInput = ({
       setSearchInputRef(searchRef);
     }
   }, []);
-  return /* @__PURE__ */ React37.createElement("div", { className: cn(defaultStyles.container, styles.container, className) }, /* @__PURE__ */ React37.createElement(
+  return /* @__PURE__ */ React38.createElement("div", { className: cn(defaultStyles.container, styles.container, className) }, /* @__PURE__ */ React38.createElement(
     "input",
     {
       className: cn(defaultStyles.input, styles.input),
@@ -963,7 +1001,7 @@ var SelectInput = ({
       },
       ref: searchRef
     }
-  ), /* @__PURE__ */ React37.createElement(
+  ), /* @__PURE__ */ React38.createElement(
     "span",
     {
       className: cn(
@@ -971,26 +1009,26 @@ var SelectInput = ({
         styles.searchIconWrapper
       )
     },
-    /* @__PURE__ */ React37.createElement(
+    /* @__PURE__ */ React38.createElement(
       SearchIcon_default,
       {
         className: cn(defaultStyles.searchIcon, styles.searchIcon)
       }
     )
-  ), /* @__PURE__ */ React37.createElement(
+  ), /* @__PURE__ */ React38.createElement(
     "span",
     {
       "data-is-open": isListOpen,
       onClick: toggleListOpen,
       className: cn(defaultStyles.arrowIconWrapper, styles.arrowIconWrapper)
     },
-    /* @__PURE__ */ React37.createElement(ArrowRight_default, { className: cn(defaultStyles.arrowIcon, styles.arrowIcon) })
+    /* @__PURE__ */ React38.createElement(ArrowRight_default, { className: cn(defaultStyles.arrowIcon, styles.arrowIcon) })
   ));
 };
 var SelectInput_default = SelectInput;
 
 // src/components/select/SelectList.tsx
-import React39, { useEffect as useEffect3, useMemo as useMemo2, useRef as useRef4 } from "react";
+import React40, { useEffect as useEffect3, useMemo as useMemo2, useRef as useRef4 } from "react";
 
 // src/utils/filter.ts
 function matchCharactersWithRegex(word, searchTerm) {
@@ -1001,7 +1039,7 @@ function matchCharactersWithRegex(word, searchTerm) {
 }
 
 // src/components/select/BaseSelectList.tsx
-import React38 from "react";
+import React39 from "react";
 var defaultStyles2 = {
   container: "scroller font-medium mt-2 max-h-[300px] py-[6px] overflow-auto border border-bdp-stroke rounded-xl data-[is-open='false']:hidden",
   optionWrapper: `flex gap-1 py-1 2xl:py-2 px-[14px] group/checkOption hover:bg-bdp-hover-state data-[current-navigated=true]:bg-bdp-hover-state
@@ -1024,7 +1062,7 @@ var BaseSelectList = ({
   selectContextData
 }) => {
   const { isListOpen, currentNavigateCheckbox, containerRef } = selectContextData;
-  return /* @__PURE__ */ React38.createElement(
+  return /* @__PURE__ */ React39.createElement(
     "div",
     {
       "data-is-open": isListOpen,
@@ -1036,18 +1074,18 @@ var BaseSelectList = ({
         className
       )
     },
-    options.length < 1 && /* @__PURE__ */ React38.createElement("p", { className: cn(defaultStyles2.noResults, styles.noResults) }, noResultsMessage),
+    options.length < 1 && /* @__PURE__ */ React39.createElement("p", { className: cn(defaultStyles2.noResults, styles.noResults) }, noResultsMessage),
     options == null ? void 0 : options.map((option) => {
       const checked = option.selected;
       const value = option.value;
-      return /* @__PURE__ */ React38.createElement(
+      return /* @__PURE__ */ React39.createElement(
         "label",
         {
           key: option.label,
           htmlFor: `checkbox-${label}-${option.label}`,
           "data-checkbox": option.label
         },
-        /* @__PURE__ */ React38.createElement(
+        /* @__PURE__ */ React39.createElement(
           "div",
           {
             "data-selected": checked,
@@ -1057,21 +1095,21 @@ var BaseSelectList = ({
             role: "button",
             "aria-label": `${checked ? "uncheck" : "check"} filter ${label}:${option.label}`
           },
-          /* @__PURE__ */ React38.createElement(
+          /* @__PURE__ */ React39.createElement(
             "div",
             {
               className: cn(defaultStyles2.optionInner, styles.optionInner),
               id: `example_facet_${label}${option.label}`
             },
-            /* @__PURE__ */ React38.createElement(
+            /* @__PURE__ */ React39.createElement(
               LightningIconSolid_default,
               {
                 className: cn(defaultStyles2.icon, styles.icon)
               }
             ),
-            /* @__PURE__ */ React38.createElement("span", { className: cn(defaultStyles2.label, styles.label) }, option.label)
+            /* @__PURE__ */ React39.createElement("span", { className: cn(defaultStyles2.label, styles.label) }, option.label)
           ),
-          option.count ? /* @__PURE__ */ React38.createElement("span", { className: cn(defaultStyles2.count, styles.count) }, numberFormat.format(option.count)) : null
+          option.count ? /* @__PURE__ */ React39.createElement("span", { className: cn(defaultStyles2.count, styles.count) }, numberFormat.format(option.count)) : null
         )
       );
     })
@@ -1103,7 +1141,7 @@ var SelectList = (props) => {
     }
     return props.options;
   }, [props.options, searchTerm]);
-  return /* @__PURE__ */ React39.createElement(
+  return /* @__PURE__ */ React40.createElement(
     BaseSelectList_default,
     {
       ...props,
@@ -1115,9 +1153,9 @@ var SelectList = (props) => {
 var SelectList_default = SelectList;
 
 // src/components/select/MultiSelect.tsx
-var SelectContext = React40.createContext(null);
+var SelectContext = React41.createContext(null);
 var useMultiSelect = () => {
-  const context = React40.useContext(SelectContext);
+  const context = React41.useContext(SelectContext);
   if (!context) {
     throw new Error("useMultiSelect must be used within a MultiSelectProvider");
   }
@@ -1144,7 +1182,7 @@ var MultiSelectProvider = ({
     const newValue = value.trim();
     setInputValue(newValue);
   };
-  return /* @__PURE__ */ React40.createElement(
+  return /* @__PURE__ */ React41.createElement(
     SelectContext.Provider,
     {
       value: {
@@ -1164,16 +1202,16 @@ var MultiSelectProvider = ({
   );
 };
 var MultiSelect = ({ children, isCollapsible = true }) => {
-  return /* @__PURE__ */ React40.createElement(MultiSelectProvider, { isCollapsible }, children);
+  return /* @__PURE__ */ React41.createElement(MultiSelectProvider, { isCollapsible }, children);
 };
 MultiSelect.Input = SelectInput_default;
 MultiSelect.List = SelectList_default;
 
 // src/components/select/Dropdown.tsx
-import React43, { createContext, useCallback as useCallback2, useState as useState3 } from "react";
+import React44, { createContext, useCallback as useCallback2, useState as useState3 } from "react";
 
 // src/components/select/SingleSelectList.tsx
-import React41, { useEffect as useEffect4 } from "react";
+import React42, { useEffect as useEffect4 } from "react";
 var SingleSelectList = (props) => {
   const {
     isListOpen,
@@ -1182,7 +1220,7 @@ var SingleSelectList = (props) => {
     handleSelectOption,
     setSelectedOption
   } = useSingleSelect();
-  const containerRef = React41.useRef(null);
+  const containerRef = React42.useRef(null);
   useEffect4(() => {
     if (!containerRefProvider && containerRef.current) {
       setContainerRef(containerRef);
@@ -1206,7 +1244,7 @@ var SingleSelectList = (props) => {
       props.options.find((option) => option.value === props.value) || null
     );
   }, [props.value, props.options]);
-  return /* @__PURE__ */ React41.createElement(
+  return /* @__PURE__ */ React42.createElement(
     BaseSelectList_default,
     {
       ...props,
@@ -1227,7 +1265,7 @@ var SingleSelectList = (props) => {
 var SingleSelectList_default = SingleSelectList;
 
 // src/components/select/SingleSelectInput.tsx
-import React42 from "react";
+import React43 from "react";
 var defaultStyles3 = {
   container: "relative text-bdp-primary-text",
   trigger: "block bg-transparent text-base text-bdp-accent 2xl:text-base font-medium w-full pl-6 py-4 rounded-xl border-[1px] border-bdp-stroke focus:outline-none focus:outline-bdp-secondary-text focus:outline-offset-0 leading-none",
@@ -1240,21 +1278,21 @@ var SingleSelectTrigger = ({
   styles = {}
 }) => {
   const { selectedOption, toggleListOpen, isListOpen, triggerRef } = useSingleSelect();
-  return /* @__PURE__ */ React42.createElement(
+  return /* @__PURE__ */ React43.createElement(
     "div",
     {
       ref: triggerRef,
       className: cn(defaultStyles3.container, styles.container, className),
       onClick: toggleListOpen
     },
-    /* @__PURE__ */ React42.createElement("label", { className: cn(defaultStyles3.trigger, styles.trigger) }, (selectedOption == null ? void 0 : selectedOption.label) || defaultPlaceholder),
-    /* @__PURE__ */ React42.createElement(
+    /* @__PURE__ */ React43.createElement("label", { className: cn(defaultStyles3.trigger, styles.trigger) }, (selectedOption == null ? void 0 : selectedOption.label) || defaultPlaceholder),
+    /* @__PURE__ */ React43.createElement(
       "span",
       {
         "data-is-open": isListOpen,
         className: cn(defaultStyles3.arrowIconWrapper, styles.arrowIconWrapper)
       },
-      /* @__PURE__ */ React42.createElement(ArrowRight_default, { className: cn(defaultStyles3.arrowIcon, styles.arrowIcon) })
+      /* @__PURE__ */ React43.createElement(ArrowRight_default, { className: cn(defaultStyles3.arrowIcon, styles.arrowIcon) })
     )
   );
 };
@@ -1263,7 +1301,7 @@ var SingleSelectInput_default = SingleSelectTrigger;
 // src/components/select/Dropdown.tsx
 var SingleSelectContext = createContext(null);
 var useSingleSelect = () => {
-  const context = React43.useContext(SingleSelectContext);
+  const context = React44.useContext(SingleSelectContext);
   if (!context) {
     throw new Error(
       "useSingleSelect must be used within a SingleSelectProvider"
@@ -1295,7 +1333,7 @@ var SingleSelectProvider = ({
     },
     [containerRef, isListOpen]
   );
-  React43.useEffect(() => {
+  React44.useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -1311,20 +1349,20 @@ var SingleSelectProvider = ({
     setContainerRef,
     triggerRef
   };
-  return /* @__PURE__ */ React43.createElement(SingleSelectContext.Provider, { value: contextValue }, /* @__PURE__ */ React43.createElement("div", { className: "relative" }, children));
+  return /* @__PURE__ */ React44.createElement(SingleSelectContext.Provider, { value: contextValue }, /* @__PURE__ */ React44.createElement("div", { className: "relative" }, children));
 };
 var SingleSelect = ({
   children,
   disabled = false
 }) => {
-  const triggerRef = React43.useRef(null);
-  return /* @__PURE__ */ React43.createElement(SingleSelectProvider, { disabled, triggerRef }, children);
+  const triggerRef = React44.useRef(null);
+  return /* @__PURE__ */ React44.createElement(SingleSelectProvider, { disabled, triggerRef }, children);
 };
 SingleSelect.List = SingleSelectList_default;
 SingleSelect.Trigger = SingleSelectInput_default;
 
 // src/components/banner/Banner.tsx
-import React44 from "react";
+import React45 from "react";
 import { useState as useState4 } from "react";
 var defaultStyles4 = {
   container: "dark:text-bdp-white dark:shadow-dark-light gap-2 flex items-center justify-between w-full px-2 sm:px-4 shadow-md transition-all duration-200 ease-in-out text-center h-auto opacity-100 max-h-[200px]",
@@ -1343,7 +1381,7 @@ function Banner({
   ...rest
 }) {
   const [showBanner, setShowBanner] = useState4(true);
-  return /* @__PURE__ */ React44.createElement(
+  return /* @__PURE__ */ React45.createElement(
     "div",
     {
       "data-show-banner": showBanner,
@@ -1354,7 +1392,7 @@ function Banner({
         styles.container
       )
     },
-    /* @__PURE__ */ React44.createElement(
+    /* @__PURE__ */ React45.createElement(
       "div",
       {
         className: cn(
@@ -1364,9 +1402,9 @@ function Banner({
           styles.bannerInfoContainer
         )
       },
-      !!headingText && /* @__PURE__ */ React44.createElement("h3", { className: cn(defaultStyles4.headingText, styles.headingText) }, headingText, hasBoss && /* @__PURE__ */ React44.createElement("span", { className: cn(defaultStyles4.boss, styles.boss) }, " \u20BFOSS")),
-      !!bodyText && /* @__PURE__ */ React44.createElement("p", { className: cn(defaultStyles4.bodyText, styles.bodyText) }, bodyText),
-      !!rest.linkText && /* @__PURE__ */ React44.createElement(
+      !!headingText && /* @__PURE__ */ React45.createElement("h3", { className: cn(defaultStyles4.headingText, styles.headingText) }, headingText, hasBoss && /* @__PURE__ */ React45.createElement("span", { className: cn(defaultStyles4.boss, styles.boss) }, " \u20BFOSS")),
+      !!bodyText && /* @__PURE__ */ React45.createElement("p", { className: cn(defaultStyles4.bodyText, styles.bodyText) }, bodyText),
+      !!rest.linkText && /* @__PURE__ */ React45.createElement(
         "a",
         {
           onClick: () => setShowBanner(false),
@@ -1378,7 +1416,7 @@ function Banner({
         rest.linkText
       )
     ),
-    /* @__PURE__ */ React44.createElement(
+    /* @__PURE__ */ React45.createElement(
       "button",
       {
         onClick: () => setShowBanner(false),
@@ -1390,7 +1428,7 @@ function Banner({
           styles.icon
         )
       },
-      /* @__PURE__ */ React44.createElement(
+      /* @__PURE__ */ React45.createElement(
         "svg",
         {
           className: "h-[20px] w-[20px] md:h-6 md:w-6",
@@ -1401,7 +1439,7 @@ function Banner({
           width: "24",
           height: "24"
         },
-        /* @__PURE__ */ React44.createElement(
+        /* @__PURE__ */ React45.createElement(
           "path",
           {
             strokeLinecap: "round",

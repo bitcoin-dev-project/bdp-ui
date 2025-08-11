@@ -57,6 +57,8 @@ declare const LightningIconSolid: ({ width, height, pathProps, ...props }: SVGPr
     pathProps?: SVGProps<SVGPathElement>;
 }) => React.JSX.Element;
 
+declare const LinkedinIcon: ({ width, height, ...props }: SVGProps<SVGSVGElement>) => React.JSX.Element;
+
 declare const MicIcon: ({ width, height, pathProps, ...props }: SVGProps<SVGSVGElement> & {
     pathProps?: SVGProps<SVGPathElement>;
 }) => React.JSX.Element;
@@ -83,4 +85,4 @@ declare const TwitterXIcon: ({ width, height, pathProps, ...props }: SVGProps<SV
     pathProps?: SVGProps<SVGPathElement>;
 }) => React.JSX.Element;
 
-export { AppsIcon, ArrowLeft, ArrowLinkRight, ArrowLinkUpRight, ArrowRight, ArrowUp, AuthorIcon, BitcoinIcon, BookmarkIcon, CalendarIcon, CloseIconOutlined, DateIcon, DayIcon, DiceIcon, DiscordIcon, FilterCloseIcon, FilterIcon, GithubIcon, LightningIconSolid, MicIcon, NightIcon, NostrIcon, PlusIcon, SearchIcon, SortIcon, SourceIcon, TimeIcon, TwitterXIcon };
+export { AppsIcon, ArrowLeft, ArrowLinkRight, ArrowLinkUpRight, ArrowRight, ArrowUp, AuthorIcon, BitcoinIcon, BookmarkIcon, CalendarIcon, CloseIconOutlined, DateIcon, DayIcon, DiceIcon, DiscordIcon, FilterCloseIcon, FilterIcon, GithubIcon, LightningIconSolid, LinkedinIcon, MicIcon, NightIcon, NostrIcon, PlusIcon, SearchIcon, SortIcon, SourceIcon, TimeIcon, TwitterXIcon };

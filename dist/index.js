@@ -327,14 +327,43 @@ var LightningIconSolid = ({
 };
 var LightningIconSolid_default = LightningIconSolid;
 
-// src/icons/MicIcon.tsx
+// src/icons/LinkedinIcon.tsx
 var React23 = __toESM(require("react"));
+var LinkedinIcon = ({
+  width = 52,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  height,
+  ...props
+}) => (
+  // height is destructed and unused, scaling is defined by width
+  /* @__PURE__ */ React23.createElement(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      width,
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth: 2,
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      ...props
+    },
+    /* @__PURE__ */ React23.createElement("path", { d: "M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" }),
+    /* @__PURE__ */ React23.createElement("rect", { x: 2, y: 9, width: 4, height: 12 }),
+    /* @__PURE__ */ React23.createElement("circle", { cx: 4, cy: 4, r: 2 })
+  )
+);
+var LinkedinIcon_default = LinkedinIcon;
 
-// src/icons/NightIcon.tsx
+// src/icons/MicIcon.tsx
 var React24 = __toESM(require("react"));
 
-// src/icons/NostrIcon.tsx
+// src/icons/NightIcon.tsx
 var React25 = __toESM(require("react"));
+
+// src/icons/NostrIcon.tsx
+var React26 = __toESM(require("react"));
 var NostrIcon = ({
   width = 31,
   height,
@@ -343,7 +372,7 @@ var NostrIcon = ({
 }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  /* @__PURE__ */ React25.createElement(
+  /* @__PURE__ */ React26.createElement(
     "svg",
     {
       width,
@@ -352,7 +381,7 @@ var NostrIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React25.createElement(
+    /* @__PURE__ */ React26.createElement(
       "path",
       {
         d: "M31.5 13.5114V29.8827C31.5 30.4984 31.0041 30.998 30.3929 30.998H17.1081C16.4969 30.998 16.001 30.4984 16.001 29.8827V26.8339C16.0615 23.0966 16.454 19.5166 17.2779 17.8879C17.7719 16.9084 18.5861 16.3753 19.5214 16.0901C21.2884 15.5551 24.389 15.9209 25.705 15.858C25.705 15.858 29.6803 16.0173 29.6803 13.7494C29.6803 11.924 27.9035 12.0676 27.9035 12.0676C25.9451 12.1187 24.4534 11.985 23.4869 11.6014C21.8683 10.9602 21.8136 9.78388 21.8077 9.39048C21.7277 4.8467 15.0774 4.30184 9.21796 5.42893C2.81177 6.65635 9.28825 15.9072 9.28825 28.256V29.9044C9.27653 30.5102 8.79036 31 8.18508 31H1.60707C0.995937 31 0.5 30.5004 0.5 29.8847V1.56967C0.5 0.953998 0.995937 0.454378 1.60707 0.454378H7.79067C8.40181 0.454378 8.89775 0.953998 8.89775 1.56967C8.89775 2.48433 9.91891 2.99378 10.657 2.46072C12.8809 0.855648 15.7354 0 18.9297 0C26.0857 0 31.4961 4.20152 31.4961 13.5114H31.5ZM19.6209 10.1891C19.6209 8.87119 18.5607 7.80311 17.2525 7.80311C15.9444 7.80311 14.8841 8.87119 14.8841 10.1891C14.8841 11.507 15.9444 12.5751 17.2525 12.5751C18.5607 12.5751 19.6209 11.507 19.6209 10.1891Z",
@@ -364,10 +393,10 @@ var NostrIcon = ({
 var NostrIcon_default = NostrIcon;
 
 // src/icons/PlusIcon.tsx
-var React26 = __toESM(require("react"));
+var React27 = __toESM(require("react"));
 
 // src/icons/SearchIcon.tsx
-var React27 = __toESM(require("react"));
+var React28 = __toESM(require("react"));
 var SearchIcon = ({
   width = 20,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -375,7 +404,7 @@ var SearchIcon = ({
   ...props
 }) => (
   // height is destructed and unused, scaling is defined by width
-  /* @__PURE__ */ React27.createElement(
+  /* @__PURE__ */ React28.createElement(
     "svg",
     {
       width,
@@ -384,7 +413,7 @@ var SearchIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React27.createElement(
+    /* @__PURE__ */ React28.createElement(
       "path",
       {
         d: "M9.00001 17C13.4183 17 17 13.4183 17 9.00001C17 4.58173 13.4183 1 9.00001 1C4.58173 1 1 4.58173 1 9.00001C1 13.4183 4.58173 17 9.00001 17Z",
@@ -392,7 +421,7 @@ var SearchIcon = ({
         strokeWidth: 2
       }
     ),
-    /* @__PURE__ */ React27.createElement(
+    /* @__PURE__ */ React28.createElement(
       "path",
       {
         d: "M18.9992 19.0002L14.6992 14.7002",
@@ -405,16 +434,16 @@ var SearchIcon = ({
 var SearchIcon_default = SearchIcon;
 
 // src/icons/SortIcon.tsx
-var React28 = __toESM(require("react"));
-
-// src/icons/SourceIcon.tsx
 var React29 = __toESM(require("react"));
 
-// src/icons/TimeIcon.tsx
+// src/icons/SourceIcon.tsx
 var React30 = __toESM(require("react"));
 
-// src/icons/TwitterXIcon.tsx
+// src/icons/TimeIcon.tsx
 var React31 = __toESM(require("react"));
+
+// src/icons/TwitterXIcon.tsx
+var React32 = __toESM(require("react"));
 var TwitterXIcon = ({
   width = 37,
   height,
@@ -423,7 +452,7 @@ var TwitterXIcon = ({
 }) => (
   // height is destructed and unused, scaling is defined by width
   // pathProps is destructured and unused
-  /* @__PURE__ */ React31.createElement(
+  /* @__PURE__ */ React32.createElement(
     "svg",
     {
       width,
@@ -432,7 +461,7 @@ var TwitterXIcon = ({
       xmlns: "http://www.w3.org/2000/svg",
       ...props
     },
-    /* @__PURE__ */ React31.createElement(
+    /* @__PURE__ */ React32.createElement(
       "path",
       {
         d: "M28.5659 3.46875H33.6657L22.5241 16.2029L35.6313 33.5312H25.3685L17.3302 23.0217L8.13271 33.5312H3.0298L14.9469 19.9106L2.37305 3.46875H12.8965L20.1623 13.0749L28.5659 3.46875ZM26.776 30.4788H29.6019L11.361 6.36092H8.3285L26.776 30.4788Z",
@@ -470,6 +499,15 @@ var Platform = ({ platform }) => {
     }
     if (entity2 === "nostr") {
       return /* @__PURE__ */ import_react4.default.createElement(NostrIcon_default, { className: (0, import_tailwind_merge3.twMerge)((0, import_clsx3.default)("w-full", className)), ...rest });
+    }
+    if (entity2 === "linkedin") {
+      return /* @__PURE__ */ import_react4.default.createElement(
+        LinkedinIcon_default,
+        {
+          className: (0, import_tailwind_merge3.twMerge)((0, import_clsx3.default)("w-full", className)),
+          ...rest
+        }
+      );
     }
   };
   const iconElement = getIcon(entity);

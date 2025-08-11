@@ -25,15 +25,15 @@ interface FooterFeedbackProps extends FooterPartsPrimitiveProps<HTMLDivElement> 
     entityCtaText?: string;
 }
 
-type SupportedSocialMedia = "twitter" | "github" | "discord" | "nostr";
-type ManadatorySocialMediaProps<T> = {
+type SupportedSocialMedia = "twitter" | "github" | "discord" | "nostr" | "linkedin";
+type MandatorySocialMediaProps<T> = {
     entityLink: string;
     iconProps?: React__default.SVGProps<SVGSVGElement>;
 } & T;
-type SocialMediaProps = ManadatorySocialMediaProps<{
+type SocialMediaProps = MandatorySocialMediaProps<{
     entity: SupportedSocialMedia;
     icon?: React__default.ReactElement;
-}> | ManadatorySocialMediaProps<{
+}> | MandatorySocialMediaProps<{
     entity: Exclude<string, SupportedSocialMedia>;
     icon: React__default.ReactElement;
 }>;
