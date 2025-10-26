@@ -111,4 +111,3 @@ Pill.propTypes = {
   selected: PropTypes.bool,
   onSelectChange: PropTypes.func,
 };
-
