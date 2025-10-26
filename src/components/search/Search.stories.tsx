@@ -123,9 +123,9 @@ export const AllStates: Story = {
   parameters: {
     docs: {
       description: {
-        story: "This story shows the search component in its default state. You can interact with it to see hover and focus states.",
+        story:
+          "This story shows the search component in its default state. You can interact with it to see hover and focus states.",
       },
     },
   },
 };
-

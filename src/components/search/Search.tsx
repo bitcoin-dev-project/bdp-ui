@@ -120,4 +120,3 @@ Search.propTypes = {
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
 };
-
