@@ -1,4 +1,5 @@
 import React, { forwardRef, useState } from "react";
+import PropTypes from "prop-types";
 import { cn } from "../../utils/cn";
 import searchIcon from "../../assets/search-icon.svg";
 
@@ -107,4 +108,16 @@ export const Search = forwardRef<HTMLInputElement, SearchProps>(
 );
 
 Search.displayName = "Search";
+
+Search.propTypes = {
+  containerClassName: PropTypes.string,
+  inputClassName: PropTypes.string,
+  iconClassName: PropTypes.string,
+  showIcon: PropTypes.bool,
+  size: PropTypes.oneOf(["small", "default", "large"]),
+  placeholder: PropTypes.string,
+  className: PropTypes.string,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func,
+};
 
