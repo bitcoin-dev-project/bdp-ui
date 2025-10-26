@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { isInViewport } from "../../utils/navigation";
 
-type ChekboxNavigateProps = {
+type CheckboxNavigateProps = {
   checkboxContainer: React.MutableRefObject<HTMLDivElement> | null;
   searchEl: React.MutableRefObject<HTMLInputElement> | null;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -12,7 +12,7 @@ const useCheckboxNavigate = ({
   checkboxContainer,
   searchEl,
   options,
-}: ChekboxNavigateProps) => {
+}: CheckboxNavigateProps) => {
   const checkboxNavIndex = useRef<number>(null);
 
   const [currentNavigateCheckbox, setcurrentNavigateCheckbox] = useState("");
