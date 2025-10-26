@@ -41,6 +41,24 @@ module.exports = {
           "light-yellow": "#ECD4B5",
           "lighter-text": "#F6F0E6",
         },
+        brand:{
+          light:{
+            100:"#F6F0E6",
+          },
+          orange:{
+            100:"#EB5234",
+          },
+          gray:{
+            100:"#201E1E",
+            200:"#F6F0E6",
+            300:"#A9A49B",
+            400:"#F6F0E6",
+          },
+          green:"#0E9158",
+          dark:{
+            100:"#201E1E"
+          }
+        }
       },
     },
   },
