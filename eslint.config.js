@@ -1,13 +1,13 @@
-const typescript = require('@typescript-eslint/eslint-plugin');
-const typescriptParser = require('@typescript-eslint/parser');
-const react = require('eslint-plugin-react');
+const typescript = require("@typescript-eslint/eslint-plugin");
+const typescriptParser = require("@typescript-eslint/parser");
+const react = require("eslint-plugin-react");
 
 module.exports = [
   {
-    files: ['**/*.{js,jsx,ts,tsx}'],
+    files: ["**/*.{js,jsx,ts,tsx}"],
     plugins: {
-      '@typescript-eslint': typescript,
-      'react': react,
+      "@typescript-eslint": typescript,
+      react: react,
     },
     languageOptions: {
       parser: typescriptParser,
@@ -16,14 +16,14 @@ module.exports = [
       },
     },
     rules: {
-      ...typescript.configs['recommended'].rules,
-      ...react.configs['recommended'].rules,
-      'no-console': ['warn', { allow: ['warn', 'error'] }],
-      '@typescript-eslint/no-unused-vars': 'warn'
+      ...typescript.configs["recommended"].rules,
+      ...react.configs["recommended"].rules,
+      "no-console": ["warn", { allow: ["warn", "error"] }],
+      "@typescript-eslint/no-unused-vars": "warn",
     },
     settings: {
       react: {
-        version: 'detect',
+        version: "detect",
       },
     },
   },

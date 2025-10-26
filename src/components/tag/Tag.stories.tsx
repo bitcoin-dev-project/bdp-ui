@@ -86,7 +86,8 @@ export const AllDefault: Story = {
   parameters: {
     docs: {
       description: {
-        story: "All tag types in their default state with white background and colored border.",
+        story:
+          "All tag types in their default state with white background and colored border.",
       },
     },
   },
@@ -138,7 +139,8 @@ export const AllSelected: Story = {
   parameters: {
     docs: {
       description: {
-        story: "All tag types in selected state with solid colored background and white text.",
+        story:
+          "All tag types in selected state with solid colored background and white text.",
       },
     },
   },
@@ -203,7 +205,8 @@ export const AllStatesComparison: Story = {
   parameters: {
     docs: {
       description: {
-        story: "Side-by-side comparison of all tag types across their three states: default (white background with colored border), hover (light colored background), and selected (solid colored background with white text).",
+        story:
+          "Side-by-side comparison of all tag types across their three states: default (white background with colored border), hover (light colored background), and selected (solid colored background with white text).",
       },
     },
   },
@@ -213,14 +216,8 @@ export const InteractiveDemo: Story = {
   render: () => (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
-        <p className="text-sm text-gray-600">
-          Click to see the state change:
-        </p>
-        <Tag
-          type="guide"
-          state="default"
-          onClick={() => alert("Tag clicked!")}
-        >
+        <p className="text-sm text-gray-600">Click to see the state change:</p>
+        <Tag type="guide" state="default" onClick={() => alert("Tag clicked!")}>
           Clickable Tag
         </Tag>
       </div>

@@ -22,10 +22,9 @@ jobs:
 
       - name: Run lint
         run: yarn lint
-      
+
       - name: Check formatting
         run: yarn format:check
 
       - name: Run typecheck
         run: yarn typecheck
-

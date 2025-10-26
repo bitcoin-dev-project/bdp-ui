@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        quicksand: ['Quicksand', 'sans-serif'],
+        quicksand: ["Quicksand", "sans-serif"],
       },
       boxShadowColor: {
-        "dark-light": "rgba(255, 255, 255, 0.05)"
+        "dark-light": "rgba(255, 255, 255, 0.05)",
       },
       colors: {
         bdp: {

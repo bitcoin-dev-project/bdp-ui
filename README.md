@@ -9,7 +9,9 @@ To install the BDP-UI library, you can use the following command:
 ```bash
 yarn add @bitcoin-dev-project/bdp-ui
 ```
-or 
+
+or
+
 ```bash
 npm i @bitcoin-dev-project/bdp-ui
 ```
@@ -19,10 +21,12 @@ npm i @bitcoin-dev-project/bdp-ui
 Once installed, you can import the components or icons you need from the library:
 
 ## CSS workaround
+
 Kindly import the css file to your global entry point.
 Usually, that is `app/layout.tsx`
 
 _note: import the css before your global css so if there are any conflicts your css takes precedence_
+
 ```tsx
 // app/layout.tsx
 ...
@@ -33,6 +37,7 @@ import "./globals.css";
 
 If you use tailwind for styling, also point your tailwind config to the library
 i.e
+
 ```tsx
 // tailwind.config.ts
 ...
@@ -47,31 +52,29 @@ const config: Config = {
 ```
 
 ### Components
+
 Here is how you can import and use components
 
 ```jsx
-import { Button } from '@bitcoin-dev-project/bdp-ui';
+import { Button } from "@bitcoin-dev-project/bdp-ui";
 
 function App() {
-  return (
-    <Button>Hello, World!</Button>
-  );
+  return <Button>Hello, World!</Button>;
 }
 ```
 
 ### Icons
+
 Here is how you can import icons
 
 ```jsx
-import { GithubIcon } from '@bitcoin-dev-project/bdp-ui/icons';
+import { GithubIcon } from "@bitcoin-dev-project/bdp-ui/icons";
 
 function App() {
-  return (
-    <GithubIcon className="w-[40px] text-black" />
-  );
+  return <GithubIcon className="w-[40px] text-black" />;
 }
 ```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

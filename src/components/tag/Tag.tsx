@@ -53,15 +53,15 @@ export const Tag: React.FC<TagProps> = ({
 }) => {
   const config = tagConfig[type];
   const Icon = config.icon;
-  
+
   const [internalSelected, setInternalSelected] = useState(false);
-  
-  const isSelected = controlledSelected !== undefined 
-    ? controlledSelected 
-    : internalSelected;
-  
+
+  const isSelected =
+    controlledSelected !== undefined ? controlledSelected : internalSelected;
+
   const effectiveState = state ?? (isSelected ? "selected" : "default");
-  const isForcedState = effectiveState === "selected" || effectiveState === "hover";
+  const isForcedState =
+    effectiveState === "selected" || effectiveState === "hover";
 
   const handleClick = () => {
     if (state === undefined) {
@@ -72,8 +72,14 @@ export const Tag: React.FC<TagProps> = ({
     onClick?.();
   };
 
-  const renderIconColor = effectiveState === "selected" ? "white" : config.color;
-  const renderBackgroundColor = effectiveState === "selected" ? config.color : (effectiveState === "hover" ? config.lightColor : "white");
+  const renderIconColor =
+    effectiveState === "selected" ? "white" : config.color;
+  const renderBackgroundColor =
+    effectiveState === "selected"
+      ? config.color
+      : effectiveState === "hover"
+        ? config.lightColor
+        : "white";
   const renderBorderColor = config.color;
 
   return (
@@ -82,7 +88,7 @@ export const Tag: React.FC<TagProps> = ({
       className={cn(
         "inline-flex items-center gap-1 px-2 py-1 transition-all duration-200 cursor-pointer border text-sm rounded-[6px]",
         "hover:brightness-95",
-        className
+        className,
       )}
       data-state={effectiveState}
       data-type={type}
@@ -133,4 +139,3 @@ Tag.propTypes = {
   selected: PropTypes.bool,
   onSelectChange: PropTypes.func,
 };
-

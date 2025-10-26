@@ -27,4 +27,3 @@ const MenuIcon = ({
 };
 
 export default MenuIcon;
-

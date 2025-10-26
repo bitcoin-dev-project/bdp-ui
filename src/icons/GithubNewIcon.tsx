@@ -27,4 +27,3 @@ const GithubNewIcon = ({
 };
 
 export default GithubNewIcon;
-
