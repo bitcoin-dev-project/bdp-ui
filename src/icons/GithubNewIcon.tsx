@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const GithubFooterIcon = ({
+const GithubNewIcon = ({
   width = 30,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   height,
@@ -26,5 +26,5 @@ const GithubFooterIcon = ({
   );
 };
 
-export default GithubFooterIcon;
+export default GithubNewIcon;
 
