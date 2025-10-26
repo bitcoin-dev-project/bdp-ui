@@ -67,6 +67,7 @@ export const Interactive: Story = {
 };
 
 export const AllDefault: Story = {
+  args: { type: "guide" },
   render: () => (
     <div className="flex gap-2 flex-wrap">
       <Tag type="guide" state="default">
@@ -94,6 +95,7 @@ export const AllDefault: Story = {
 };
 
 export const AllHover: Story = {
+  args: { type: "guide" },
   render: () => (
     <div className="flex gap-2 flex-wrap">
       <Tag type="guide" state="hover">
@@ -120,6 +122,7 @@ export const AllHover: Story = {
 };
 
 export const AllSelected: Story = {
+  args: { type: "guide" },
   render: () => (
     <div className="flex gap-2 flex-wrap">
       <Tag type="guide" state="selected">
@@ -147,6 +150,7 @@ export const AllSelected: Story = {
 };
 
 export const AllStatesComparison: Story = {
+  args: { type: "guide" },
   render: () => (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
@@ -213,6 +217,7 @@ export const AllStatesComparison: Story = {
 };
 
 export const InteractiveDemo: Story = {
+  args: { type: "guide" },
   render: () => (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
