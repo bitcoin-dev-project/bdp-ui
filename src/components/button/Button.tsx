@@ -7,7 +7,7 @@ export interface ButtonProps {
   variant?: "primary" | "secondary" | "navigation" | "rebrand";
   size?: "small" | "medium" | "large";
   disabled?: boolean;
-  className?:string;
+  className?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   size = "medium",
   disabled = false,
-  className:customClass,
+  className: customClass,
 }) => {
   const baseStyles = "font-bold";
   const variantStyles = {
@@ -25,8 +25,9 @@ export const Button: React.FC<ButtonProps> = ({
     navigation: `border-brand-gray-100/60 rounded-lg bg-transparent border py-1 px-2 text-brand-gray-100/60
     hover:bg-brand-gray-200/20 active:bg-brand-gray-100/60 active:text-brand-gray-400 active:border-0
     `,
-    rebrand:"bg-brand-orange-100 text-brand-light-100 px-2 py-2.5 rounded-lg font-bold hover:bg-brand-dark-100 w-full",
-    custom:`${customClass}`
+    rebrand:
+      "bg-brand-orange-100 text-brand-light-100 px-2 py-2.5 rounded-lg font-bold hover:bg-brand-dark-100 w-full",
+    custom: `${customClass}`,
   };
   const sizeStyles = {
     small: "text-sm",
@@ -47,4 +48,3 @@ export const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
-

@@ -9,7 +9,7 @@ export default {
   component: Leaf,
   argTypes: {
     variant: {
-      control: { type: "select", options: [1,2,3] },
+      control: { type: "select", options: [1, 2, 3] },
     },
     selected: {
       control: "boolean",
@@ -22,11 +22,11 @@ const Template: StoryFn<LeavesProps> = (args) => <Leaf {...args} />;
 
 export const OneLeaf = Template.bind({});
 OneLeaf.args = {
-  leavesCount:1,
+  leavesCount: 1,
 };
 
 export const TwoLeaf = Template.bind({});
 TwoLeaf.args = {
-  leavesCount:1,
-  selected:true
+  leavesCount: 1,
+  selected: true,
 };

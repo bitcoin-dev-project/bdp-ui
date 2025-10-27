@@ -1,0 +1,1 @@
+export { BDPCard } from "./BDPCard";

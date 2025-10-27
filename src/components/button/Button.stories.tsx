@@ -34,11 +34,11 @@ Disabled.args = {
 export const PillButton = Template.bind({});
 PillButton.args = {
   label: "Learn",
-  variant:"navigation",
+  variant: "navigation",
 };
 
 export const Rebrand = Template.bind({});
 Rebrand.args = {
   label: "Clear Filters",
-  variant:"rebrand",
+  variant: "rebrand",
 };

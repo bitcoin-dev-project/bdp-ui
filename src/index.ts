@@ -6,3 +6,5 @@ export * from "./components/banner";
 export * from "./components/search";
 export * from "./components/tag";
 export * from "./components/pill";
+export * from "./components/badge";
+export * from "./components/card";

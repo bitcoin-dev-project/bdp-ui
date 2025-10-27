@@ -4,24 +4,45 @@ import LeafIcon from "../../icons/LeafIcon";
 import React from "react";
 
 export interface LeavesProps {
+  leavesCount: number;
   onClick?: () => void;
   disabled?: boolean;
   withBorder?: boolean;
-  leavesCount: number;
   selected?: boolean;
+  showLeftOvers?: boolean;
 }
 
-export const Leaf: React.FC<LeavesProps> = ({ leavesCount = 1, selected=false }) => {
-  const baseStyles = `rounded-md border border-brand-green w-max py-1 px-2 flex gap-1 hover:bg-brand-green/30 active:bg-brand-green active:text-white`
-  const allStyles =  `
+export const Leaf: React.FC<LeavesProps> = ({
+  leavesCount = 1,
+  selected = false,
+  withBorder,
+  showLeftOvers,
+}) => {
+  const baseStyles = `rounded-md  w-max py-1 px-2 flex gap-1 `;
+  const allStyles = `
   ${baseStyles}
-  ${selected ? "bg-brand-green text-white": " text-brand-green"}
+  ${selected ? "bg-brand-green text-white" : " text-brand-green"}
+  ${withBorder ? "border border-brand-green" : "border-0"}
+  ${showLeftOvers ? "bg-none! hover:bg-none" : "hover:bg-brand-green/30 active:bg-brand-green active:text-white"}
   `.trim();
 
-  return <div className={allStyles} role="button" tabIndex={0}>
-    {Array.from({length:leavesCount}).map((_,i)=>
-        <LeafIcon key={i} />
-    )}
-  </div>;
-};
+  const leaves = showLeftOvers
+    ? Array.from({ length: 3 }).map((_, i) => ({
+        active: i + 1 <= leavesCount,
+      }))
+    : [];
+  return (
+    <div className={allStyles} role="button" tabIndex={0}>
+      {!showLeftOvers &&
+        Array.from({ length: leavesCount }).map((_, i) => <LeafIcon key={i} />)}
 
+      {showLeftOvers &&
+        leaves.map((leave, i) => (
+          <LeafIcon
+            key={i}
+            className={`${leave.active ? "text-brand-green" : "text-[#A9A49B99]"}`}
+          />
+        ))}
+    </div>
+  );
+};

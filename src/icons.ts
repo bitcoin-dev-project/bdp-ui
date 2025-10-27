@@ -29,6 +29,7 @@ export { default as PlusIcon } from "./icons/PlusIcon";
 export { default as PlusNewIcon } from "./icons/PlusNewIcon";
 export { default as MinusIcon } from "./icons/MinusIcon";
 export { default as MenuIcon } from "./icons/MenuIcon";
+export { default as Pangolins } from "./icons/Pangolins";
 export { default as RightArrowIcon } from "./icons/RightArrowIcon";
 export { default as XIcon } from "./icons/XIcon";
 export { default as SearchIcon } from "./icons/SearchIcon";
