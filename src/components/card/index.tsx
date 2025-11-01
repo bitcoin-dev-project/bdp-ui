@@ -1,1 +1,1 @@
-export { BDPCard } from "./BDPCard";
+export * from "./BDPCard";

@@ -53,7 +53,13 @@ export const BDPCard: React.FC<CardProps> = ({
     }
   };
   return (
-    <a href={link} className={className} onClick={onClick}>
+    <a
+      href={link}
+      target="_blank"
+      className={className}
+      onClick={onClick}
+      rel="noreferrer"
+    >
       <div className="flex flex-col rounded-xl border border-brand-stroke-on-base w-full min-h-full bg-brand-card-bg">
         <div
           className={`h-[126px] flex border border-l-0 border-r-0 border-t-0

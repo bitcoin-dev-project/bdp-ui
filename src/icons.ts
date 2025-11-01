@@ -31,6 +31,7 @@ export { default as MinusIcon } from "./icons/MinusIcon";
 export { default as MenuIcon } from "./icons/MenuIcon";
 export { default as Pangolins } from "./icons/Pangolins";
 export { default as RightArrowIcon } from "./icons/RightArrowIcon";
+export { default as RebrandSearchIcon } from "./icons/RebrandSearchIcon";
 export { default as XIcon } from "./icons/XIcon";
 export { default as SearchIcon } from "./icons/SearchIcon";
 export { default as SortIcon } from "./icons/SortIcon";

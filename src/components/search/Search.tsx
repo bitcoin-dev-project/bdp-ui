@@ -1,7 +1,7 @@
 import React, { forwardRef, useState } from "react";
 import PropTypes from "prop-types";
 import { cn } from "../../utils/cn";
-import searchIcon from "../../assets/search-icon.svg";
+import { RebrandSearchIcon } from "../../icons";
 
 export interface SearchProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size"> {
@@ -67,9 +67,7 @@ export const Search = forwardRef<HTMLInputElement, SearchProps>(
         )}
       >
         {showIcon && (
-          <img
-            src={searchIcon}
-            alt="Search"
+          <RebrandSearchIcon
             className={cn(
               "absolute pointer-events-none",
               sizeStyles[size].icon,
