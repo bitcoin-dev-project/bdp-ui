@@ -6,6 +6,14 @@ module.exports = {
     extend: {
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
+        montserrat: ["Montserrat","sans-serif"]
+      },
+      boxShadow:{
+        "by-bdp": `
+          0px 1px 1px 0px #00000017,
+          0px 1px 1px 0px #0000000D,
+          0px 2px 1px 0px #00000003,
+          0px 3px 1px 0px #00000000`
       },
       boxShadowColor: {
         "dark-light": "rgba(255, 255, 255, 0.05)",
@@ -41,6 +49,27 @@ module.exports = {
           "light-yellow": "#ECD4B5",
           "lighter-text": "#F6F0E6",
         },
+        brand:{
+          light:{
+            100:"#F6F0E6",
+          },
+          "stroke-on-base":"#E1DBD0",
+          "card-bg":"#EFE9DE",
+          orange:{
+            100:"#EB5234",
+          },
+          gray:{
+            100:"#201E1E",
+            200:"#F6F0E6",
+            300:"#A9A49B",
+            400:"#F6F0E6",
+            500:"#E1DBD0",
+          },
+          green:"#0E9158",
+          dark:{
+            100:"#201E1E"
+          }
+        }
       },
     },
   },
