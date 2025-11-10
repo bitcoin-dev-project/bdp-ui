@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from "react";
 import { StoryObj, Meta } from "@storybook/react";
 import * as Icons from "../../icons";

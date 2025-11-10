@@ -56,7 +56,7 @@ module.exports = {
           "stroke-on-base":"#E1DBD0",
           "card-bg":"#EFE9DE",
           orange:{
-            100:"#EB5234",
+            100:"var(--brand-orange-100)",
           },
           gray:{
             100:"#201E1E",

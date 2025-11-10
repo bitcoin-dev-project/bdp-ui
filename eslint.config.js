@@ -19,6 +19,7 @@ module.exports = [
       ...typescript.configs["recommended"].rules,
       ...react.configs["recommended"].rules,
       "no-console": ["warn", { allow: ["warn", "error"] }],
+      "react/prop-types": "off",
       "@typescript-eslint/no-unused-vars": "warn",
     },
     settings: {

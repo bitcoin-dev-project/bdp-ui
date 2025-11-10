@@ -79,7 +79,7 @@ export const Tag: React.FC<TagProps> = ({
       ? config.color
       : effectiveState === "hover"
         ? config.lightColor
-        : "white";
+        : "transparent";
   const renderBorderColor = config.color;
 
   return (
@@ -128,14 +128,4 @@ export const Tag: React.FC<TagProps> = ({
       <span style={{ color: renderIconColor }}>{children}</span>
     </div>
   );
-};
-
-Tag.propTypes = {
-  type: PropTypes.oneOf(["guide", "seminar", "tool", "interactive"]).isRequired,
-  state: PropTypes.oneOf(["default", "hover", "selected"]),
-  onClick: PropTypes.func,
-  className: PropTypes.string,
-  children: PropTypes.node,
-  selected: PropTypes.bool,
-  onSelectChange: PropTypes.func,
 };

@@ -102,12 +102,3 @@ export const Pill: React.FC<PillProps> = ({
     </div>
   );
 };
-
-Pill.propTypes = {
-  state: PropTypes.oneOf(["default", "hover", "selected"]),
-  onClick: PropTypes.func,
-  className: PropTypes.string,
-  children: PropTypes.node,
-  selected: PropTypes.bool,
-  onSelectChange: PropTypes.func,
-};

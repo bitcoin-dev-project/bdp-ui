@@ -34,7 +34,7 @@ export const BDPCard: React.FC<CardProps> = ({
   byBDP,
 }) => {
   const baseStyles = `border border-brand-stroke-on-base p-2 
-  flex min-h-[290px] w-[374px] rounded-2xl  bg-brand-card-bg`;
+  flex min-h-[290px] w-full md:max-w-[374px] rounded-2xl  bg-brand-card-bg`;
 
   const className = `
   ${baseStyles}
@@ -62,8 +62,8 @@ export const BDPCard: React.FC<CardProps> = ({
     >
       <div className="flex flex-col rounded-xl border border-brand-stroke-on-base w-full min-h-full bg-brand-card-bg">
         <div
-          className={`h-[126px] flex border border-l-0 border-r-0 border-t-0
-             border-brand-stroke-on-base rounded-lg relative flex-col items-center justify-center`}
+          className={`min-h-[126px] flex border border-l-0 border-r-0 border-t-0
+             border-brand-stroke-on-base rounded-lg relative z-0 flex-col items-center justify-center`}
           style={{ backgroundColor: bannerColor }}
         >
           <div>
@@ -80,16 +80,21 @@ export const BDPCard: React.FC<CardProps> = ({
           )}
         </div>
         {/* Footer */}
-        <div className="flex flex-col w-full p-3 gap-2">
-          <div className="w-full flex items-center justify-between">
-            <h6 className="font-montserrat text-lg font-semibold">{title}</h6>
-            <Leaf
-              showLeftOvers
-              leavesCount={convertToLeavesCount(difficulty)}
-            />
+        <div className="flex flex-col w-full h-full p-2 md:p-3 gap-1.5 md:gap-2 justify-between">
+          <div className="flex flex-col gap-1.5 md:gap-2">
+            <div className="w-full flex items-start justify-between">
+              <h6 className="font-montserrat text-base md:text-lg font-semibold">
+                {title}
+              </h6>
+              <Leaf
+                showLeftOvers
+                leavesCount={convertToLeavesCount(difficulty)}
+              />
+            </div>
+            <p className="font-light text-sm md:text-base font-quicksand">
+              {description}
+            </p>
           </div>
-          <p className="font-light font-quicksand">{description}</p>
-
           <div className="flex gap-[9px] flex-wrap">
             {tagList &&
               tagList.map((tag) => (

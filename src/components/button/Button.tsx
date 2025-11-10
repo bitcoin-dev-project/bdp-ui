@@ -40,6 +40,7 @@ export const Button: React.FC<ButtonProps> = ({
     ${variantStyles[variant]}
     ${sizeStyles[size]}
     ${disabled ? "opacity-50 cursor-not-allowed" : ""}
+    ${customClass}
   `.trim();
 
   return (
