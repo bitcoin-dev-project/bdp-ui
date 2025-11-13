@@ -1002,6 +1002,7 @@ var Button = ({
     ${variantStyles[variant]}
     ${sizeStyles[size]}
     ${disabled ? "opacity-50 cursor-not-allowed" : ""}
+    ${customClass}
   `.trim();
   return /* @__PURE__ */ React.createElement("button", { className, onClick, disabled }, label);
 };
@@ -3229,7 +3230,7 @@ var MicIcon = ({
       {
         d: "M19.179 7.79078V12.1985C19.179 15.2414 16.7122 17.7082 13.6693 17.7082C10.6264 17.7082 8.15967 15.2414 8.15967 12.1985V7.79078C8.15967 4.74789 10.6264 2.28113 13.6693 2.28113C16.7122 2.28113 19.179 4.74789 19.179 7.79078Z",
         stroke: "currentColor",
-        strokeWidth: 1.6529
+        strokeWidth: (pathProps == null ? void 0 : pathProps.strokeWidth) || 1.6529
       }
     ),
     /* @__PURE__ */ React29.createElement(
@@ -3237,7 +3238,7 @@ var MicIcon = ({
       {
         d: "M19.1793 7.79077H15.8735M19.1793 12.1985H15.8735",
         stroke: "currentColor",
-        strokeWidth: 1.6529,
+        strokeWidth: (pathProps == null ? void 0 : pathProps.strokeWidth) || 1.6529,
         strokeLinecap: "round"
       }
     ),
@@ -3246,7 +3247,7 @@ var MicIcon = ({
       {
         d: "M22.4849 12.1985C22.4849 17.0671 18.5381 21.0139 13.6695 21.0139M13.6695 21.0139C8.80081 21.0139 4.854 17.0671 4.854 12.1985M13.6695 21.0139V24.3197M13.6695 24.3197H16.9752M13.6695 24.3197H10.3637",
         stroke: "currentColor",
-        strokeWidth: 1.6529,
+        strokeWidth: (pathProps == null ? void 0 : pathProps.strokeWidth) || 1.6529,
         strokeLinecap: "round"
       }
     )
@@ -7393,7 +7394,6 @@ Search.propTypes = {
 };
 
 // src/components/tag/Tag.tsx
-var import_prop_types2 = __toESM(require_prop_types());
 import React63, { useState as useState6 } from "react";
 var tagConfig = {
   guide: {
@@ -7449,7 +7449,7 @@ var Tag = ({
     onClick == null ? void 0 : onClick();
   };
   const renderIconColor = effectiveState === "selected" ? "white" : config.color;
-  const renderBackgroundColor = effectiveState === "selected" ? config.color : effectiveState === "hover" ? config.lightColor : "white";
+  const renderBackgroundColor = effectiveState === "selected" ? config.color : effectiveState === "hover" ? config.lightColor : "transparent";
   const renderBorderColor = config.color;
   return /* @__PURE__ */ React63.createElement(
     "div",
@@ -7498,18 +7498,8 @@ var Tag = ({
     /* @__PURE__ */ React63.createElement("span", { style: { color: renderIconColor } }, children)
   );
 };
-Tag.propTypes = {
-  type: import_prop_types2.default.oneOf(["guide", "seminar", "tool", "interactive"]).isRequired,
-  state: import_prop_types2.default.oneOf(["default", "hover", "selected"]),
-  onClick: import_prop_types2.default.func,
-  className: import_prop_types2.default.string,
-  children: import_prop_types2.default.node,
-  selected: import_prop_types2.default.bool,
-  onSelectChange: import_prop_types2.default.func
-};
 
 // src/components/pill/Pill.tsx
-var import_prop_types3 = __toESM(require_prop_types());
 import React64, { useState as useState7 } from "react";
 var pillColors = {
   default: {
@@ -7533,7 +7523,6 @@ var pillColors = {
     textColor: "#F6F0E6",
     // Light beige text
     borderColor: "#201E1E"
-    // Solid dark border
   }
 };
 var Pill = ({
@@ -7599,14 +7588,6 @@ var Pill = ({
     /* @__PURE__ */ React64.createElement("span", null, children)
   );
 };
-Pill.propTypes = {
-  state: import_prop_types3.default.oneOf(["default", "hover", "selected"]),
-  onClick: import_prop_types3.default.func,
-  className: import_prop_types3.default.string,
-  children: import_prop_types3.default.node,
-  selected: import_prop_types3.default.bool,
-  onSelectChange: import_prop_types3.default.func
-};
 
 // src/components/badge/ByBdp.tsx
 import React65 from "react";
@@ -7628,7 +7609,7 @@ var BDPCard = ({
   byBDP
 }) => {
   const baseStyles = `border border-brand-stroke-on-base p-2 
-  flex min-h-[290px] w-[374px] rounded-2xl  bg-brand-card-bg`;
+  flex min-h-[290px] w-full md:max-w-[374px] rounded-2xl  bg-brand-card-bg`;
   const className = `
   ${baseStyles}
   `.trim();
@@ -7656,8 +7637,8 @@ var BDPCard = ({
     /* @__PURE__ */ React66.createElement("div", { className: "flex flex-col rounded-xl border border-brand-stroke-on-base w-full min-h-full bg-brand-card-bg" }, /* @__PURE__ */ React66.createElement(
       "div",
       {
-        className: `h-[126px] flex border border-l-0 border-r-0 border-t-0
-             border-brand-stroke-on-base rounded-lg relative flex-col items-center justify-center`,
+        className: `min-h-[126px] flex border border-l-0 border-r-0 border-t-0
+             border-brand-stroke-on-base rounded-lg relative z-0 flex-col items-center justify-center`,
         style: { backgroundColor: bannerColor }
       },
       /* @__PURE__ */ React66.createElement("div", null, /* @__PURE__ */ React66.createElement(
@@ -7668,13 +7649,13 @@ var BDPCard = ({
         }
       )),
       byBDP && /* @__PURE__ */ React66.createElement("div", { className: "absolute bottom-3 left-3" }, /* @__PURE__ */ React66.createElement(ByBDPBadge, null))
-    ), /* @__PURE__ */ React66.createElement("div", { className: "flex flex-col w-full p-3 gap-2" }, /* @__PURE__ */ React66.createElement("div", { className: "w-full flex items-center justify-between" }, /* @__PURE__ */ React66.createElement("h6", { className: "font-montserrat text-lg font-semibold" }, title), /* @__PURE__ */ React66.createElement(
+    ), /* @__PURE__ */ React66.createElement("div", { className: "flex flex-col w-full h-full p-2 md:p-3 gap-1.5 md:gap-2 justify-between" }, /* @__PURE__ */ React66.createElement("div", { className: "flex flex-col gap-1.5 md:gap-2" }, /* @__PURE__ */ React66.createElement("div", { className: "w-full flex items-start justify-between" }, /* @__PURE__ */ React66.createElement("h6", { className: "font-montserrat text-base md:text-lg font-semibold" }, title), /* @__PURE__ */ React66.createElement(
       Leaf,
       {
         showLeftOvers: true,
         leavesCount: convertToLeavesCount(difficulty)
       }
-    )), /* @__PURE__ */ React66.createElement("p", { className: "font-light font-quicksand" }, description), /* @__PURE__ */ React66.createElement("div", { className: "flex gap-[9px] flex-wrap" }, tagList && tagList.map((tag) => /* @__PURE__ */ React66.createElement(Tag, { className: "capitalize", key: tag, type: tag }, tag)))))
+    )), /* @__PURE__ */ React66.createElement("p", { className: "font-light text-sm md:text-base font-quicksand" }, description)), /* @__PURE__ */ React66.createElement("div", { className: "flex gap-[9px] flex-wrap" }, tagList && tagList.map((tag) => /* @__PURE__ */ React66.createElement(Tag, { className: "capitalize", key: tag, type: tag }, tag)))))
   );
 };
 export {
