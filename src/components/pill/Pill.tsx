@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { cn } from "../../utils/cn";
 
 export type PillState = "default" | "hover" | "selected";
@@ -28,7 +27,7 @@ const pillColors = {
   selected: {
     backgroundColor: "#201E1E", // Solid dark color
     textColor: "#F6F0E6", // Light beige text
-    borderColor: "#201E1E", // Solid dark border
+    borderColor: "#201E1E",
   },
 } as const;
 
